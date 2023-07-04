@@ -18,3 +18,28 @@
     font-family: 'Montserrat';
     font-weight: normal;
 }
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.nav-item {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+.nav-link:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px orange;
+    border-radius: 50%;
+}
