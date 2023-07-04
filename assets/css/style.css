@@ -1,3 +1,20 @@
 /* 
     Style.css
 */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --highlight-color: #FF9C40;
+    --light-font-color: #e3e3e3;
+    --dark-font-color: #090708;
+}
+
+.title-font {
+    font-family: 'Crimson Text';
+    font-weight: bold;
+}
+
+.text-font {
+    font-family: 'Montserrat';
+    font-weight: normal;
+}
