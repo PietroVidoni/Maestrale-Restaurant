@@ -4,58 +4,86 @@
 <head>
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="dynamic.css">
     <link rel="script" href="assets/js/script.js">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Maestrale Restaurant</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
 </head>
 
 <body id="body">
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark">
-            <a class="navbar-brand" href="#">
-              <img src="assets/images/icons/logo.png" alt="Logo" width="150" height="30" class="d-inline-block align-top">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Menus</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Events</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
-                </li>
-              </ul>
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/icons/Logo.svg" height="80px" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item svg-background">
+                            <a class="nav-link active" href="#" onclick="toggleShape(this)">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="toggleShape(this)">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="toggleShape(this)">Menus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="toggleShape(this)">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="toggleShape(this)">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>     
+        </nav>
+
+        <script>
+            function toggleShape(link) {
+                var links = document.querySelectorAll('.nav-link');
+                links.forEach(function (link) {
+                    link.parentNode.classList.remove('active');
+                    link.parentNode.classList.remove('svg-background');
+                });
+
+                link.parentNode.classList.add('active');
+                link.parentNode.classList.add('svg-background');
+            }
+        </script>
+
     </header>
 
     <main>
-        <section id="hero-section">
-            
+        <section class="hero-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>Taste the Magic of Italy</h1>
+                        <h2>Unmistakably Italian, Unrivaled in Sarasota, FL.</h2>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
 
     </footer>
-</body>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JQjB7avNjJFr1J0AW3fqH96uKQPLFj+5brJ1o+hu3mZ9L9T/Qk8q1Q6P44T0iDR5" crossorigin="anonymous"></script>
+
+</body>
 
 </html>
