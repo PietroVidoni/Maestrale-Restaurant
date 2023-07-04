@@ -4,17 +4,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Montserrat:wght@400;600&display=swap');
 
 :root {
+    --main-1-color: #1a1a1a;
     --highlight-color: #FF9C40;
     --light-font-color: #e3e3e3;
     --dark-font-color: #090708;
 }
 
+body {
+    background-color: var(--main-1-color);
+}
+
 .title-font {
     font-family: 'Crimson Text';
     font-weight: bold;
+    font-size: 3rem;
+    color: var(--light-font-color);
 }
 
 .text-font {
     font-family: 'Montserrat';
     font-weight: normal;
+    font-size: 1.25rem;
+    color: var(--light-font-color);
 }

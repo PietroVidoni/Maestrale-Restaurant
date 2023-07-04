@@ -4,12 +4,14 @@
 <head>
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="script" href="assets/js/script.js">
+    <link rel="stylesheet" href="assets/css/reservation.css">
+
+    <script src="assets/js/script.js"></script>
+    <script defer src="./assets/js/reservation.js"></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Document</title>
+    <title>Maestrale's Restaurant</title>
 </head>
 <body>
     <nav></nav>
@@ -18,6 +20,37 @@
     <main>
         <section id="hero-section">
 
+        </section>
+        <section>
+            <h1 class="title-font">Claim your spot</h1>
+            <img src="./assets/images/location/seat-map.png" alt="map seat" width="30%">
+            <p class="text-font">If you plan to book a table for more than eight, please call the restaurant directly.</p>
+            <h4>Reservation Infos</h4>
+            <div>
+                <p class="text-font">How many?</p>
+                <select id="guest-selector">
+                    <option value="">Number of guests</option>
+                </select>
+
+                <p class="text-font">When?</p>
+                <select id="day-selector">
+                    <option value="">Day</option>
+                </select>
+                
+                <select id="month-selector">
+                    <option value="">Month</option>
+                </select>
+                
+                <select id="year">
+                    <option value="">Year</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                </select>
+            </div>
         </section>
     </main>
     <footer>
