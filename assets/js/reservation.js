@@ -52,6 +52,11 @@ for (let guests = 1; guests <= 8; guests++) {
 monthSelector.addEventListener('change', () => {
     const selectedMonth = monthSelector.value;
 
+    // If the placeholder is selected again it does nothing
+    if (!selectedMonth) {
+        return
+    }
+
     let selectedDay = daySelector.value
 
     // Removes all the childs but the first one
@@ -66,5 +71,11 @@ monthSelector.addEventListener('change', () => {
         option.text = (day + 1)
         daySelector.appendChild(option)
     }
-    daySelector.value = Math.min(selectedDay, monthDaysMap[selectedMonth][1] - 1)
+
+    if (selectedDay !== "") {
+        daySelector.value = Math.min(selectedDay, monthDaysMap[selectedMonth][1] - 1)
+    }
+    else {
+        daySelector.value = ""
+    }
 });

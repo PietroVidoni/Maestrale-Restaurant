@@ -1,0 +1,116 @@
+
+#reservation-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 2rem;
+}
+
+#reservation-section h1 {
+    text-align: center;
+    
+    color: var(--dark-font-color);
+    background-color: var(--highlight-color);
+    
+    width: 100%;
+}
+
+#reservation-section .notice-info {
+    margin: 1.5rem 0;
+}
+
+#reservation-section .notice-info span {
+    text-decoration: underline;
+}
+
+#reservation-section h4 {
+    font-size: var(--font-medium);
+    margin-bottom: 1.5rem;
+}
+
+#reservation-section .reservation-subtitle {
+    text-align: left;
+    width: 100%;
+
+    margin: 1.5rem 0;
+}
+
+#reservation-section .reservation-wrapper {
+    display: flex;
+
+    padding: .5rem;
+
+    width: 100%;
+}
+
+#reservation-section .reservation-wrapper p {
+    margin-right: 1rem;
+}
+
+#reservation-section .guest, #reservation-section .date {
+    display: flex;
+    margin: 0 1.5rem;
+
+    align-items: center;
+}
+
+/* Spacing the date selects from each other */
+#reservation-section .date select {
+    margin: 0 .5rem;
+}
+
+/* select html objects */
+#reservation-section select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: none;
+    padding-right: 1rem;
+    cursor: pointer;
+
+    color: var(--light-font-color);
+    background-color: #ffffff00;
+    border: 2px solid var(--highlight-color);
+    border-radius: 4px;
+    padding: 0.5rem;
+    outline: none;
+    
+    transition: all 0.2s ease-in-out;
+}
+
+/* Could make a global style rule */
+#reservation-section select:hover {
+    background-color: var(--highlight-color);
+    color: var(--dark-font-color);
+}
+
+#reservation-section .button-wrapper {
+    display: flex;
+    width: 80%;
+
+    justify-content: right;
+
+}
+#reservation-section .button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: none;
+    padding-right: 1rem;
+    cursor: pointer;
+
+    color: var(--dark-font-color);
+    background-color: var(--highlight-color);
+    border: 2px solid var(--highlight-color);
+    border-radius: 4px;
+    padding: 0.5rem;
+    outline: none;
+
+    transition: all 0.2s ease-in-out;
+}
+
+#reservation-section button:hover {
+    background-color: transparent;
+    color: var(--light-font-color);
+}

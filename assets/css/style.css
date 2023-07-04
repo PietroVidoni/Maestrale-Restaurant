@@ -5,9 +5,20 @@
 
 :root {
     --main-1-color: #1a1a1a;
+    --main-2-color: #424242;
     --highlight-color: #FF9C40;
     --light-font-color: #e3e3e3;
-    --dark-font-color: #090708;
+    --dark-font-color: #1a1a1a;
+
+    --font-big: 3rem;
+    --font-medium: 1.5rem;
+    --font-small: 1rem;
+    --font-very-small: .75rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -17,13 +28,20 @@ body {
 .title-font {
     font-family: 'Crimson Text';
     font-weight: bold;
-    font-size: 3rem;
+    font-size: var(--font-big);
     color: var(--light-font-color);
 }
 
 .text-font {
     font-family: 'Montserrat';
     font-weight: normal;
-    font-size: 1.25rem;
+    font-size: var(--font-small);
+    color: var(--light-font-color);
+}
+
+.detail-font {
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-size: var(--font-very-small);
     color: var(--light-font-color);
 }
