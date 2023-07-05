@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="assets/css/reservation.css">
+    <link rel="stylesheet" href="assets/css/gmap.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <script src="./assets/js/script.js"></script>
@@ -22,9 +23,7 @@
 
         </section>
         <section id="reservation-section" class="">
-            <div class="">
-                <h1 class="title is-size-1 has-text-centered py-3 title-font">Claim Your Spot</h1>
-            </div>
+            <h1 class="title is-size-1 has-text-centered py-3 title-font">Claim Your Spot</h1>
             <p class="subtitle is-size-6 has-text-centered my-6 text-font">If you plan to book a table for more than eigth, <span class="text-decoration-underline">please call the restaurant directly</span>.</p>
             <div class="is-flex is-justify-content-center">
                 <img class="image is-4x3" src="./assets/images/location/seat-map.jpg" alt="map seat" width="50%">
@@ -62,9 +61,30 @@
                 </div>
             </div>
         </section>
-        <br>
-        <br>
-        <br>
+        <section id="location">
+            <h1 class="title is-size-1 has-text-centered py-3 mt-6 title-font">Where we are</h1>
+            <div class="columns is-multiline mx-6">
+                <div class="column is-half-tablet is-full-touch">
+                    <iframe id="gmap"
+                        width="400px"
+                        height="400px"
+                        frameborder="0"
+                        scrolling="yes"
+                        marginheight="0"
+                        marginwidth="0"
+                        src="https://maps.google.com/maps?width=644&amp;height=432&amp;hl=en&amp;q=7515 S Tamiami Trail, Sarasota, FL 34231&amp;t=h&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                    </iframe>
+                </div>
+                <div class="column is-half-tablet is-full-touch is-flex is-align-items-center">
+                    <p class="text-font location-description">
+                        Maestrale Restaurant is located at 7515 S Tamiami Trail, Sarasota, FL 34231,
+                        in the Gulf Gate community of Sarasota.<br>It's a convenient and easily accessible
+                        location with ample parking. Come and enjoy authentic Italian cuisine in a
+                        comfortable and inviting atmosphere.
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
