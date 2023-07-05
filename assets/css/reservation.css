@@ -4,28 +4,8 @@
     background-color: var(--highlight-color);
 }
 
-#reservation-section h4 {
-    font-size: var(--font-medium);
-}
-
-#reservation-section .reservation-wrapper p {
-    margin-right: 1rem;
-}
-
-#reservation-section .guest, #reservation-section .date {
-    display: flex;
-    align-items: center;
-}
-
-/* Spacing the date selects from each other */
-#reservation-section .date select {
-    margin: 0 .5rem;
-}
-
 /* select html objects */
 #reservation-section select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
     background-image: none;
     padding-right: 1rem;

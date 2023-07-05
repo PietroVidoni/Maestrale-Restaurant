@@ -45,13 +45,3 @@ html, main {
     font-size: var(--font-very-small);
     color: var(--light-font-color);
 }
-
-/*  Overriding bootstrap's margins */
-p {
-    margin: 0;
-}
-
-.container-fluid {
-    padding: 0;
-    overflow: hidden;
-}
