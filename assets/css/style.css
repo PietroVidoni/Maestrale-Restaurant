@@ -62,9 +62,6 @@ html, main {
     height: 100%;
 }
 
-.right-image {
-    
-}
 
 .blur {
   position: relative;
@@ -72,11 +69,6 @@ html, main {
 
 .blur img {
     position: absolute;
-
-    webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
     transition: all 1s ease;
 }
  
@@ -87,11 +79,6 @@ html, main {
     top: 30px;
     left: 30px;
     color: white;
-
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
     transition: all 1s ease;
 }
 
@@ -100,5 +87,5 @@ html, main {
 }
 
 .blur:hover img {
-    -webkit-filter: blur(5px);
+    filter: blur(5px);
   }
