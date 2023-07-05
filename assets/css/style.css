@@ -45,3 +45,47 @@ html, main {
     font-size: var(--font-very-small);
     color: var(--light-font-color);
 }
+
+
+.gallery-description {
+    color: var(--light-font-color);
+}
+
+.image-wrapper {
+    width: 600px;
+    height: 600px;
+}
+
+.image-wrapper img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+.blur {
+  position: relative;
+}
+
+.blur img {
+    position: absolute;
+    transition: all 1s ease;
+}
+ 
+
+.blur span {
+    opacity: 0;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: white;
+    transition: all 1s ease;
+}
+
+.blur:hover span {
+    opacity: 1;
+}
+
+.blur:hover img {
+    filter: blur(5px);
+  }
