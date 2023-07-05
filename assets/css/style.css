@@ -21,7 +21,7 @@
     padding: 0;
 }
 
-body {
+html, main {
     background-color: var(--main-1-color);
 }
 
@@ -44,4 +44,9 @@ body {
     font-weight: normal;
     font-size: var(--font-very-small);
     color: var(--light-font-color);
+}
+
+/*  Overriding bootstrap's margins */
+p {
+    margin: 0;
 }
