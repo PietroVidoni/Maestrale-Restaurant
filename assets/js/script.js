@@ -2,17 +2,9 @@
     Script.css
 */
 
-function toggleShape(link) {
-  var links = document.querySelectorAll('.nav-link');
-  links.forEach(function (link) {
-      link.parentNode.classList.remove('active');
-      link.parentNode.classList.remove('svg-background');
-  });
+const preloader = document.querySelector("[data-preaload]");
 
-  link.parentNode.classList.add('active');
-  link.parentNode.classList.add('svg-background');
-}
-
-
-
-  
+window.addEventListener("load", function () {
+    preloader.classList.add("loaded");
+    document.body.classList.add("loaded");
+});
