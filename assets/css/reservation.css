@@ -1,47 +1,11 @@
 
-#reservation-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    margin: 2rem;
-}
-
 #reservation-section h1 {
-    text-align: center;
-    
     color: var(--dark-font-color);
     background-color: var(--highlight-color);
-    
-    width: 100%;
-}
-
-#reservation-section .notice-info {
-    margin: 1.5rem 0;
-}
-
-#reservation-section .notice-info span {
-    text-decoration: underline;
 }
 
 #reservation-section h4 {
     font-size: var(--font-medium);
-    margin-bottom: 1.5rem;
-}
-
-#reservation-section .reservation-subtitle {
-    text-align: left;
-    width: 100%;
-
-    margin: 1.5rem 0;
-}
-
-#reservation-section .reservation-wrapper {
-    display: flex;
-
-    padding: .5rem;
-
-    width: 100%;
 }
 
 #reservation-section .reservation-wrapper p {
@@ -50,8 +14,6 @@
 
 #reservation-section .guest, #reservation-section .date {
     display: flex;
-    margin: 0 1.5rem;
-
     align-items: center;
 }
 
@@ -85,13 +47,6 @@
     color: var(--dark-font-color);
 }
 
-#reservation-section .button-wrapper {
-    display: flex;
-    width: 80%;
-
-    justify-content: right;
-
-}
 #reservation-section .button {
     -webkit-appearance: none;
     -moz-appearance: none;

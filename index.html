@@ -21,41 +21,60 @@
         <section id="hero-section">
 
         </section>
-        <section id="reservation-section">
-            <h1 class="title-font">Claim Your Spot</h1>
-            <p class="text-font notice-info">If you plan to book a table for more than eigth, <span>please call the restaurant directly</span>.</p>
-            <img src="./assets/images/location/seat-map.jpg" alt="map seat" width="50%">
-            <h4 class="title-font reservation-subtitle">Reservation Infos</h4>
-            <div class="reservation-wrapper">
-                <div class="guest">
-                    <p class="text-font display-9">How many?</p>
-                    <select id="guest-selector" class="detail-font">
-                        <option value="">Number of guests</option>
-                    </select>
-                </div>
-                <div class="date">
-                    <p class="text-font display-9">When?</p>
-                    <select id="day-selector" class="detail-font">
-                        <option value="">Day</option>
-                    </select>
-                    <select id="month-selector" class="detail-font">
-                        <option value="">Month</option>
-                    </select>
-                    <select id="year" class="detail-font">
-                        <option value="">Year</option>
-                        <option value="2023">2023</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
-                        <option value="2026">2026</option>
-                        <option value="2027">2027</option>
-                        <option value="2028">2028</option>
-                    </select>
+        <section id="reservation-section" class="container-fluid">
+            <div class="container-fluid text-center">
+                <h1 class="title-font vw-responsive">Claim Your Spot</h1>
+            </div>
+            <p class="text-font my-5 text-center vw-responsive">If you plan to book a table for more than eigth, <span class="text-decoration-underline">please call the restaurant directly</span>.</p>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="./assets/images/location/seat-map.jpg" alt="map seat" width="50%">
                 </div>
             </div>
-            <div class="button-wrapper">
-                <button id="booking-button" class="button">Book your table</button>
+            <h4 class="title-font ms-lg-5 ms-md-4 ms-sm-3 mt-5 mb-1">Reservation Infos</h4>
+            <div class="container ms-lg-5 ms-md-4 ms-sm-3 reservation-wrapper">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="guest mt-4">
+                            <p class="text-font">How many?</p>
+                            <select id="guest-selector" class="detail-font">
+                                <option value="">Number of guests</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="date mt-4">
+                            <p class="text-font">When?</p>
+                            <select id="day-selector" class="detail-font">
+                                <option value="">Day</option>
+                            </select>
+                            <select id="month-selector" class="detail-font">
+                                <option value="">Month</option>
+                            </select>
+                            <select id="year" class="detail-font">
+                                <option value="">Year</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 mt-4">
+                        <div class="button-wrapper">
+                            <button id="booking-button" class="button">Book your table</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
     </main>
     <footer>
 
