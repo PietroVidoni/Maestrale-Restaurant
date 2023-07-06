@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/hero.css">
     <link rel="stylesheet" href="assets/css/animation.css">
-    <script src="assets/js/script.js"></script>
+    
+    <script defer src="assets/js/script.js"></script>
     <script defer src="assets/js/animation.js"></script>
-
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maestrale Restaurant</title>
@@ -63,57 +64,23 @@
                 </div>
             </div>
         </nav>
-
-        <script>
-            function toggleShape(link) {
-                var links = document.querySelectorAll('.navbar-item');
-
-                links.forEach(function (link) {
-                    link.classList.remove('button-highlight');
-                    link.style.color = 'var(--light-font-color)'
-                });
-
-                link.classList.add('button-highlight');
-                ink.style.color = 'var(--dark-font-color)'
-            }
-
-            const navbar = document.querySelector('.navbar');
-
-            let prevScrollPos = window.pageYOffset;
-
-            const handleScroll = () => {
-                const currentScrollPos = window.pageYOffset;
-
-                if (prevScrollPos > currentScrollPos) {
-                    navbar.classList.remove('navbar-hidden');
-                    navbar.classList.add('navbar-visible');
-                } else {
-                    navbar.classList.remove('navbar-visible');
-                    navbar.classList.add('navbar-hidden');
-                }
-
-                prevScrollPos = currentScrollPos;
-            };
-
-            window.addEventListener('scroll', handleScroll);
-
-        </script>
-
     </header>
-
     <main>
         <section id="hero-section" class="hero">
             <div class="content-wrapper">
-                <h1 class="title title-font is-size-1-desktop is-size-2-tablet is-size-3-touch">Taste the Magic of Italy</h1>
-                <h4 class="subtitle mt-5 text-font is-size-4-desktop is-size-5">Unmistakably Italian, Unrivaled in Sarasota, FL.</h4>
+                <h1 class="title title-font is-size-1-desktop is-size-2-tablet is-size-3-touch">Taste the Magic of Italy
+                </h1>
+                <h4 class="subtitle mt-5 text-font is-size-4-desktop is-size-5">Unmistakably Italian, Unrivaled in
+                    Sarasota, FL.</h4>
                 <p class="is-size-6 mb-5 menu-description">Take a look at today's special menu.</p>
-                <button class="rounded has-text-weight-bold is-size-6 is-size-6-touch py-4 px-3 custom-button"><span>View Today's Menu</span></button>
+                <button class="rounded has-text-weight-bold is-size-6 is-size-6-touch py-4 px-3 custom-button"><span>View
+                        Today's Menu</span></button>
             </div>
         </section>
     </main>
 
     <footer>
-            
+
     </footer>
 </body>
 
