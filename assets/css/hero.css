@@ -9,71 +9,43 @@ p {
 }
 
 #hero-section {
+    
+    height: 100vh;
+    
     background-image: url('/assets/images/food/vini-vari.jpg');
     background-attachment: fixed;
-    position: relative;
-    height: calc(100vh);
-    display: flex;
-    flex-direction: column;
     background-size: cover;
     background-position: center;
-    color: #ffffff;
-    text-align: center;
 }
 
-#hero-section .title-container {
-    margin-top: 12%;
+#hero-section .content-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
 
-@media (max-width: 1000px) {
-  #hero-section .title-container {
-    margin-top: 30%;
-  }
-}
-
-#hero-section .title {
-    font-size: 8rem /*FIXME*/
-}
-
-#hero-section .button-container {
-    position: absolute;
-    bottom: 20%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    width: 100%;
-    max-width: 500px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-    box-sizing: border-box;
+    margin-top: 7rem;
 }
 
-#hero-section .button-container p {
-    margin-bottom: 45px;
-    text-align: center;
-    font-size: 26px;  /*FIXME*/
+#hero-section .menu-description {
+    margin-top: 16rem;
+    color: var(--light-font-color);
 }
 
 #hero-section .custom-button {
     background-color: var(--trasparent-black-1);
-    color: white;
-    font-weight: bold;
-    font-size: 20px; /*FIXME*/
-    padding: 30px 20px;
+    color: var(--light-font-color);
+
+    width: 200px;
+
     border: 2px solid var(--highlight-color);
+
     cursor: pointer;
-    margin: 0 auto;
-    display: block;
+
     filter: blur(0);
-    transition: filter 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 #hero-section .custom-button:hover {
-    filter: blur(0.1px);
+    backdrop-filter: blur(10px);
     transform: scale(1.1);
 }

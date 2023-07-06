@@ -1,39 +1,27 @@
-/*Navbar code*/
+/*
+  Navbar code
+*/
 
 #header .navbar {
-    background-color: var(--trasparent-black-1);
-    height: auto;
+  background-color: var(--trasparent-black-1);
 }
 
 #header .navbar a {
-    background-color: transparent;
-    text-decoration: none;
-}
-
-#header .navbar-menu{
-    padding-left: 15%;
-}
-
-.navbar-brand {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: transparent;
+  height: 90px; /* height of the logo */
 }
 
 .navbar-burger {
-  margin-right: 10px;
-  margin-top: 20px;
-  margin-bottom: auto;
+  color: var(--light-font-color);
 }
 
 #header .navbar-item {
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 400;
-    padding-right: 90px;
+
+    width: 150px;
+
+    color: var(--light-font-color);
 }
 
 #header .navbar-hidden {
@@ -46,23 +34,11 @@
     transition: transform 0.3s ease;
 }
 
-#header .svg-background {
-    top: 6%;
-    width: 230px;
-    height: 80px;
+#header .button-highlight {
     background-image: url('/assets/images/svg/Button\ Highlight.svg');
     background-repeat: no-repeat;   
     background-size: contain;
+
+    background-position: center;
     z-index: inherit;
 }
-
-@media screen and (max-width: 1485px) {
-    .navbar-menu {
-      display: none;
-    }
-  
-    .navbar-burger {
-      display:block;
-    }
-  }
-  
