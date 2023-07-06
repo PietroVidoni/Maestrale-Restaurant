@@ -13,10 +13,11 @@
     --highlight-color: #FF9C40;
     --light-font-color: #e3e3e3;
     --dark-font-color: #090708;
-    --white: #ffffff;
+
     --smoky-black-1: hsla(40, 12%, 5%, 1);
     --smoky-black-2: hsla(30, 8%, 5%, 1);
     --smoky-black-3: hsla(0, 3%, 7%, 1);
+
     --trasparent-black-1: rgba(0, 0, 0, 0.5);
     /* transition */
     --transition-1: 250ms ease;
@@ -39,13 +40,13 @@
 .title-font {
     font-family: 'Crimson Text';
     font-weight: bold;
-    color: var(--white);
+    color: white;
 }
 
 .text-font {
     font-family: 'Montserrat';
     font-weight: normal;
-    color: var(--white);
+    color: white;
 }
 
 /* Reset */
@@ -69,27 +70,16 @@ header {
     background-color: var(--smoky-black-3);
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
     background-color: var(--smoky-black-3);
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
     background-color: var(--highlight-color);
     border-radius: 0px;
     max-height: 5px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--highlight-color)
-}
-
-/* Custom */
-
-h2,
-p {
-    font-family: 'Montserrat';
-    font-weight: normal;
 }

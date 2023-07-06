@@ -1,7 +1,16 @@
 /* Hero-section*/
 
+/* Custom */
+
+h2,
+p {
+    font-family: 'Montserrat';
+    font-weight: normal;
+}
+
 #hero-section {
     background-image: url('/assets/images/food/vini-vari.jpg');
+    background-attachment: fixed;
     position: relative;
     height: calc(100vh);
     display: flex;
@@ -13,10 +22,16 @@
 }
 
 #hero-section .title-container {
-    margin-top: 10%;
+    margin-top: 12%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  #hero-section .title-container {
+    margin-top: 30%;
+  }
 }
 
 #hero-section .title {
@@ -25,20 +40,21 @@
 
 #hero-section .button-container {
     position: absolute;
-    bottom: 100px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: max-content;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 100%;
+    max-width: 500px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    box-sizing: border-box;
 }
 
 #hero-section .button-container p {
-    margin-bottom: 35px;
+    margin-bottom: 45px;
     text-align: center;
     font-size: 26px;  /*FIXME*/
 }
@@ -47,8 +63,8 @@
     background-color: var(--trasparent-black-1);
     color: white;
     font-weight: bold;
-    font-size: 17px; /*FIXME*/
-    padding: 10px 20px;
+    font-size: 20px; /*FIXME*/
+    padding: 30px 20px;
     border: 2px solid var(--highlight-color);
     cursor: pointer;
     margin: 0 auto;

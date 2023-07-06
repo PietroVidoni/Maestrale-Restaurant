@@ -1,8 +1,39 @@
 /*Navbar code*/
 
-#header .navbar-menu{
-    position: fixed;
+#header .navbar {
     background-color: var(--trasparent-black-1);
+    height: auto;
+}
+
+#header .navbar a {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#header .navbar-menu{
+    padding-left: 15%;
+}
+
+.navbar-brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-burger {
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: auto;
+}
+
+#header .navbar-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    padding-right: 90px;
 }
 
 #header .navbar-hidden {
@@ -16,11 +47,22 @@
 }
 
 #header .svg-background {
-    width: 280px;
-    height: 100%;
+    top: 6%;
+    width: 230px;
+    height: 80px;
     background-image: url('/assets/images/svg/Button\ Highlight.svg');
-    background-repeat: no-repeat;
-    background-position: center;
+    background-repeat: no-repeat;   
     background-size: contain;
     z-index: inherit;
 }
+
+@media screen and (max-width: 1485px) {
+    .navbar-menu {
+      display: none;
+    }
+  
+    .navbar-burger {
+      display:block;
+    }
+  }
+  

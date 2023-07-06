@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/hero.css">
@@ -14,7 +15,7 @@
 
 </head>
 
-<body id="body">
+<body id="body" class="is-overflow-hidden">
 
     <div class="preload" data-preaload>
         <div class="circle"></div>
@@ -23,40 +24,40 @@
 
     <header id="header">
 
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-                <a class="navbar-item">
-                    <img src="/assets/images/svg/logo.svg" height="auto" width="auto">
+        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand is-centered">
+                <a class="is-pulled-left">
+                    <img src="/assets/images/svg/logo.svg">
                 </a>
 
-                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-                    data-target="navbarBasic">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
+                <div class="navbar-burger" data-target="navbarCollapse">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
 
-            <div id="navbarBasic" class="navbar-menu">
-                <div class="navbar-start">
-                    <a class="navbar-item" onclick="toggleShape(this)">
+            <div id="navbarCollapse" class="navbar-menu">
+                <div class="navbar-start is-flex is-justify-content-flex-end">
+                    <a class="navbar-item has-text-white has-background-transparent svg-background" href="#"
+                        onclick="toggleShape(this)">
                         Home
                     </a>
-
-                    <a class="navbar-item" onclick="toggleShape(this)">
+                    <a class="navbar-item has-text-white has-background-transparent" href="#"
+                        onclick="toggleShape(this)">
                         About
                     </a>
-
-                    <a class="navbar-item" onclick="toggleShape(this)">
+                    <a class="navbar-item has-text-white has-background-transparent" href="#"
+                        onclick="toggleShape(this)">
                         Menus
                     </a>
-                    
-                    <a class="navbar-item" onclick="toggleShape(this)">
-                        Events
+                    <a class="navbar-item has-text-white has-background-transparent" href="#"
+                        onclick="toggleShape(this)">
+                        Event
                     </a>
-
-                    <a class="navbar-item" onclick="toggleShape(this)">
-                       Contact Us
+                    <a class="navbar-item has-text-white has-background-transparent" href="#"
+                        onclick="toggleShape(this)">
+                        Contact Us
                     </a>
                 </div>
             </div>
@@ -64,6 +65,7 @@
 
         <script>
             function toggleShape(link) {
+                console.log(link);
                 var links = document.querySelectorAll('.navbar-item');
                 links.forEach(function (link) {
                     link.classList.remove('active');
@@ -108,10 +110,10 @@
     </script>
 
     <main>
-        <section id="hero-section">
+        <section id="hero-section" class="hero is-fullheight is-max-widescreen">
             <div class="title-container">
-                <h1 class="title title-font">Taste the Magic of Italy</h1>
-                <h2 class="subtitle text-font">Unmistakably Italian, Unrivaled in Sarasota, FL.</h2>
+                <h1 class="title title-font is-size-1-touch responsive-text">Taste the Magic of Italy</h1>
+                <h2 class="subtitle text-font is-size-3-touch responsive-text">Unmistakably Italian, Unrivaled in Sarasota, FL.</h2>
             </div>
             <div class="button-container">
                 <p>Take a look at today's special menu.</p>
@@ -121,7 +123,7 @@
     </main>
 
     <footer>
-
+            
     </footer>
 </body>
 
