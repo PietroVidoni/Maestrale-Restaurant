@@ -1,9 +1,9 @@
 
-#location h1 {
+#location-section h1 {
     color: var(--dark-font-color);
     background-color: var(--highlight-color);
 }
 
-#location .location-description {
+#location-section .location-description {
     line-height: 2.25rem;
 }

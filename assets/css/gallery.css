@@ -1,0 +1,43 @@
+
+#gallery-section .gallery-description {
+    color: var(--light-font-color);
+}
+
+#gallery-section .image-wrapper {
+    width: 600px;
+    height: 600px;
+}
+
+#gallery-section .image-wrapper img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+#gallery-section .blur {
+  position: relative;
+}
+
+#gallery-section .blur img {
+    position: absolute;
+    transition: all 1s ease;
+}
+ 
+
+#gallery-section .blur span {
+    opacity: 0;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: white;
+    transition: all 1s ease;
+}
+
+#gallery-section .blur:hover span {
+    opacity: 1;
+}
+
+#gallery-section .blur:hover img {
+    filter: blur(5px);
+  }
