@@ -1,6 +1,3 @@
-
-/* PRELOAD */
-
 .preload {
     position: fixed;
     top: 0;
@@ -15,7 +12,7 @@
     transition: var(--transition-2);
 }
 
-.preload>* {
+.preload> {
     transition: var(--transition-1);
 }
 
@@ -35,7 +32,7 @@
     border: 5px solid var(--white);
     border-block-start-color: var(--smoky-black-3);
     margin-block-end: 45px;
-    animation: rotate360 1s linear infinite;
+    animation: rotate360 2s linear infinite;
 }
 
 @keyframes rotate360 {
@@ -44,7 +41,7 @@
     }
 
     100% {
-        transform: rotate(1turn);
+        transform: rotate(4turn);
     }
 }
 

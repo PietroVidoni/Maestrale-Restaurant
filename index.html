@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/hero.css">
     <link rel="stylesheet" href="assets/css/animation.css">
-    <link rel="script" href="assets/js/script.js">
+    <script src="assets/js/script.js"></script>
+    <script defer src="assets/js/animation.js"></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -100,22 +101,13 @@
 
     </header>
 
-    <script>
-        const preloader = document.querySelector("[data-preaload]");
-
-        window.addEventListener("load", function () {
-            preloader.classList.add("loaded");
-            document.body.classList.add("loaded");
-        });
-    </script>
-
     <main>
         <section id="hero-section" class="hero">
             <div class="content-wrapper">
                 <h1 class="title title-font is-size-1-desktop is-size-2-tablet is-size-3-touch">Taste the Magic of Italy</h1>
-                <h4 class="subtitle text-font is-size-4-desktop is-size-5">Unmistakably Italian, Unrivaled in Sarasota, FL.</h4>
+                <h4 class="subtitle mt-5 text-font is-size-4-desktop is-size-5">Unmistakably Italian, Unrivaled in Sarasota, FL.</h4>
                 <p class="is-size-6 mb-5 menu-description">Take a look at today's special menu.</p>
-                <button class="rounded has-text-weight-bold is-size-6 is-size-6-touch py-4 px-3 custom-button">View Today's Menu</button>
+                <button class="rounded has-text-weight-bold is-size-6 is-size-6-touch py-4 px-3 custom-button"><span>View Today's Menu</span></button>
             </div>
         </section>
     </main>

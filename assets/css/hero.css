@@ -1,12 +1,6 @@
-/* Hero-section*/
-
-/* Custom */
-
-h2,
-p {
-    font-family: 'Montserrat';
-    font-weight: normal;
-}
+/*
+    Hero-section 
+*/
 
 #hero-section {
     
@@ -23,7 +17,7 @@ p {
     flex-direction: column;
 
     align-items: center;
-    margin-top: 7rem;
+    margin-top: 8rem;
 }
 
 #hero-section .menu-description {
@@ -32,6 +26,7 @@ p {
 }
 
 #hero-section .custom-button {
+    
     background-color: var(--trasparent-black-1);
     color: var(--light-font-color);
 
@@ -40,12 +35,10 @@ p {
     border: 2px solid var(--highlight-color);
 
     cursor: pointer;
-
-    filter: blur(0);
+    
     transition: all 0.2s ease;
 }
 
 #hero-section .custom-button:hover {
-    backdrop-filter: blur(10px);
     transform: scale(1.1);
 }
