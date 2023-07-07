@@ -1,0 +1,23 @@
+html, main {
+    background-color: var(--main-1-color);
+}
+
+#menu-section {
+    margin-top: 0;
+    background-color: var(--highlight-color);
+}
+
+#menu-section .menu-entry {
+    margin-bottom: 3rem;
+    color: var(--dark-font-color);
+
+}
+
+#menu-section .menu-title {
+    color: var(--dark-font-color);
+}
+
+#menu-section .menu-description {
+    color: var(--dark-font-color);
+    
+}
