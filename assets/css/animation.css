@@ -1,4 +1,3 @@
-
 .preload {
     position: fixed;
     top: 0;
@@ -70,4 +69,29 @@
     100% {
         background-position: 0%;
     }
+}
+
+.box-animation {
+    padding: 1rem;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
+        0 5px 15px 0 rgba(0, 0, 0, 0.08);
+    background-color: var(--highlight-color);
+    border-radius: 0.5rem;
+
+    border-left: 0 solid black;
+    transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
+    color: black;
+}
+
+.box-animation:hover {
+    padding-left: 0.5rem;
+    border-left: 0.5rem solid black;
+}
+
+.box-animation> :first-child {
+    margin-top: 0;
+}
+
+.box-animation> :last-child {
+    margin-bottom: 0;
 }

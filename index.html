@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="assets/css/hero.css">
     <link rel="stylesheet" href="assets/css/animation.css">
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     <script defer src="assets/js/script.js"></script>
     <script defer src="assets/js/animation.js"></script>
 
@@ -30,7 +28,7 @@
 
         <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
             <div class="navbar-brand is-flex is-justify-content-space-between is-align-items-center">
-                <a>
+                <a class="darkening">
                     <img src="/assets/images/svg/logo.svg">
                 </a>
 
@@ -41,52 +39,56 @@
                     <span></span>
                 </label>
 
-                <ul class="menu__box columns" id="navbarBurgerMenu">
+                <ul class="menu-box columns" id="navbarBurgerMenu">
 
                     <div class="column has-text-centered">
-                        <a>
-                            <img src="/assets/images/svg/hamburgerLogo.svg">
-                        </a>
-                        <div class="is-mobile mt-5">
-                            <div class="column">
-                                <li><a class="ml-2 menu__item" href="#Home">Home</a></li>
-                                <li><a class="ml-2 menu__item" href="#">About</a></li>
-                                <li><a class="ml-2 menu__item" href="#">Menus</a></li>
-                                <li><a class="ml-2 menu__item" href="#">Event</a></li>
-                                <li><a class="ml-2 menu__item" href="#">Contact Us</a></li>
+                        
+                        <div class="box-animation">
+                            <a>
+                                <img src="/assets/images/svg/hamburgerLogo.svg">
+                            </a>
+                            
+                            <div class="is-mobile mt-5">
+                                <div class="column has-text-left">
+                                    <li class=""><a class="ml-2 menu-item" href="#Home">Home</a></li>
+                                    <li class="mt-2"><a class="ml-2 menu-item" href="#">About</a></li>
+                                    <li class="mt-2"><a class="ml-2 menu-item" href="#">Menus</a></li>
+                                    <li class="mt-2"><a class="ml-2 menu-item" href="#">Event</a></li>
+                                    <li class="mt-2"><a class="ml-2 menu-item" href="#">Contact Us</a></li>
+                                </div>
                             </div>
+
+                            <p>Visit Us:</p>
+    
+                            <div class="mt-3"></div>
+    
+                            <address>
+                                7515 S Tamiami Trl, <br>
+                                Sarasota, FL 34231-6901
+                            </address>
+    
+                            <div class="mt-4"></div>
+    
+                            <p>Open: 17.00 pm - 22.00.pm</p>
+    
+                            <div class="mt-1"></div>
+    
+                            <a href="mailto:maestraleflorida@gmail.com">maestraleflorida@gmail.com</a>
+    
+                            <div class="mt-4"></div>
+    
+                            <p>Booking Request</p>
+    
+                            <a href="tel:+1 941 312 5410">
+                                +1 941 312 5410
+                            </a>
                         </div>
-
-                        <p>Visit Us:</p>
-
-                        <div class="mt-3"></div>
-
-                        <address>
-                            7515 S Tamiami Trl, <br>
-                            Sarasota, FL 34231-6901
-                        </address>
-
-                        <div class="mt-4"></div>
-
-                        <p>Open: 17.00 pm - 22.00.pm</p>
-
-                        <div class="mt-1"></div>
-
-                        <a href="mailto:maestraleflorida@gmail.com">maestraleflorida@gmail.com</a>
-
-                        <div class="mt-4"></div>
-
-                        <p>Booking Request</p>
-
-                        <a href="tel:+1 941 312 5410">
-                            +1 941 312 5410
-                        </a>
                     </div>
                 </ul>
 
             </div>
 
-            <div id="navbarMenu" class="navbar-menu">
+            <div id="navbarMenu" class="darkening navbar-menu">
                 <div class="navbar-end">
                     <a class="navbar-item has-text-weight-normal has-background-transparent button-highlight" href="#"
                         onclick="toggleShape(this)">
@@ -113,7 +115,7 @@
         </nav>
     </header>
     <main>
-        <section id="hero-section" class="hero">
+        <section id="hero-section" class="hero darkening">
             <div class="content-wrapper">
                 <h1 class="title title-font is-size-1-desktop is-size-2-tablet is-size-3-touch">Taste the Magic of Italy
                 </h1>

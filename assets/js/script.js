@@ -1,6 +1,3 @@
-/* 
-    Script.css
-*/
 
 function toggleShape(link) {
     var links = document.querySelectorAll('.navbar-item');
@@ -35,17 +32,40 @@ const handleScroll = () => {
 window.addEventListener('scroll', handleScroll);
 
 /* Navbar hamburger */
+const darkening = document.querySelectorAll('.darkening');
 
-$(document).click(function(e) {
-    var menu = $('.navbar-burger');
-    var button = $('#burger-menu-button');
-    
-    console.log(button);
+document.addEventListener('click', function (e) {
+    var menu = document.querySelector('.navbar-burger');
+    var button = document.querySelector('#burger-menu-button');
 
-    if (!menu.is(e.target) && menu.has(e.target).length === 0 &&
-      !button.is(e.target) && button.has(e.target).length === 0) {
-        var checkbox = document.getElementById("burger-menu-button");
-        checkbox.checked = false;        
+    if (!menu.contains(e.target) && !button.contains(e.target)) {
+        var checkbox = document.getElementById('burger-menu-button');
+        checkbox.checked = false;
+
+        darkening.forEach(function(item) {
+            toggleCSSProperty(item, 'filter', 'brightness(0)');
+        }); 
     }
-  });
-  
+});
+
+const burger = document.getElementById("burger-menu-button");
+
+burger.addEventListener('click', () => {
+
+    if (typeof navbarMenu.style.backdropFilter !== 'undefined') {
+        darkening.forEach(function(item) {
+            toggleCSSProperty(item, 'filter', 'brightness(0.4)');
+        });          
+    }
+});
+
+function toggleCSSProperty(element, property, value) {
+    const currentValue = element.style.getPropertyValue(property);
+
+    if (currentValue) {
+        element.style.removeProperty(property);
+    } else {
+        element.style.setProperty(property, value);
+    }
+}
+

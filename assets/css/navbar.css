@@ -48,15 +48,15 @@
   opacity: 0;
 }
 
-#burger-menu-button:checked ~ .menu__box {
+#burger-menu-button:checked ~ .menu-box {
   left: 0 !important;
 }
 
-.menu__box {
+.menu-box {
   display: block;
   position: fixed;
 
-  background-color: var(--highlight-color);
+  background-color: transparent;
 
   top: 0;
   left: -100%;
@@ -69,14 +69,12 @@
   
   transition-duration: .25s;
   overflow-y: auto;
+  
+  z-index: 20;
 }
 
-.menu__item {
-  display: block;
-  text-align: left;
-
-  color: var(--dark-font-color);
-
+.menu-item {
+  color: black;
   transition-duration: .25s;
 }
 
