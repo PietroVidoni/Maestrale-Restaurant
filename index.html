@@ -103,14 +103,44 @@
                         src="https://maps.google.com/maps?width=644&amp;height=432&amp;hl=en&amp;q=7515 S Tamiami Trail, Sarasota, FL 34231&amp;t=h&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
                     </iframe>
                 </div>
-                <div class="column is-half-tablet is-full-mobile is-flex is-align-items-center">
-                    <p class="text-font location-description">
+                <div class="column mt-6">
+                    <div class="text-font location-description">
                         Maestrale Restaurant is located at 7515 S Tamiami Trail, Sarasota, FL 34231,
                         in the Gulf Gate community of Sarasota.<br>It's a convenient and easily accessible
                         location with ample parking. Come and enjoy authentic Italian cuisine in a
                         comfortable and inviting atmosphere.
-                    </p>
-                </div>
+                    </div>
+
+                    <div id="contact-modal" class="modal">
+                        <div class="modal-background"></div>
+                      
+                        <div class="modal-content box has-text-centered ">
+                            <h2 class="title is-size-1 has-text-centered py-3 mt-4 title-font">Send us a message</h2>
+                            
+                            <div>
+                                <input class="input" type="text" placeholder="Name">
+                            </div>
+                            <div>
+                                <input class="input" type="tel" placeholder="Phone number">
+                            </div>
+                            <div>
+                                <input class="input" type="email" placeholder="Email">
+                            </div>
+                            <div>
+                                <input class="input" type="text" placeholder="Message">
+                            </div>
+        
+                            <div class="has-text-centered my-4 is-flex is-justify-content-flex-end">
+                                <button id="contact-button" class="js-modal-trigger button" data-target="contact-modal">Send message</button>
+                            </div>
+                        </div>
+                      
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+        
+                    <div>
+                        <button id="contact-button" class="js-modal-trigger button" data-target="contact-modal">Contact us</button>
+                    </div>
             </div>
         </section>
         <section id="newsletter-section">
@@ -126,7 +156,7 @@
                 <div class="modal-background"></div>
               
                 <div class="modal-content box has-text-centered ">
-                    <h1 class="title is-size-1 has-text-centered py-3 mt-4 title-font">Enter your email :</h1>
+                    <h2 class="title is-size-1 has-text-centered py-3 mt-4 title-font">Enter your email :</h2>
 
                     <div class="control has-icons-left has-icons-right is-flex is-justify-content-flex-end">
                         <input class="input" type="email" placeholder="Email">
