@@ -16,6 +16,7 @@
 }
 
 #header .navbar-item {
+
     display: flex;
     justify-content: center;
 
@@ -42,3 +43,41 @@
     background-position: center;
     z-index: inherit;
 }
+
+#burger-menu-button {
+  opacity: 0;
+}
+
+#burger-menu-button:checked ~ .menu__box {
+  left: 0 !important;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+
+  background-color: var(--highlight-color);
+
+  top: 0;
+  left: -100%;
+
+  width: 270px;
+  height: 100%;
+
+  margin: 0;
+  padding: 10px 0;
+  
+  transition-duration: .25s;
+  overflow-y: auto;
+}
+
+.menu__item {
+  display: block;
+  text-align: left;
+
+  color: var(--dark-font-color);
+
+  transition-duration: .25s;
+}
+
+

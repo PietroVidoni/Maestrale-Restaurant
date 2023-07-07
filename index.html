@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/hero.css">
     <link rel="stylesheet" href="assets/css/animation.css">
-    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script defer src="assets/js/script.js"></script>
     <script defer src="assets/js/animation.js"></script>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maestrale Restaurant</title>
@@ -32,14 +34,59 @@
                     <img src="/assets/images/svg/logo.svg">
                 </a>
 
-                <div class="navbar-burger mr-5" data-target="navbarCollapse">
+                <input id="burger-menu-button" type="checkbox" />
+                <label class="navbar-burger mr-5" data-target="navbarMenu" for="burger-menu-button">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </label>
+
+                <ul class="menu__box columns" id="navbarBurgerMenu">
+
+                    <div class="column has-text-centered">
+                        <a>
+                            <img src="/assets/images/svg/hamburgerLogo.svg">
+                        </a>
+                        <div class="is-mobile mt-5">
+                            <div class="column">
+                                <li><a class="ml-2 menu__item" href="#Home">Home</a></li>
+                                <li><a class="ml-2 menu__item" href="#">About</a></li>
+                                <li><a class="ml-2 menu__item" href="#">Menus</a></li>
+                                <li><a class="ml-2 menu__item" href="#">Event</a></li>
+                                <li><a class="ml-2 menu__item" href="#">Contact Us</a></li>
+                            </div>
+                        </div>
+
+                        <p>Visit Us:</p>
+
+                        <div class="mt-3"></div>
+
+                        <address>
+                            7515 S Tamiami Trl, <br>
+                            Sarasota, FL 34231-6901
+                        </address>
+
+                        <div class="mt-4"></div>
+
+                        <p>Open: 17.00 pm - 22.00.pm</p>
+
+                        <div class="mt-1"></div>
+
+                        <a href="mailto:maestraleflorida@gmail.com">maestraleflorida@gmail.com</a>
+
+                        <div class="mt-4"></div>
+
+                        <p>Booking Request</p>
+
+                        <a href="tel:+1 941 312 5410">
+                            +1 941 312 5410
+                        </a>
+                    </div>
+                </ul>
+
             </div>
 
-            <div id="navbarCollapse" class="navbar-menu">
+            <div id="navbarMenu" class="navbar-menu">
                 <div class="navbar-end">
                     <a class="navbar-item has-text-weight-normal has-background-transparent button-highlight" href="#"
                         onclick="toggleShape(this)">
@@ -72,8 +119,8 @@
                 </h1>
                 <h4 class="subtitle mt-5 text-font is-size-4-desktop is-size-5">Unmistakably Italian, Unrivaled in
                     Sarasota, FL.</h4>
-                <p class="is-size-6 mb-5 menu-description">Take a look at today's special menu.</p>
-                <button class="rounded has-text-weight-bold is-size-6 is-size-6-touch py-4 px-3 custom-button"><span>View
+                <p class="is-size-6 mb-5 menu-description text-font">Take a look at today's special menu.</p>
+                <button class="rounded has-text-weight-bold is-size-6-touch py-4 px-3 custom-button"><span>View
                         Today's Menu</span></button>
             </div>
         </section>

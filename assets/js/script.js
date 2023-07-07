@@ -7,11 +7,11 @@ function toggleShape(link) {
 
     links.forEach(function (link) {
         link.classList.remove('button-highlight');
-        link.style.color = 'var(--light-font-color)'
+        link.style.color = 'var(--light-font-color)';
     });
 
     link.classList.add('button-highlight');
-    ink.style.color = 'var(--dark-font-color)'
+    link.style.color = 'var(--dark-font-color)';
 }
 
 const navbar = document.querySelector('.navbar');
@@ -33,3 +33,19 @@ const handleScroll = () => {
 };
 
 window.addEventListener('scroll', handleScroll);
+
+/* Navbar hamburger */
+
+$(document).click(function(e) {
+    var menu = $('.navbar-burger');
+    var button = $('#burger-menu-button');
+    
+    console.log(button);
+
+    if (!menu.is(e.target) && menu.has(e.target).length === 0 &&
+      !button.is(e.target) && button.has(e.target).length === 0) {
+        var checkbox = document.getElementById("burger-menu-button");
+        checkbox.checked = false;        
+    }
+  });
+  

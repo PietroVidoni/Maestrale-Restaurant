@@ -11,7 +11,7 @@
 :root {
     /* colors */
     --highlight-color: #FF9C40;
-    --light-font-color: #e3e3e3;
+    --light-font-color: #fffcfc;
     --dark-font-color: #090708;
 
     --smoky-black-1: hsla(40, 12%, 5%, 1);
@@ -40,13 +40,13 @@
 .title-font {
     font-family: 'Crimson Text';
     font-weight: bold;
-    color: white;
+    color: var(--light-font-color);
 }
 
 .text-font {
     font-family: 'Montserrat';
     font-weight: normal;
-    color: white;
+    color: var(--light-font-color);
 }
 
 /* Reset */
@@ -62,6 +62,11 @@ body.loaded {
 header {
     z-index: 2;
     position: fixed;
+}
+
+a:active {
+    background-color: transparent;
+    outline: none;
 }
 
 /* Scrollbar */
