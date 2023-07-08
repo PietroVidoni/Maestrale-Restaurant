@@ -69,13 +69,14 @@
   
   transition-duration: .25s;
   overflow-y: auto;
-  
+
   z-index: 20;
 }
 
 .menu-item {
   color: black;
   transition-duration: .25s;
+  
 }
 
 

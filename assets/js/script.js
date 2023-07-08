@@ -13,10 +13,10 @@ function toggleShape(link) {
 
 const navbar = document.querySelector('.navbar');
 
-let prevScrollPos = window.pageYOffset;
+let prevScrollPos = window.scrollY;
 
 const handleScroll = () => {
-    const currentScrollPos = window.pageYOffset;
+    const currentScrollPos = window.scrollY;
 
     if (prevScrollPos > currentScrollPos) {
         navbar.classList.remove('navbar-hidden');

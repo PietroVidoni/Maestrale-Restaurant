@@ -78,14 +78,14 @@
     background-color: var(--highlight-color);
     border-radius: 0.5rem;
 
-    border-left: 0 solid black;
+    border-left: 0 solid var(--highlight-color-2);
     transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
     color: black;
 }
 
 .box-animation:hover {
     padding-left: 0.5rem;
-    border-left: 0.5rem solid black;
+    border-left: 0.5rem solid var(--highlight-color-2);
 }
 
 .box-animation> :first-child {
