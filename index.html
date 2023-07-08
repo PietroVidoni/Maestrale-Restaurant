@@ -6,12 +6,17 @@
     <link rel="stylesheet" href="assets/css/reservation.css">
     <link rel="stylesheet" href="assets/css/gmap.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/hero.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
     <link rel="stylesheet" href="assets/css/newsletter.css">
     <link rel="stylesheet" href="assets/css/gallery.css">
     <link rel="stylesheet" href="assets/css/menu.css">
 
     <script src="./assets/js/script.js"></script>
     <script defer src="./assets/js/reservation.js"></script>
+    <script defer src="assets/js/navbar.js"></script>
+    <script defer src="assets/js/animation.js"></script>
     <script src="https://kit.fontawesome.com/128ecbb3e8.js" crossorigin="anonymous"></script>
 
     <meta charset="UTF-8">
@@ -19,8 +24,117 @@
     <title>Maestrale's Restaurant</title>
 </head>
 
-<body>
+<body id="body" class="is-overflow-hidden">
+
+    <div class="preload" data-preaload>
+        <div class="circle"></div>
+        <p class="text">Maestrale</p>
+    </div>
+
+    <header id="header">
+
+        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand is-flex is-justify-content-space-between is-align-items-center">
+                <a class="darkening">
+                    <img src="/assets/images/svg/logo.svg">
+                </a>
+
+                <input id="burger-menu-button" type="checkbox" />
+                <label class="navbar-burger mr-5" data-target="navbarMenu" for="burger-menu-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <ul class="menu-box columns" id="navbarBurgerMenu">
+
+                    <div class="column has-text-centered">
+                        
+                        <div class="box-animation">
+                            <a>
+                                <img src="/assets/images/svg/hamburgerLogo.svg">
+                            </a>
+                            
+                            <div class="is-mobile mt-5">
+                                <div class="column has-text-left">
+                                    <li class=""><a class="ml-2 menu-item" href="#Home">Home</a></li>
+                                    <li class="mt-2"><a class="ml-2 menu-item" href="#">About</a></li>
+                                    <li class="mt-2"><a class="ml-2 menu-item" href="#">Menus</a></li>
+                                    <li class="mt-2"><a class="ml-2 menu-item" href="#">Event</a></li>
+                                    <li class="mt-2"><a class="ml-2 menu-item" href="#">Contact Us</a></li>
+                                </div>
+                            </div>
+
+                            <p>Visit Us:</p>
+    
+                            <div class="mt-3"></div>
+    
+                            <address>
+                                7515 S Tamiami Trl, <br>
+                                Sarasota, FL 34231-6901
+                            </address>
+    
+                            <div class="mt-4"></div>
+    
+                            <p>Open: 17.00 pm - 22.00.pm</p>
+    
+                            <div class="mt-1"></div>
+    
+                            <a href="mailto:maestraleflorida@gmail.com">maestraleflorida@gmail.com</a>
+    
+                            <div class="mt-4"></div>
+    
+                            <p>Booking Request</p>
+    
+                            <a href="tel:+1 941 312 5410">
+                                +1 941 312 5410
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+
+            </div>
+
+            <div id="navbarMenu" class="darkening navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item has-text-weight-normal has-background-transparent button-highlight" href="#"
+                        onclick="toggleShape(this)">
+                        Home
+                    </a>
+                    <a class="navbar-item has-text-weight-normal has-background-transparent" href="#"
+                        onclick="toggleShape(this)">
+                        About
+                    </a>
+                    <a class="navbar-item has-text-weight-normal has-background-transparent" href="#"
+                        onclick="toggleShape(this)">
+                        Menus
+                    </a>
+                    <a class="navbar-item has-text-weight-normal has-background-transparent" href="#"
+                        onclick="toggleShape(this)">
+                        Event
+                    </a>
+                    <a class="navbar-item has-text-weight-normal has-background-transparent" href="#"
+                        onclick="toggleShape(this)">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <main>
+        <section id="hero-section" class="hero darkening">
+            <div class="content-wrapper">
+                <h1 class="title title-font is-size-1-desktop is-size-2-tablet is-size-3-touch">Taste the Magic of Italy
+                </h1>
+                <h4 class="subtitle mt-5 text-font is-size-4-desktop is-size-5">Unmistakably Italian, Unrivaled in
+                    Sarasota, FL.</h4>
+                <p class="is-size-6 mb-5 menu-description text-font">Take a look at today's special menu.</p>
+                <button class="rounded has-text-weight-bold is-size-6-touch py-4 px-3 custom-button"><span>View
+                        Today's Menu</span></button>
+            </div>
+        </section>
+
         <section id="reservation-section" class="">
             <h1 class="title is-size-1 has-text-centered py-3 title-font">Claim Your Spot</h1>
             <p class="subtitle is-size-6 has-text-centered my-6 text-font">If you plan to book a table for more than eigth, <span class="text-decoration-underline">please call the restaurant directly</span>.</p>
