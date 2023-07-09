@@ -57,7 +57,7 @@ body.loaded {
 
 header {
     z-index: 2;
-    position: fixed;
+    position: relative;
 }
 
 a:active {

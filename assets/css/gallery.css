@@ -1,4 +1,3 @@
-
 #gallery-section .gallery-description {
     color: var(--light-font-color);
 }
@@ -14,16 +13,15 @@
     height: 100%;
 }
 
-
 #gallery-section .blur {
-  position: relative;
+    position: relative;
 }
 
 #gallery-section .blur img {
     position: absolute;
     transition: all 1s ease;
 }
- 
+
 
 #gallery-section .blur span {
     opacity: 0;
@@ -40,4 +38,4 @@
 
 #gallery-section .blur:hover img {
     filter: blur(5px);
-  }
+}

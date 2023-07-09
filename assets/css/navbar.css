@@ -31,7 +31,7 @@
 }
 
 #header .navbar-visible {
-    transform: translateY(0);
+    transform: translateY(-1);
     transition: transform 0.3s ease;
 }
 
@@ -44,21 +44,19 @@
     z-index: inherit;
 }
 
-#burger-menu-button {
+#header #burger-menu-button {
   opacity: 0;
 }
 
-#burger-menu-button:checked ~ .menu-box {
+#header #burger-menu-button:checked + .navbar-burger + .menu-box {
   left: 0 !important;
 }
 
-.menu-box {
-  display: block;
+#header .menu-box {
   position: fixed;
 
   background-color: transparent;
 
-  top: 0;
   left: -100%;
 
   width: 270px;
@@ -73,10 +71,7 @@
   z-index: 40;
 }
 
-.menu-item {
+#header .menu-item {
   color: black;
   transition-duration: .25s;
-  
 }
-
-

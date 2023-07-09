@@ -11,7 +11,7 @@ function toggleShape(link) {
     link.style.color = 'var(--dark-font-color)';
 }
 
-/* Scroll bar/ navbar animation*/
+/* Scroll bar/navbar animation*/
 
 const navbar = document.querySelector('.navbar');
 
@@ -37,24 +37,26 @@ window.addEventListener('scroll', handleScroll);
 
 const darkening = document.querySelectorAll('.darkening');
 const menu = document.querySelector('.navbar-burger');
-const button = document.querySelector('#burger-menu-button');
 const checkbox = document.getElementById('burger-menu-button');
-const burger = document.getElementById("burger-menu-button");
+const burger_menu = document.getElementById("navbarBurgerMenu");
 
 let menuState = false;
 
-burger.addEventListener('click', () => {
+checkbox.addEventListener('click', () => {
     if (typeof CSS.supports('backdrop-filter', 'blur(0)')) {
         menuState = menuState ? false : true;
 
+        burger_menu.style.left = menuState ? "0%" : "-100%";
+        
         darkening.forEach(item => toggleCSSProperty(item, 'filter', 'brightness(0.4)'));
     }
 });
 
 document.addEventListener('click', function (e) {
-    if (!menu.contains(e.target) && !button.contains(e.target) && menuState) {
+    if (!menu.contains(e.target) && !checkbox.contains(e.target) && menuState) {
         checkbox.checked = false;
-
+        menuState = false;
+        burger_menu.style.left = "-100%";
         darkening.forEach(item => toggleCSSProperty(item, 'filter', 'brightness(1)'));
     }
 });
