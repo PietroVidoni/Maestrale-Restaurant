@@ -1,6 +1,4 @@
 #newsletter-section .button {   
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
     background-image: none;
     padding-right: 1rem;
@@ -34,14 +32,22 @@
     border: 2px solid var(--main-2-color);
     background-color: var(--main-1-color);
     color: var(--light-font-color);
+
     border-radius: 5px;
     outline: none;
     box-shadow: none;
     transition: all 100ms ease-in-out;
 }
+#newsletter-section .input::placeholder {
+    color: var(--light-font-color-a);
+}
+
+#newsletter-section .icon {
+    color: var(--light-font-color);
+}
 
 #newsletter-section .input:focus {
     border: 2px solid var(--highlight-color);
+
     background-color: var(--main-1-color);
-    
 }

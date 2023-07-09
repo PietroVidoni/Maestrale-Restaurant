@@ -9,6 +9,7 @@
     --highlight-color: #FF9C40;
     --light-font-color: #e3e3e3;
     --dark-font-color: #1a1a1a;
+    --light-font-color-a: #e3e3e355;
 
     --font-big: 3rem;
     --font-medium: 1.5rem;
@@ -44,4 +45,10 @@ html, main {
     font-weight: normal;
     font-size: var(--font-very-small);
     color: var(--light-font-color);
+}
+
+/* General website styles */
+.title {
+    color: var(--dark-font-color);
+    background-color: var(--highlight-color);
 }

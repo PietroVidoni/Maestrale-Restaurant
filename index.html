@@ -21,30 +21,30 @@
 
 <body>
     <main>
-        <section id="reservation-section" class="">
-            <h1 class="title is-size-1 has-text-centered py-3 title-font">Claim Your Spot</h1>
-            <p class="subtitle is-size-6 has-text-centered my-6 text-font">If you plan to book a table for more than eigth, <span class="text-decoration-underline">please call the restaurant directly</span>.</p>
+        <section id="reservation-section">
+            <h1 class="title is-size-1-desktop is-size-2-tablet is-size-3-mobile has-text-centered py-3 title-font">Claim Your Spot</h1>
+            <p class="subtitle is-size-4-desktop is-size-5-touch has-text-centered m-6 text-font">If you plan to book a table for more than eigth, <span class="text-decoration-underline">please call the restaurant directly</span>.</p>
             <div class="is-flex is-justify-content-center">
                 <img class="image is-4x3" src="./assets/images/location/seat-map.jpg" alt="map seat" width="50%">
             </div>
-            <div class="reservation-wrapper mx-6">
-                <h4 class="subtitle is-size-5 mt-6 mb-4 title-font">Reservation Informations</h4>
-                <div class="columns is-multiline">
-                    <div class="column is-half-touch is-flex guest">
-                        <p class="mr-5 text-font">How many?</p>
-                        <select id="guest-selector" class="detail-font">
+            <div class="mx-6">
+                <h4 class="subtitle is-size-3-desktop is-size-4-touch mt-6 mb-4 title-font">Reservation Informations</h4>
+                <div class="columns is-multiline reservation-data-container">
+                    <div class="column is-full-touch is-one-third-desktop is-flex is-align-items-center">
+                        <p class="is-size-6 mr-5 text-font">How many?</p>
+                        <select id="guest-selector" class="is-size-5-desktop is-size-6-touch detail-font">
                             <option value="">Number of guests</option>
                         </select>
                     </div>
-                    <div class="column is-half-touch is-flex date">
-                        <p class="text-font mr-5">When?</p>
-                        <select id="day-selector" class="mr-3 detail-font">
+                    <div class="column is-full-touch is-one-third-desktop is-flex is-align-items-center">
+                        <p class="is-size-5-desktop is-size-6-touch mr-5 text-font">When?</p>
+                        <select id="day-selector" class="m-3 is-size-5-desktop is-size-6-touch detail-font">
                             <option value="">Day</option>
                         </select>
-                        <select id="month-selector" class="mr-3 detail-font">
+                        <select id="month-selector" class="m-3 is-size-5-desktop is-size-6-touch detail-font">
                             <option value="">Month</option>
                         </select>
-                        <select id="year" class="mr-3 detail-font">
+                        <select id="year" class="m-3 is-size-5-desktop is-size-6-touch detail-font">
                             <option value="">Year</option>
                             <option value="2023">2023</option>
                             <option value="2024">2024</option>
@@ -54,13 +54,13 @@
                             <option value="2028">2028</option>
                         </select>
                     </div>
-                    <div class="column is-one-third-desktop is-full-tablet is-flex is-justify-content-flex-end">
-                        <button id="booking-button" class="button">Book your table</button>
+                    <div class="column is-one-third-desktop is-full-mobile is-flex is-justify-content-flex-end">
+                        <button id="booking-button" class="button is-size-5-desktop is-size-6-touch">Book your table</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="gallery-section" class="mx-6">
+        <!-- <section id="gallery-section" class="mx-6">
             <h1 class="title is-size-1 has-text-centered py-3 mt-6 title-font">Gallery</h1>
             <div class="has-text-centered is-size-4 mb-6 gallery-description text-font">
                     Explore our mouthwatering gallery of culinary delights. Immerse yourself<br>
@@ -88,9 +88,9 @@
                 To see our menu 
                 <a href="menu.html">click here</a>
             </div>
-        </section>
+        </section> -->
         <section id="location-section">
-            <h1 class="title is-size-1 has-text-centered py-3 mt-6 title-font">Where we are</h1>
+            <h1 class="title is-size-1-desktop is-size-2-tablet is-size-3-touch has-text-centered py-3 mt-6 title-font">Where we are</h1>
             <div class="columns is-multiline mx-6">
                 <div class="column is-flex is-justify-content-center is-half-tablet is-full-mobile">
                     <iframe id="gmap"
@@ -104,7 +104,7 @@
                     </iframe>
                 </div>
                 <div class="column mt-6">
-                    <div class="text-font location-description">
+                    <div class="is-size-4-desktop is-size-5-touch text-font location-description">
                         Maestrale Restaurant is located at 7515 S Tamiami Trail, Sarasota, FL 34231,
                         in the Gulf Gate community of Sarasota.<br>It's a convenient and easily accessible
                         location with ample parking. Come and enjoy authentic Italian cuisine in a
@@ -129,7 +129,7 @@
                             <div>
                                 <input class="input" type="text" placeholder="Message">
                             </div>
-        
+
                             <div class="has-text-centered my-4 is-flex is-justify-content-flex-end">
                                 <button id="contact-button" class="js-modal-trigger button" data-target="contact-modal">Send message</button>
                             </div>
@@ -137,29 +137,26 @@
                       
                         <button class="modal-close is-large" aria-label="close"></button>
                     </div>
-        
-                    <div>
-                        <button id="contact-button" class="js-modal-trigger button" data-target="contact-modal">Contact us</button>
-                    </div>
+                    <button id="contact-button" class="my-6 button js-modal-trigger" data-target="contact-modal">Contact us</button>
             </div>
         </section>
         <section id="newsletter-section">
-            <h1 class="title is-size-1 has-text-centered py-3 mt-6 title-font">Maestrale's Newsletter</h1>
-            <div class="has-text-centered is-size-4 mb-6 gallery-description text-font">
-                To stay updated on the latest news about Maestrale, we recommend subscribing to our personal<br>
-                newsletter. By doing so, you'll receive important updates on our restaurant, as well as exclusive offers and<br>
+            <h1 class="title is-size-1-desktop is-size-2-tablet is-size-3-mobile has-text-centered py-3 mt-6 title-font">Maestrale's Newsletter</h1>
+            <p class="has-text-centered is-size-4-desktop is-size-5-touch m-6 gallery-description text-font">
+                To stay updated on the latest news about Maestrale, we recommend subscribing to our personal
+                newsletter. By doing so, you'll receive important updates on our restaurant, as well as exclusive offers and
                 promotions.
-            </div>
+            </p>
             
 
             <div id="subscribe-modal" class="modal">
                 <div class="modal-background"></div>
               
-                <div class="modal-content box has-text-centered ">
-                    <h2 class="title is-size-1 has-text-centered py-3 mt-4 title-font">Enter your email :</h2>
+                <div class="modal-content box has-text-centered">
+                    <p class="is-size-4-desktop is-size-5-touch has-text-centered py-3 mt-4 text-font">Please enter your email to recieve the restaurants news:</p>
 
                     <div class="control has-icons-left has-icons-right is-flex is-justify-content-flex-end">
-                        <input class="input" type="email" placeholder="Email">
+                        <input class="input" type="email" placeholder="email@example.com">
                         <span class="icon is-small is-left">
                           <i class="fas fa-envelope"></i>
                         </span>
@@ -177,7 +174,7 @@
               </div>
 
               <div class="has-text-centered mb-4">
-                <button id="subscribe-button" class="js-modal-trigger button" data-target="subscribe-modal">Subscribe</button>
+                <button id="subscribe-button" class="is-size-5 js-modal-trigger button" data-target="subscribe-modal">Subscribe</button>
             </div>
         </section>
     </main>
