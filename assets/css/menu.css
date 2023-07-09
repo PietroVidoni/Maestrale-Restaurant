@@ -3,7 +3,7 @@ html, main {
 }
 
 #menu-section {
-    margin-top: 0;
+    margin: 3rem;
     background-color: var(--highlight-color);
 }
 
