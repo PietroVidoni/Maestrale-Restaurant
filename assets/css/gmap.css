@@ -1,11 +1,11 @@
 
-#location-section .location-description {
-    line-height: 2.25rem;
+@media screen and (max-width > 1024px) {
+    #location-section .location-description {
+        line-height: 2.25rem;
+    }    
 }
 
 #location-section .button {   
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
     background-image: none;
     padding-right: 1rem;
@@ -56,4 +56,9 @@
     border: 2px solid var(--highlight-color);
     background-color: var(--main-1-color);
     
+}
+
+/* Contact us modal */
+#location-section .modal {
+    z-index: 999;
 }

@@ -1,4 +1,9 @@
 
+#reservation-section img {
+    min-width: 200px;
+    min-height: 200px;
+}
+
 /* select html objects */
 #reservation-section select {
     appearance: none;

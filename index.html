@@ -5,12 +5,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="assets/css/reservation.css">
     <link rel="stylesheet" href="assets/css/gmap.css">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/newsletter.css">
     <link rel="stylesheet" href="assets/css/gallery.css">
     <link rel="stylesheet" href="assets/css/menu.css">
-
-    <script src="./assets/js/script.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <script defer src="./assets/js/script.js"></script>
     <script defer src="./assets/js/reservation.js"></script>
     <script src="https://kit.fontawesome.com/128ecbb3e8.js" crossorigin="anonymous"></script>
 
@@ -30,65 +30,69 @@
             <div class="mx-6">
                 <h4 class="subtitle is-size-3-desktop is-size-4-touch mt-6 mb-4 title-font">Reservation Informations</h4>
                 <div class="columns is-multiline reservation-data-container">
-                    <div class="column is-full-touch is-one-third-desktop is-flex is-align-items-center">
-                        <p class="is-size-6 mr-5 text-font">How many?</p>
-                        <select id="guest-selector" class="is-size-5-desktop is-size-6-touch detail-font">
-                            <option value="">Number of guests</option>
-                        </select>
+                    <div class="column is-full-touch is-half-desktop is-flex is-align-items-center">
+                        <div class="columns is-multiline">
+                            <p class="is-size-5-desktop is-size-6-touch mr-5 is-flex is-align-items-center text-font">How many?</p>
+                            <div class="column is-flex is-align-items-center">
+                                <select id="guest-selector" class="is-size-5-desktop is-size-6-touch detail-font">
+                                    <option value="">Number of guests</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
-                    <div class="column is-full-touch is-one-third-desktop is-flex is-align-items-center">
-                        <p class="is-size-5-desktop is-size-6-touch mr-5 text-font">When?</p>
-                        <select id="day-selector" class="m-3 is-size-5-desktop is-size-6-touch detail-font">
-                            <option value="">Day</option>
-                        </select>
-                        <select id="month-selector" class="m-3 is-size-5-desktop is-size-6-touch detail-font">
-                            <option value="">Month</option>
-                        </select>
-                        <select id="year" class="m-3 is-size-5-desktop is-size-6-touch detail-font">
-                            <option value="">Year</option>
-                            <option value="2023">2023</option>
-                            <option value="2024">2024</option>
-                            <option value="2025">2025</option>
-                            <option value="2026">2026</option>
-                            <option value="2027">2027</option>
-                            <option value="2028">2028</option>
-                        </select>
+                    <div class="column is-full-touch is-half-desktop is-flex is-align-items-center">
+                        <div class="columns is-multiline">
+                            <p class="is-size-5-desktop is-size-6-touch mr-5 text-font is-flex is-align-items-center">When?</p>
+                            <div class="column">
+                                <select id="day-selector" class="m-3 is-size-5-desktop is-size-6-touch detail-font">
+                                    <option value="">Day</option>
+                                </select>
+                                <select id="month-selector" class="m-3 is-size-5-desktop is-size-6-touch detail-font">
+                                    <option value="">Month</option>
+                                </select>
+                                <select id="year" class="m-3 is-size-5-desktop is-size-6-touch detail-font">
+                                    <option value="">Year</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
-                    <div class="column is-one-third-desktop is-full-mobile is-flex is-justify-content-flex-end">
+                    <div class="column is-full is-flex is-justify-content-center is-align-items-center">
                         <button id="booking-button" class="button is-size-5-desktop is-size-6-touch">Book your table</button>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- <section id="gallery-section" class="mx-6">
-            <h1 class="title is-size-1 has-text-centered py-3 mt-6 title-font">Gallery</h1>
-            <div class="has-text-centered is-size-4 mb-6 gallery-description text-font">
-                    Explore our mouthwatering gallery of culinary delights. Immerse yourself<br>
-                    in a visual feast of beautifully crafted plates that will leave you craving for <br>
-                    more. Experience the artistry and flavors that make our dishes truly <br>
-                    unforgettable. Buon appetito!<br>
-            </div>
-
-            <div class="columns">
-                <div class="column is-flex is-justify-content-flex-end">
+        <section id="gallery-section" class="">
+            <h1 class="title is-size-1-desktop is-size-2-tablet is-size-3-mobile has-text-centered py-3 mt-6 title-font">Gallery</h1>
+            <p class="has-text-centered is-size-4-desktop is-size-5-touch m-6 gallery-description text-font">
+                Explore our mouthwatering gallery of culinary delights. Immerse yourself
+                in a visual feast of beautifully crafted plates that will leave you craving for
+                more. Experience the artistry and flavors that make our dishes truly
+                unforgettable. Buon appetito!
+            </p>
+            <div class="columns is-multiline mx-6">
+                <div class="column is-half-desktop is-full-touch is-flex is-justify-content-center">
                     <div class="blur image-wrapper">
-                        <img src="assets/images/food/pescatora.jpg">
-                        <span>Fatto di oro diamanti e cosi tanti K che non si possono contare.</span>
+                        <img src="assets/images/food/food-1.jpg" width="30%" height="30%">
+                        <span class="text-font">Fatto di oro diamanti e cosi tanti K che non si possono contare.</span>
                     </div>
                 </div>
 
-                <div class="column">
+                <div class="column is-half-desktop is-full-touch is-flex is-justify-content-center">
                     <div class="blur image-wrapper">
-                        <img src="assets/images/food/grilled-octopus.jpg">
-                        <span>Fatto di oro diamanti e cosi tanti K che non si possono contare.</span>
+                        <img src="assets/images/food/food-2.jpg" width="30%" height="30%">
+                        <span class="text-font">Fatto di oro diamanti e cosi tanti K che non si possono contare.</span>
                     </div>
                 </div>
             </div>
-            <div class="has-text-centered">
-                To see our menu 
-                <a href="menu.html">click here</a>
-            </div>
-        </section> -->
+            <p class="is-flex is-justify-content-center m-5 p-5 menu-link">To see our menu <a href="menu.html">click here</a></p>
+        </section>
         <section id="location-section">
             <h1 class="title is-size-1-desktop is-size-2-tablet is-size-3-touch has-text-centered py-3 mt-6 title-font">Where we are</h1>
             <div class="columns is-multiline mx-6">
@@ -104,14 +108,14 @@
                     </iframe>
                 </div>
                 <div class="column mt-6">
-                    <div class="is-size-4-desktop is-size-5-touch text-font location-description">
+                    <p class="is-size-4-desktop is-size-5-touch is-size-6-mobile text-font location-description">
                         Maestrale Restaurant is located at 7515 S Tamiami Trail, Sarasota, FL 34231,
                         in the Gulf Gate community of Sarasota.<br>It's a convenient and easily accessible
                         location with ample parking. Come and enjoy authentic Italian cuisine in a
                         comfortable and inviting atmosphere.
-                    </div>
+                    </p>
 
-                    <div id="contact-modal" class="modal">
+                    <div id="contact-modal" class="is-overlay modal">
                         <div class="modal-background"></div>
                       
                         <div class="modal-content box has-text-centered ">

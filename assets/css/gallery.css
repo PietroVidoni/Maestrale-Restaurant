@@ -1,17 +1,32 @@
 
+#gallery-section {
+    background-image: url('../images/food/food-background-2.jpg');
+
+    background-size: cover;
+    background-position: center;
+}
+
 #gallery-section .gallery-description {
     color: var(--light-font-color);
 }
 
 #gallery-section .image-wrapper {
-    width: 600px;
-    height: 600px;
+    position: relative;
+    
+    width: 100%;
+
+    padding-bottom: 100%;
+
+    border: 2px solid var(--dark-font-color);
 }
 
 #gallery-section .image-wrapper img {
-    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 
@@ -21,9 +36,10 @@
 
 #gallery-section .blur img {
     position: absolute;
-    transition: all 1s ease;
+    border: 2px solid var(--dark-font-color);
+    
+    transition: all 0.25s ease-in-out;
 }
- 
 
 #gallery-section .blur span {
     opacity: 0;
@@ -31,7 +47,7 @@
     top: 30px;
     left: 30px;
     color: white;
-    transition: all 1s ease;
+    transition: all 0.25s ease-in;
 }
 
 #gallery-section .blur:hover span {
@@ -39,5 +55,12 @@
 }
 
 #gallery-section .blur:hover img {
-    filter: blur(5px);
-  }
+    filter: blur(5px) brightness(0.4);
+    border: 10px solid var(--dark-font-color);
+}
+
+#gallery-section .menu-link {
+    width: fit-content;
+    padding: 1rem;
+    background-color: red;
+}
