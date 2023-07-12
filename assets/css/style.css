@@ -25,11 +25,19 @@
     --light-font-color: #e3e3e3;
     --dark-font-color: #1a1a1a;
     --light-font-color-a: #e3e3e355;
+    --smoky-black-1: hsla(40, 12%, 5%, 1);
+    --smoky-black-2: hsla(30, 8%, 5%, 1);
+    --smoky-black-3: hsla(0, 3%, 7%, 1);
+    --trasparent-black-1: rgba(0, 0, 0, 0.5);
 
-    --font-big: 3rem;
-    --font-medium: 1.5rem;
-    --font-small: 1rem;
-    --font-very-small: .75rem;
+    /* transition */
+    --transition-1: 250ms ease;
+    --transition-2: 500ms ease;
+    --transition-3: 1000ms ease;
+
+    /* radius */
+    --radius-24: 24px;
+    --radius-circle: 50%;
 
     /* font */
     --weight-regular: 400;
@@ -54,27 +62,41 @@ html, main {
     font-family: 'Poppins';
     font-weight: bold;
     color: var(--light-font-color);
+
+    transition: all 250ms;
 }
 
 .text-font {
     font-family: 'Montserrat';
     font-weight: normal;
     color: var(--light-font-color);
+
+    transition: all 250ms;
 }
 
-/* Reset */
+.detail-font {
+    font-family: 'Montserrat';
+    font-weight: normal;
+    color: var(--light-font-color);
 
-html {
-    scroll-behavior: smooth;
+    transition: all 250ms;
 }
 
-body.loaded {
-    overflow: overlay;
+/* General website styles */
+.title {
+    color: var(--dark-font-color);
+    background-color: var(--highlight-color);
 }
 
-header {
-    z-index: 2;
-    position: fixed;
+section {
+    transition: all 500ms ease-in-out;
+}
+
+@media (max-width: 769px) {
+    .mx-6 {
+        margin-left: 1.5rem !important;
+        margin-right: 1.5rem !important;
+    }
 }
 
 a:active {
@@ -100,27 +122,4 @@ a:active {
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--highlight-color)
-}
-.detail-font {
-    font-family: 'Montserrat';
-    font-weight: normal;
-    font-size: var(--font-very-small);
-    color: var(--light-font-color);
-}
-
-/* General website styles */
-.title {
-    color: var(--dark-font-color);
-    background-color: var(--highlight-color);
-}
-
-section {
-    transition: all 500ms ease-in-out;
-}
-
-@media (max-width: 769px) {
-    .mx-6 {
-        margin-left: 1.5rem !important;
-        margin-right: 1.5rem !important;
-    }
 }

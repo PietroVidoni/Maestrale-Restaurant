@@ -22,7 +22,7 @@ window.addEventListener('scroll', highlightCurrentSection)
 function toggleShape(link) {
     var links = document.querySelectorAll('.navbar-item');
 
-    links.forEach(function (link) {
+    links.forEach(link => {
         link.classList.remove('button-highlight');
         link.style.color = 'var(--light-font-color)';
     });
@@ -36,15 +36,10 @@ const navbar = document.querySelector('.navbar');
 let prevScrollPos = window.scrollY;
 
 const handleScroll = () => {
-    const currentScrollPos = window.scrollY;
+    let isVisible = prevScrollPos > window.scrollY || window.scrollY <= 0
 
-    if (prevScrollPos > currentScrollPos) {
-        navbar.classList.remove('navbar-hidden');
-        navbar.classList.add('navbar-visible');
-    } else {
-        navbar.classList.remove('navbar-visible');
-        navbar.classList.add('navbar-hidden');
-    }
+    navbar.classList.remove(isVisible ? 'navbar-hidden' : 'navbar-visible');
+    navbar.classList.add(isVisible ? 'navbar-visible' : 'navbar-hidden');
 
     prevScrollPos = currentScrollPos;
 };
@@ -68,7 +63,7 @@ burger.addEventListener('click', () => {
     }
 });
 
-document.addEventListener('click', function (e) {
+document.addEventListener('click', e => {
     if (!menu.contains(e.target) && !button.contains(e.target) && menuState) {
         checkbox.checked = false;
 
