@@ -31,13 +31,13 @@
     --font-small: 1rem;
     --font-very-small: .75rem;
 
-        /* font */
-        --weight-regular: 400;
-        --weight-bold: 700;
-    
-        --loading-text-gradient: linear-gradient(90deg, transparent 0% 16.66%, var(--smoky-black-3) 33.33% 50%, transparent 66.66% 75%);
-    
-        --navbar-height: 100px;
+    /* font */
+    --weight-regular: 400;
+    --weight-bold: 700;
+
+    --loading-text-gradient: linear-gradient(90deg, transparent 0% 16.66%, var(--smoky-black-3) 33.33% 50%, transparent 66.66% 75%);
+
+    --navbar-height: 100px;
 }
 
 * {
