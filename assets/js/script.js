@@ -41,7 +41,7 @@ const handleScroll = () => {
     navbar.classList.remove(isVisible ? 'navbar-hidden' : 'navbar-visible');
     navbar.classList.add(isVisible ? 'navbar-visible' : 'navbar-hidden');
 
-    prevScrollPos = currentScrollPos;
+    prevScrollPos = window.scrollY;
 };
 
 window.addEventListener('scroll', handleScroll);
@@ -57,7 +57,7 @@ let menuState = false;
 
 burger.addEventListener('click', () => {
     if (typeof CSS.supports('backdrop-filter', 'blur(0)')) {
-        menuState = menuState ? false : true;
+        menuState = !menuState;
 
         darkening.forEach(item => toggleCSSProperty(item, 'filter', 'brightness(0.4)'));
     }

@@ -36,10 +36,10 @@
         <p class="text">Maestrale</p>
     </div>
     <header id="header">
-
+        <div id="top"></div>
         <nav class="navbar is-fixed-top is-clipped" role="navigation" aria-label="main navigation" style="overflow: overlay;">
             <div class="navbar-brand is-flex is-justify-content-space-between is-align-items-center">
-                <a class="darkening">
+                <a class="darkening" href="#body">
                     <img src="/assets/images/svg/navbar-logo.svg">
                 </a>
 
@@ -53,26 +53,24 @@
                 <ul class="menu-box columns" id="navbarBurgerMenu">
                     <div class="column has-text-centered">
                         <div class="box-animation">
-                            <a>
+                            <a href="#hero-section">
                                 <img src="/assets/images/svg/hamburgerLogo.svg">
                             </a>
                             <div class="is-mobile mt-5">
                                 <div class="column has-text-left">
                                     <li class=""><a class="ml-2 menu-item" href="#Home">Home</a></li>
-                                    <li class="mt-2"><a class="ml-2 menu-item" href="#">About</a></li>
-                                    <li class="mt-2"><a class="ml-2 menu-item" href="#">Menus</a></li>
-                                    <li class="mt-2"><a class="ml-2 menu-item" href="#">Event</a></li>
-                                    <li class="mt-2"><a class="ml-2 menu-item" href="#">Contact Us</a></li>
+                                    <li class="mt-2"><a class="ml-2 menu-item" href="./about.html">About</a></li>
+                                    <li class="mt-2"><a class="ml-2 menu-item" href="./menu.html">Menus</a></li>
+                                    <li class="mt-2"><a class="ml-2 menu-item" href="./events.html">Event</a></li>
+                                    <li class="mt-2"><a class="ml-2 menu-item" href="#location-section">Contact Us</a></li>
                                 </div>
                             </div>
                             <p>Visit Us:</p>
-                            <div class="mt-3"></div>
-                            <address>
+                            <address class="mt-3">
                                 7515 S Tamiami Trl, <br>
                                 Sarasota, FL 34231-6901
                             </address>
-                            <div class="mt-4"></div>
-                            <p>Open: 17.00 pm - 22.00.pm</p>
+                            <p class="mt-4">Open: 17.00 pm - 22.00.pm</p>
                             <div class="mt-1"></div>
                             <a href="mailto:maestraleflorida@gmail.com">maestraleflorida@gmail.com</a>
                             <div class="mt-4"></div>
@@ -88,23 +86,23 @@
 
             <div id="navbarMenu" class="darkening navbar-menu">
                 <div class="navbar-end">
-                    <a class="navbar-item has-text-weight-normal has-background-transparent button-highlight p-0" href="#"
+                    <a class="navbar-item has-text-weight-normal has-background-transparent button-highlight p-0" href="#top"
                         onclick="toggleShape(this)">
                         Home
                     </a>
-                    <a class="navbar-item has-text-weight-normal has-background-transparent p-0" href="#"
+                    <a class="navbar-item has-text-weight-normal has-background-transparent p-0" href="./about.html"
                         onclick="toggleShape(this)">
                         About
                     </a>
-                    <a class="navbar-item has-text-weight-normal has-background-transparent p-0" href="#"
+                    <a class="navbar-item has-text-weight-normal has-background-transparent p-0" href="./menu.html"
                         onclick="toggleShape(this)">
                         Menus
                     </a>
-                    <a class="navbar-item has-text-weight-normal has-background-transparent p-0" href="#"
+                    <a class="navbar-item has-text-weight-normal has-background-transparent p-0" href="./events.html"
                         onclick="toggleShape(this)">
                         Event
                     </a>
-                    <a class="navbar-item has-text-weight-normal has-background-transparent p-0" href="#"
+                    <a class="navbar-item has-text-weight-normal has-background-transparent p-0" href="#location-section"
                         onclick="toggleShape(this)">
                         Contact Us
                     </a>
@@ -157,12 +155,12 @@
                 more. Experience the artistry and flavors that make our dishes truly
                 unforgettable. Buon appetito!
             </p>
-            <div class="columns is-multiline mx-6">
+            <div class="columns is-multiline mx-6 is-flex is-justify-content-center">
                 <div class="column is-4-desktop is-full-touch is-flex is-justify-content-center">
                     <div id="gallery-section" class="blur image-wrapper">
                         <img src="assets/images/food/food-1.jpg" class="image">
                         <div class="image-description">
-                            <p class="p-4 is-size-5-tablet is-size-5-mobile text-font">
+                            <p class="p-4 is-size-5-tablet is-size-5-mobile has-text-centered text-font">
                                 Indulge in our captivating Chicken Carciofi with Piccata Sauce. Tender chicken and
                                 artichoke hearts harmonize with a tangy blend of capers, white wine, and lemon. This
                                 exquisite plate offers a symphony of flavors that will leave a lasting impression!
@@ -170,23 +168,11 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="column is-4-desktop is-full-touch is-flex is-justify-content-center">
-                    <div class="blur image-wrapper">
-                        <img src="assets/images/food/food-1.jpg" class="image">
-                        <div class="image-description">
-                            <p class="p-4 is-size-5-tablet is-size-5-mobile text-font">
-                                Indulge in our captivating Chicken Carciofi with Piccata Sauce. Tender chicken and
-                                artichoke hearts harmonize with a tangy blend of capers, white wine, and lemon. This
-                                exquisite plate offers a symphony of flavors that will leave a lasting impression!
-                            </p>
-                        </div>
-                    </div>
-                </div> -->
                 <div class="column is-4-desktop is-full-touch is-flex is-justify-content-center">
                     <div class="blur image-wrapper">
                         <img src="assets/images/food/food-2.jpg" class="image">
                         <div class="image-description">
-                            <p class="p-4 is-size-5-tablet is-size-5-mobile text-font">
+                            <p class="p-4 is-size-5-tablet is-size-5-mobile has-text-centered text-font">
                                 Experience the divine flavors of our Italian Shrimp Gratin. Succulent shrimp, coated in crispy
                                 breadcrumbs and topped with melted cheese, rest delicately on a bed of fresh arugula. This dish
                                 is a true indulgence for the senses.
@@ -197,8 +183,8 @@
                 <div class="column is-4-desktop is-full-touch is-flex is-justify-content-center">
                     <div class="blur image-wrapper">
                         <img src="assets/images/food/food-3.jpg" class="image">
-                        <div class="image-description">
-                            <p class="p-4 is-size-5-tablet is-size-5-mobile text-font">
+                        <div class="is-flex is-justify-content-center is-align-items-center image-description">
+                            <p class="p-4 is-size-5-tablet is-size-5-mobile has-text-centered text-font">
                                 On the right, Chicken Parmesan with Orecchiette in a luscious Mozzarella and Tomato
                                 Sauce.
                                 And on the left, Pinsa with Prosciutto San Daniele, Arugula, Tomato, and Mozzarella.<br>
@@ -208,12 +194,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="column is-4-desktop"></div>
+                <div class="column is-4-desktop is-hidden-touch"></div>
                 <div class="column is-4-desktop is-full-touch is-flex is-justify-content-center">
                     <div class="blur image-wrapper">
                         <img src="assets/images/food/food-4.jpg" class="image">
                         <div class="is-flex is-justify-content-center is-align-items-center image-description">
-                            <p class="p-4 is-size-5-tablet is-size-5-mobile text-font">
+                            <p class="p-4 is-size-5-tablet is-size-5-mobile has-text-centered text-font">
                                 On a pristine white plate, tender grilled octopus with smoky grill marks steals the
                                 spotlight. Alongside, velvety mashed potatoes provide a comforting contrast. Garnished
                                 with vibrant herbs, this visually stunning and harmoniously flavorful dish is a true
@@ -222,6 +208,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="column is-4-desktop is-hidden-touch"></div>
             </div>
             <div class="is-flex is-justify-content-center menu-link">
                 <p class="m-5 p-5">To see our menu <a href="menu.html">click here</a></p>
@@ -324,16 +311,21 @@
                 <h6 class="title-font is-size-4-desktop is-size-5-touch pb-3">Useful links</h6>
                 <div class="is-flex is-flex-direction-column">
                     <div>
-                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe"><a
-                                href="./menu.html">Menu</a></p>
-                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe"><a
-                                href="#reservation-section">Reserve a table</a></p>
-                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe"><a
-                                href="./events.html">Events</a></p>
-                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe"><a
-                                href="#gallery-section">Gallery</a></p>
-                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe"><a
-                                href="#location-section">Where we are</a></p>
+                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe">
+                            <a href="./menu.html">Menu</a>
+                        </p>
+                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe">
+                            <a href="#reservation-section">Reserve a table</a>
+                        </p>
+                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe">
+                            <a href="./events.html">Events</a>
+                        </p>
+                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe">
+                            <a href="#gallery-section">Gallery</a>
+                        </p>
+                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe">
+                            <a href="#location-section">Where we are</a>
+                        </p>
                     </div>
                 </div>
             </div>
