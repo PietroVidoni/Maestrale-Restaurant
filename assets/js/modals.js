@@ -1,0 +1,59 @@
+const html = document.getElementsByTagName('html').item(0)
+
+function openModal(modal) {
+    html.classList.add('is-clipped')
+    modal.classList.add('is-active')
+}
+
+function closeModal(modal) {
+    html.classList.remove('is-clipped')
+    modal.classList.remove('is-active')
+}
+
+/* Makes the button open the newsletter modal */
+let nlSection = document.getElementById('newsletter-section')
+let nlButton = document.getElementById('newsletter-button')
+let nlModal = document.getElementById('newsletter-modal')
+
+nlButton.addEventListener('click', (e) => {
+    e.preventDefault()
+
+    nlSection.style.filter = 'brightness(1)'
+    openModal(nlModal)
+})
+
+/* Makes the background/close button close the modal */
+let nlbackground = Array.from(nlModal.querySelectorAll('.modal-background, .modal-close'))
+
+nlbackground.forEach(element => {
+    element.addEventListener('click', (e) => {
+        e.preventDefault()
+
+        nlSection.style.filter = 'brightness(0.4);'
+        closeModal(nlModal)
+    })
+})
+
+/* Makes the button open the contact modal */
+let contactSection = document.getElementById('location-section')
+let contactButton = document.getElementById('contact-button')
+let contactModal = document.getElementById('contact-modal')
+
+contactButton.addEventListener('click', (e) => {
+    e.preventDefault()
+
+    contactSection.style.filter = 'brightness(1)'
+    openModal(contactModal)
+})
+
+/* Makes the background/close button close the modal */
+let contactBackground = Array.from(contactModal.querySelectorAll('.modal-background, .modal-close'))
+
+contactBackground.forEach(element => {
+    element.addEventListener('click', (e) => {
+        e.preventDefault()
+
+        contactSection.style.filter = 'brightness(0.4)'
+        closeModal(contactModal)
+    })
+})
