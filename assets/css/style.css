@@ -2,10 +2,12 @@
     Style.css
 */
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
     --main-1-color: #1a1a1a;
     --main-2-color: #424242;
+    --footer-color: #0f0f0f;
     --highlight-color: #FF9C40;
     --light-font-color: #e3e3e3;
     --dark-font-color: #1a1a1a;
@@ -24,10 +26,11 @@
 
 html, main {
     background-color: var(--main-1-color);
+    scroll-behavior: smooth;
 }
 
 .title-font {
-    font-family: 'Crimson Text';
+    font-family: 'Poppins';
     font-weight: bold;
     font-size: var(--font-big);
     color: var(--light-font-color);
@@ -54,7 +57,7 @@ html, main {
 }
 
 section {
-    filter: brightness(.4);
+    filter: brightness(.2);
     transition: all 500ms ease-in-out;
 }
 

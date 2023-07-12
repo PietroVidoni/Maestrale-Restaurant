@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/newsletter.css">
     <link rel="stylesheet" href="assets/css/gallery.css">
     <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/style.css">
     
     <script defer src="./assets/js/script.js"></script>
@@ -18,16 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maestrale's Restaurant</title>
 </head>
-
-<body>
-    <main>
-        <section id="reservation-section">
-            <h1 class="title is-size-1-desktop is-size-2-tablet is-size-3-mobile has-text-centered py-3 title-font">Claim Your Spot</h1>
-            <p class="subtitle is-size-4-desktop is-size-5-touch has-text-centered m-6 text-font">If you plan to book a table for more than eigth, <span class="text-decoration-underline">please call the restaurant directly</span>.</p>
-            <div class="is-flex is-justify-content-center">
-                <img class="image is-4x3" src="./assets/images/location/seat-map.jpg" alt="map seat" width="50%">
-            </div>
-            <div class="mx-6">
+<!-- <div class="mx-6 mt-4 pb-6 pt-2 px-5 reservation-part">
                 <h4 class="subtitle is-size-3-desktop is-size-4-touch mt-6 mb-4 title-font">Reservation Informations</h4>
                 <div class="columns is-multiline reservation-data-container">
                     <div class="column is-full-touch is-half-desktop is-flex is-align-items-center">
@@ -62,14 +54,33 @@
                             </div>
                         </div>
                     </div>
-                    <div class="column is-full is-flex is-justify-content-center is-align-items-center">
-                        <button id="booking-button" class="button is-size-5-desktop is-size-6-touch">Book your table</button>
-                    </div>
                 </div>
-            </div>
-        </section>
-        <section id="gallery-section" class="">
-            <h1 class="title is-size-1-desktop is-size-2-tablet is-size-3-mobile has-text-centered py-3 mt-6 title-font">Gallery</h1>
+            </div> -->
+<body>
+    <main>
+        <section id="reservation-section">
+            <h1 class="title is-size-1-desktop is-size-2-tablet is-size-3-mobile has-text-centered py-3 title-font">Reserve Now</h1>
+            <div class="is-flex is-justify-content-center m-6 yelp-container">
+                <iframe id="yelp-reservations-widget"
+                frameborder=""
+                scrolling="no"
+                width="850"
+                height="520"
+                src="//www.yelp.com/reservations/maestrale-restaurant-sarasota/widget?orientation=vertical&color-scheme=dark"
+                title="Make a reservation" ><a target="_blank" href=https://www.yelp.com/reservations/maestrale-restaurant-sarasota>Reserve at Maestrale Restaurant Management on Yelp</a>
+            </iframe>
+        </div>
+        <div class="is-full is-flex is-justify-content-center is-align-items-center py-5">
+            <button class="button is-size-5-desktop is-size-6-touch">
+                <a target="_blank" href="https://www.yelp.com/reservations/maestrale-restaurant-sarasota">Book your table</a>
+            </button>
+        </div>
+        <p class="subtitle is-size-4-desktop is-size-5-touch has-text-centered pt-5 text-font disclaimer">
+            If you plan to book a table for more than six, <span class="is-underlined">please call the restaurant directly</span>.
+        </p>
+    </section>
+        <section id="gallery-section" class="mt-6">
+            <h1 class="title is-size-1-desktop is-size-2-tablet is-size-3-mobile has-text-centered py-3 title-font">Gallery</h1>
             <p class="has-text-centered is-size-4-desktop is-size-5-touch m-6 gallery-description text-font">
                 Explore our mouthwatering gallery of culinary delights. Immerse yourself
                 in a visual feast of beautifully crafted plates that will leave you craving for
@@ -77,24 +88,38 @@
                 unforgettable. Buon appetito!
             </p>
             <div class="columns is-multiline mx-6">
-                <div class="column is-half-desktop is-full-touch is-flex is-justify-content-center">
+                <div class="column is-4-desktop is-full-touch is-flex is-justify-content-center">
                     <div class="blur image-wrapper">
-                        <img src="assets/images/food/food-1.jpg" width="30%" height="30%">
+                        <img src="assets/images/food/food-1.jpg">
                         <span class="text-font">Fatto di oro diamanti e cosi tanti K che non si possono contare.</span>
                     </div>
                 </div>
-
-                <div class="column is-half-desktop is-full-touch is-flex is-justify-content-center">
+                <div class="column is-4-desktop is-full-touch is-flex is-justify-content-center">
                     <div class="blur image-wrapper">
-                        <img src="assets/images/food/food-2.jpg" width="30%" height="30%">
+                        <img src="assets/images/food/food-2.jpg">
+                        <span class="text-font">Fatto di oro diamanti e cosi tanti K che non si possono contare.</span>
+                    </div>
+                </div>
+                <div class="column is-4-desktop is-full-touch is-flex is-justify-content-center">
+                    <div class="blur image-wrapper">
+                        <img src="assets/images/food/food-3.jpg">
+                        <span class="text-font">Fatto di oro diamanti e cosi tanti K che non si possono contare.</span>
+                    </div>
+                </div>
+                <div class="column is-4-desktop"></div>
+                <div class="column is-4-desktop is-full-touch is-flex is-justify-content-center">
+                    <div class="blur image-wrapper">
+                        <img src="assets/images/food/food-4.jpg">
                         <span class="text-font">Fatto di oro diamanti e cosi tanti K che non si possono contare.</span>
                     </div>
                 </div>
             </div>
-            <p class="is-flex is-justify-content-center m-5 p-5 menu-link">To see our menu <a href="menu.html">click here</a></p>
+            <div class="is-flex is-justify-content-center menu-link">
+                <p class="m-5 p-5">To see our menu <a href="menu.html">click here</a></p>
+            </div>
         </section>
-        <section id="location-section">
-            <h1 class="title is-size-1-desktop is-size-2-tablet is-size-3-touch has-text-centered py-3 mt-6 title-font">Where we are</h1>
+        <section id="location-section" class="mt-6">
+            <h1 class="title is-size-1-desktop is-size-2-tablet is-size-3-touch has-text-centered py-3 title-font">Where we are</h1>
             <div class="columns is-multiline mx-6">
                 <div class="column is-flex is-justify-content-center is-half-tablet is-full-mobile">
                     <iframe id="gmap"
@@ -115,7 +140,7 @@
                         comfortable and inviting atmosphere.
                     </p>
 
-                    <div id="contact-modal" class="is-overlay modal">
+                    <div id="contact-modal" class="modal is-overlay">
                         <div class="modal-background"></div>
                       
                         <div class="modal-content box has-text-centered ">
@@ -153,7 +178,7 @@
             </p>
             
 
-            <div id="subscribe-modal" class="modal">
+            <div id="subscribe-modal" class="modal is-overlay">
                 <div class="modal-background"></div>
               
                 <div class="modal-content box has-text-centered">
@@ -183,7 +208,34 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="footer">
+        <div class="columns mt-6">
+            <div class="column is-half-desktop is-full-mobile has-text-centered">
+                <h6 class="title-font is-size-4-desktop is-size-5-touch pb-3">Useful links</h6>
+                <div class="is-flex is-flex-direction-column">
+                    <div>
+                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe"><a href="./menu.html">Menu</a></p>
+                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe"><a href="#reservation-section">Reserve a table</a></p>
+                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe"><a href="./events.html">Events</a></p>
+                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe"><a href="#gallery-section">Gallery</a></p>
+                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe"><a href="#location-section">Where we are</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-half-desktop is-full-mobile has-text-centered">
+                <h6 class="title-font is-size-5-desktop is-size-6-touch">Contact Us</h6>
+                <div class="is-flex is-flex-direction-column">
+                    <div>
+                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe"><a href="tel:+19413125310">+1 (941) 312 5310</a></p>
+                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe"><a href="mailto:maestralemanagement@gmail.com">Send us a E-Mail</a></p>
+                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe"><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=Maestrale+Restaurant%2C+7515+S+Tamiami+Trail%2C+Sarasota%2C+FL">7515 S Tamiami Trail, Sarasota FL</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="has-text-centered mt-4">
+            <p class="text-font">Created by <b>Francesco Macaluso</b>, <b>Emir Brkic</b> & <b>Pietro Vidoni</b> © 2023</p>
+        </div>
     </footer>
 </body>
 

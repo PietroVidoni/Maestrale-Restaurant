@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
 /* Disables scrolling when modal is open */
 let contactModal = document.getElementById('contact-modal')
 
-
 function disableScroll() {
   window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
   window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
@@ -61,6 +60,7 @@ function enableScroll() {
   window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
 }
 
+/* Highlights the section you are looking at */
 const pageSections = document.getElementsByTagName('section')
 
 function highlightCurrentSection() {
@@ -68,6 +68,7 @@ function highlightCurrentSection() {
     var rect = pageSections.item(i).getBoundingClientRect();
     let screenHeight = Math.max(document.documentElement.clientHeight, window.innerHeight)
     
+    // Doesn't check the remaining section if the current one is out of view
     if (rect.bottom < 0 || rect.top - screenHeight >= 0) {
       continue
     }

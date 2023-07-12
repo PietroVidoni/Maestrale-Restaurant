@@ -1,30 +1,17 @@
 
-#reservation-section img {
-    min-width: 200px;
-    min-height: 200px;
+#reservation-section {
+    background-image: url('../images/location/interior-2.jpg');
+
+    background-position: center;
+    background-size: cover;
 }
 
-/* select html objects */
-#reservation-section select {
-    appearance: none;
-    background-image: none;
-    padding-right: 1rem;
-    cursor: pointer;
-
-    color: var(--light-font-color);
-    background-color: #ffffff00;
-    border: 2px solid var(--highlight-color);
-    border-radius: 4px;
-    padding: 0.5rem;
-    outline: none;
-    
-    transition: all 0.2s ease-in-out;
+#reservation-section .disclaimer {
+    background-color: var(--dark-font-color);
 }
 
-/* Could make a global style rule */
-#reservation-section select:hover {
-    background-color: var(--highlight-color);
-    color: var(--dark-font-color);
+#reservation-section .yelp-container iframe {
+    overflow: hidden;
 }
 
 #reservation-section .button {
@@ -43,11 +30,16 @@
     transition: all 0.2s ease-in-out;
 }
 
-#reservation-section button:hover {
-    background-color: transparent;
-    color: var(--light-font-color);
+#reservation-section .button a {
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    color: var(--dark-font-color);
 }
 
-#reservation-section .reservation-data-container p {
-    white-space: nowrap;
+#reservation-section button:hover {
+    background-color: transparent;
+}
+
+#reservation-section button:hover a {
+    color: var(--light-font-color);
 }
