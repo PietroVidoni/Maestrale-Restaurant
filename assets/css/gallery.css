@@ -61,7 +61,7 @@
 
 #gallery-section .blur:hover img {
     filter: blur(5px) brightness(0.4);
-    border: 260px solid var(--dark-font-color);
+    border: 10px solid var(--dark-font-color);
 }
 
 #gallery-section .menu-link {
