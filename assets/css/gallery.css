@@ -15,27 +15,32 @@
     align-items: center;
     justify-content: center;
 
-    position: relative;
-    
     width: 100%;
+    
+    position: relative;
 
-    max-width: 500px;
-    max-height: 500px;
-    padding-bottom: 100%;
+    overflow: hidden;
 }
 
 #gallery-section .image-wrapper img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    
+    width: 400px;
+    height: 400px;
 
     object-fit: cover;
 }
 
 #gallery-section .blur {
   position: relative;
+}
+
+#gallery-section .image-description {
+    width: 400px;
+    height: 400px;
+    overflow-y: auto;
 }
 
 #gallery-section .blur img {
@@ -45,16 +50,19 @@
     transition: all 0.25s ease-in-out;
 }
 
-#gallery-section .blur span {
+#gallery-section .blur p {
     opacity: 0;
     position: absolute;
-    top: 30px;
-    left: 30px;
+    left: 0;
+    top: 0;
+    height: inherit;
     color: white;
     transition: all 0.25s ease-in;
+
+    overflow-y: auto;
 }
 
-#gallery-section .blur:hover span {
+#gallery-section .blur:hover p {
     opacity: 1;
 }
 
