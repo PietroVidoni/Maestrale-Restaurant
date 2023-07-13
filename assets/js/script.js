@@ -12,9 +12,10 @@ function highlightCurrentSection() {
     }
     
     let isVisible = (rect.top - (screenHeight / 1.5) < 0) || (rect.top - (screenHeight / 1.5) < 0)
-    pageSections.item(i).style.filter = `brightness(${isVisible ? '1' : '0.4'})`
+    pageSections.item(i).style.filter = isVisible ? ``: `brightness(0.4)`
   }
 }
+
 
 window.addEventListener('load', highlightCurrentSection)
 window.addEventListener('scroll', highlightCurrentSection)

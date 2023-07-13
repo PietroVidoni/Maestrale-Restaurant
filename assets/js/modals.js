@@ -1,11 +1,18 @@
 const html = document.getElementsByTagName('html').item(0)
+let section = document.getElementsByTagName('section')
+let modal_on = false;
 
 function openModal(modal) {
+    modal_on = true;
     html.classList.add('is-clipped')
     modal.classList.add('is-active')
+
+    let location = document.getElementById('location-section')
+    console.log(location);
 }
 
 function closeModal(modal) {
+    modal_on = false;
     html.classList.remove('is-clipped')
     modal.classList.remove('is-active')
 }
@@ -18,7 +25,8 @@ let nlModal = document.getElementById('newsletter-modal')
 nlButton.addEventListener('click', (e) => {
     e.preventDefault()
 
-    nlSection.style.filter = 'brightness(1)'
+    Array.from(section).forEach(e => {e.style.filter = 'brightness(0.4);';})
+
     openModal(nlModal)
 })
 
@@ -29,7 +37,6 @@ nlbackground.forEach(element => {
     element.addEventListener('click', (e) => {
         e.preventDefault()
 
-        nlSection.style.filter = 'brightness(0.4);'
         closeModal(nlModal)
     })
 })
@@ -42,7 +49,8 @@ let contactModal = document.getElementById('contact-modal')
 contactButton.addEventListener('click', (e) => {
     e.preventDefault()
 
-    contactSection.style.filter = 'brightness(1)'
+    Array.from(section).forEach(e => {e.style.filter = 'brightness(0.4);';})
+
     openModal(contactModal)
 })
 
@@ -53,7 +61,6 @@ contactBackground.forEach(element => {
     element.addEventListener('click', (e) => {
         e.preventDefault()
 
-        contactSection.style.filter = 'brightness(0.4)'
         closeModal(contactModal)
     })
 })
