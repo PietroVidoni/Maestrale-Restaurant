@@ -54,8 +54,10 @@
     opacity: 1;
 }
 
-#gallery-section .blur:hover img {
-    transition: all 1s;
+#gallery-section .blur img {
+    filter: blur(0px) brightness(1);
+    border: 0px solid var(--dark-font-color);
+    transition: all .5s;
 }
 
 
