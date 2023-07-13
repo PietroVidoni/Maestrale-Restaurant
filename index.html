@@ -9,19 +9,121 @@
     <link rel="stylesheet" href="assets/css/gallery.css">
     <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/hero.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <script defer src="./assets/js/script.js"></script>
+    <script defer src="assets/js/animation.js"></script>
     <script defer src="./assets/js/modals.js"></script>
     <script src="https://kit.fontawesome.com/128ecbb3e8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/hero.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+
+    <script defer src="assets/js/script.js"></script>
+    <script defer src="assets/js/animation.js"></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maestrale's Restaurant</title>
 </head>
 
-<body>
+<body id="body" class="is-overflow-hidden">
+    <div class="preload" data-preaload>
+        <div class="circle"></div>
+        <p class="text">Maestrale</p>
+    </div>
+    <header id="header">
+        <div id="top"></div>
+        <nav class="navbar is-fixed-top is-clipped" role="navigation" aria-label="main navigation" style="overflow: overlay;">
+            <div class="navbar-brand is-flex is-justify-content-space-between is-align-items-center">
+                <a class="darkening" href="#body">
+                    <img src="/assets/images/svg/navbar-logo.svg">
+                </a>
+
+                <input id="burger-menu-button" type="checkbox" />
+                <label class="navbar-burger mr-5" data-target="navbarMenu" for="burger-menu-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <ul class="menu-box columns" id="navbarBurgerMenu">
+                    <div class="column has-text-centered">
+                        <div class="box-animation">
+                            <a href="#hero-section">
+                                <img src="/assets/images/svg/hamburgerLogo.svg">
+                            </a>
+                            <div class="is-mobile mt-5">
+                                <div class="column has-text-left">
+                                    <li class=""><a class="ml-2 menu-item" href="#Home">Home</a></li>
+                                    <li class="mt-2"><a class="ml-2 menu-item" href="./about.html">About</a></li>
+                                    <li class="mt-2"><a class="ml-2 menu-item" href="./menu.html">Menus</a></li>
+                                    <li class="mt-2"><a class="ml-2 menu-item" href="./events.html">Event</a></li>
+                                    <li class="mt-2"><a class="ml-2 menu-item" href="#location-section">Contact Us</a></li>
+                                </div>
+                            </div>
+                            <p>Visit Us:</p>
+                            <address class="mt-3">
+                                7515 S Tamiami Trl, <br>
+                                Sarasota, FL 34231-6901
+                            </address>
+                            <p class="mt-4">Open: 17.00 pm - 22.00.pm</p>
+                            <div class="mt-1"></div>
+                            <a href="mailto:maestraleflorida@gmail.com">maestraleflorida@gmail.com</a>
+                            <div class="mt-4"></div>
+                            <p>Booking Request</p>
+                            <a href="tel:+1 941 312 5410">
+                                +1 941 312 5410
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+
+            </div>
+
+            <div id="navbarMenu" class="darkening navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item has-text-weight-normal has-background-transparent button-highlight p-0" href="#top"
+                        onclick="toggleShape(this)">
+                        Home
+                    </a>
+                    <a class="navbar-item has-text-weight-normal has-background-transparent p-0" href="./about.html"
+                        onclick="toggleShape(this)">
+                        About
+                    </a>
+                    <a class="navbar-item has-text-weight-normal has-background-transparent p-0" href="./menu.html"
+                        onclick="toggleShape(this)">
+                        Menus
+                    </a>
+                    <a class="navbar-item has-text-weight-normal has-background-transparent p-0" href="./events.html"
+                        onclick="toggleShape(this)">
+                        Event
+                    </a>
+                    <a class="navbar-item has-text-weight-normal has-background-transparent p-0" href="#location-section"
+                        onclick="toggleShape(this)">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
     <main>
+        <section id="hero-section" class=" hero darkening">
+            <div class="content-wrapper">
+                <h1 class="title title-font is-size-1-desktop is-size-2-tablet is-size-3-touch">
+                    Taste the Magic of Italy
+                </h1>
+                <h4 class="subtitle mt-5 text-font is-size-4-desktop is-size-5">Unmistakably Italian, Unrivaled in
+                    Sarasota, FL.</h4>
+                <p class="is-size-6 mb-5 menu-description text-font">Take a look at today's special menu.</p>
+                <button class="rounded has-text-weight-bold is-size-6-touch py-4 px-3 custom-button">
+                    <span>View Today's Menu</span>
+                </button>
+            </div>
+        </section>
         <section id="reservation-section">
             <h1 class="title is-size-1-desktop is-size-2-tablet is-size-3-mobile has-text-centered py-3 title-font">
                 Reserve Now</h1>
@@ -53,32 +155,60 @@
                 more. Experience the artistry and flavors that make our dishes truly
                 unforgettable. Buon appetito!
             </p>
-            <div class="columns is-multiline mx-6">
+            <div class="columns is-multiline mx-6 is-flex is-justify-content-center">
                 <div class="column is-4-desktop is-full-touch is-flex is-justify-content-center">
-                    <div class="blur image-wrapper">
-                        <img src="assets/images/food/food-1.jpg">
-                        <span class="text-font">Fatto di oro diamanti e cosi tanti K che non si possono contare.</span>
+                    <div id="gallery-section" class="blur image-wrapper">
+                        <img src="assets/images/food/food-1.jpg" class="image">
+                        <div class="image-description">
+                            <p class="p-4 is-size-5-tablet is-size-5-mobile has-text-centered text-font">
+                                Indulge in our captivating Chicken Carciofi with Piccata Sauce. Tender chicken and
+                                artichoke hearts harmonize with a tangy blend of capers, white wine, and lemon. This
+                                exquisite plate offers a symphony of flavors that will leave a lasting impression!
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="column is-4-desktop is-full-touch is-flex is-justify-content-center">
                     <div class="blur image-wrapper">
-                        <img src="assets/images/food/food-2.jpg">
-                        <span class="text-font">Fatto di oro diamanti e cosi tanti K che non si possono contare.</span>
+                        <img src="assets/images/food/food-2.jpg" class="image">
+                        <div class="image-description">
+                            <p class="p-4 is-size-5-tablet is-size-5-mobile has-text-centered text-font">
+                                Experience the divine flavors of our Italian Shrimp Gratin. Succulent shrimp, coated in crispy
+                                breadcrumbs and topped with melted cheese, rest delicately on a bed of fresh arugula. This dish
+                                is a true indulgence for the senses.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="column is-4-desktop is-full-touch is-flex is-justify-content-center">
                     <div class="blur image-wrapper">
-                        <img src="assets/images/food/food-3.jpg">
-                        <span class="text-font">Fatto di oro diamanti e cosi tanti K che non si possono contare.</span>
+                        <img src="assets/images/food/food-3.jpg" class="image">
+                        <div class="is-flex is-justify-content-center is-align-items-center image-description">
+                            <p class="p-4 is-size-5-tablet is-size-5-mobile has-text-centered text-font">
+                                On the right, Chicken Parmesan with Orecchiette in a luscious Mozzarella and Tomato
+                                Sauce.
+                                And on the left, Pinsa with Prosciutto San Daniele, Arugula, Tomato, and Mozzarella.<br>
+                                These exquisite dishes epitomize our culinary mastery, inviting you to indulge in a
+                                memorable dining experience.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="column is-4-desktop"></div>
+                <div class="column is-4-desktop is-hidden-touch"></div>
                 <div class="column is-4-desktop is-full-touch is-flex is-justify-content-center">
                     <div class="blur image-wrapper">
-                        <img src="assets/images/food/food-4.jpg">
-                        <span class="text-font">Fatto di oro diamanti e cosi tanti K che non si possono contare.</span>
+                        <img src="assets/images/food/food-4.jpg" class="image">
+                        <div class="is-flex is-justify-content-center is-align-items-center image-description">
+                            <p class="p-4 is-size-5-tablet is-size-5-mobile has-text-centered text-font">
+                                On a pristine white plate, tender grilled octopus with smoky grill marks steals the
+                                spotlight. Alongside, velvety mashed potatoes provide a comforting contrast. Garnished
+                                with vibrant herbs, this visually stunning and harmoniously flavorful dish is a true
+                                masterpiece for your gallery.
+                            </p>
+                        </div>
                     </div>
                 </div>
+                <div class="column is-4-desktop is-hidden-touch"></div>
             </div>
             <div class="is-flex is-justify-content-center menu-link">
                 <p class="m-5 p-5">To see our menu <a href="menu.html">click here</a></p>
@@ -103,7 +233,7 @@
                     </p>
 
                     <div id="contact-modal" class="modal">
-                        <div id="tests" class="modal-background"></div>
+                        <div class="modal-background"></div>
 
                         <div class="modal-content box has-text-centered ">
                             <h2 class="title is-size-1 has-text-centered py-3 mt-4 title-font">Send us a message</h2>
@@ -128,9 +258,9 @@
 
                         <button class="modal-close is-large" aria-label="close"></button>
                     </div>
-                    <button id="contact-button" class="my-6 button js-modal-trigger" data-target="contact-modal">Contact us</button>
+                    <button id="contact-button" class="my-6 button js-modal-trigger" data-target="contact-modal">Contact
+                        us</button>
                 </div>
-            </div>
         </section>
         <section id="newsletter-section">
             <h1
@@ -181,16 +311,21 @@
                 <h6 class="title-font is-size-4-desktop is-size-5-touch pb-3">Useful links</h6>
                 <div class="is-flex is-flex-direction-column">
                     <div>
-                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe"><a
-                                href="./menu.html">Menu</a></p>
-                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe"><a
-                                href="#reservation-section">Reserve a table</a></p>
-                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe"><a
-                                href="./events.html">Events</a></p>
-                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe"><a
-                                href="#gallery-section">Gallery</a></p>
-                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe"><a
-                                href="#location-section">Where we are</a></p>
+                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe">
+                            <a href="./menu.html">Menu</a>
+                        </p>
+                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe">
+                            <a href="#reservation-section">Reserve a table</a>
+                        </p>
+                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe">
+                            <a href="./events.html">Events</a>
+                        </p>
+                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe">
+                            <a href="#gallery-section">Gallery</a>
+                        </p>
+                        <p class="text-font is-size-5-desktop is-size-6-touch py-5 separe">
+                            <a href="#location-section">Where we are</a>
+                        </p>
                     </div>
                 </div>
             </div>
