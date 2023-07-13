@@ -55,8 +55,7 @@
 }
 
 #gallery-section .blur img {
-    filter: blur(0px) brightness(1);
-    border: 0px solid var(--dark-font-color);
+
     transition: all .5s;
 }
 
