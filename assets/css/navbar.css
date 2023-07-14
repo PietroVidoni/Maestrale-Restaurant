@@ -1,0 +1,75 @@
+/*
+  Navbar code
+*/
+
+#header .navbar {
+  background-color: var(--trasparent-black-1);
+}
+
+#header .navbar a {
+  background-color: transparent;
+  height: var(--navbar-height);
+  z-index: 10;
+}
+
+.navbar-burger {
+  color: var(--light-font-color);
+}
+
+#header .navbar-item {
+
+    display: flex;
+    justify-content: center;
+
+    width: 150px;
+
+    color: var(--light-font-color);
+}
+
+#header .navbar-hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+}
+
+#header .navbar-visible {
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+#header .button-highlight {
+    background-image: url('../images/svg/button-highlight.svg');
+    background-repeat: no-repeat;   
+    background-size: contain;
+
+    background-position: center;
+    z-index: inherit;
+}
+
+#burger-menu-button {
+  opacity: 0;
+}
+
+.menu-box {
+  display: block;
+  position: fixed;
+
+  background-color: transparent;
+
+  top: 0;
+  left: -100%;
+
+  width: 270px;
+  height: 100%;
+
+  margin: 0;
+  padding: 10px 0;
+  
+  transition-duration: .25s;
+
+  z-index: 30;
+}
+
+.menu-item {
+  color: black;
+  transition-duration: .25s;
+}

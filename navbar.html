@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<header id="header">
+
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand is-flex is-justify-content-space-between is-align-items-center">
+            <a class="darkening">
+                <img src="./assets/images/svg/logo.svg">
+            </a>
+
+            <input id="burger-menu-button" type="checkbox" />
+            <label class="navbar-burger mr-5" data-target="navbarMenu" for="burger-menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+        </div>
+
+        <div id="navbarMenu" class="darkening navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item has-text-weight-normal has-background-transparent" href="index.php?page=index#home"
+                    onclick="toggleShape(this)">
+                    Home
+                </a>
+                <a class="navbar-item has-text-weight-normal has-background-transparent" href="index.php?page=index#about"
+                    onclick="toggleShape(this)">
+                    About
+                </a>
+                <a class="navbar-item has-text-weight-normal has-background-transparent" href="index.php?page=index#gallery-section"
+                    onclick="toggleShape(this)">
+                    Menus
+                </a>
+                <a class="navbar-item has-text-weight-normal has-background-transparent" href="index.php?page=events"
+                    onclick="toggleShape(this)">
+                    Event
+                </a>
+                <a class="navbar-item has-text-weight-normal has-background-transparent" href="index.php?page=index#contact_us"
+                    onclick="toggleShape(this)">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <ul class="menu-box columns" id="navbarBurgerMenu">
+        <div class="column has-text-centered">
+            <div class="box-animation">
+
+                <a>
+                    <img src="./assets/images/svg/hamburgerLogo.svg">
+                </a>
+
+                <div class="is-mobile mt-5">
+                    <div class="column has-text-left">
+                        <li class=""><a class="ml-2 menu-item" href="index.php?page=index#home">Home</a></li>
+                        <li class="mt-2"><a class="ml-2 menu-item" href="index.php?page=index#about">About</a></li>
+                        <li class="mt-2"><a class="ml-2 menu-item" href="index.php?page=index#menus">Menus</a></li>
+                        <li class="mt-2"><a class="ml-2 menu-item" href="index.php?page=index#events">Event</a></li>
+                        <li class="mt-2"><a class="ml-2 menu-item" href="index.php?page=index#contact_us">Contact Us</a></li>
+                    </div>
+                </div>
+
+                <p>Visit Us:</p>
+
+                <div class="mt-3"></div>
+
+                <address>
+                    7515 S Tamiami Trl, <br>
+                    Sarasota, FL 34231-6901
+                </address>
+
+                <div class="mt-4"></div>
+
+                <p>Open: 17.00 pm - 22.00.pm</p>
+
+                <div class="mt-1"></div>
+
+                <a href="mailto:maestraleflorida@gmail.com">maestraleflorida@gmail.com</a>
+
+                <div class="mt-4"></div>
+
+                <p>Booking Request</p>
+
+                <a href="tel:+1 941 312 5410">
+                    +1 941 312 5410
+                </a>
+
+            </div>
+        </div>
+    </ul>
+</header>
