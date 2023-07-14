@@ -1,18 +1,12 @@
 const html = document.getElementsByTagName('html').item(0)
 let section = document.getElementsByTagName('section')
-let modal_on = false;
 
 function openModal(modal) {
-    modal_on = true;
     html.classList.add('is-clipped')
     modal.classList.add('is-active')
-
-    let location = document.getElementById('location-section')
-    console.log(location);
 }
 
 function closeModal(modal) {
-    modal_on = false;
     html.classList.remove('is-clipped')
     modal.classList.remove('is-active')
 }
