@@ -154,3 +154,7 @@ a:active {
     color: white;
     text-decoration: none;
 }
+
+.column{
+    padding: 0;
+}
