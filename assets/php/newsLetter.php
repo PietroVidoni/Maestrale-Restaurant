@@ -5,7 +5,7 @@ require_once '../../config/config.php';
 if (isset($_POST['email']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
 
-    $response = array('message' => 'Email inviata correttamente');
+    $response = array('message' => 'Email send correctly');
 
     header('Content-Type: application/json');
 
@@ -23,12 +23,10 @@ if (isset($_POST['email']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->bindValue(1, $email);
 
         if (!$stmt->execute()) {
-            echo "Errore durante l'inserimento dei dati nel database";
-        } else {
-            //Handle this
+            echo "Error during DB query";
         }
     } catch (PDOException $e) {
-        echo "Connessione al database fallita: " . $e->getMessage();
+        echo "DB Connection failed " . $e->getMessage();
     }
 }
 ?>
