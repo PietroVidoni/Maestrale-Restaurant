@@ -1,0 +1,27 @@
+html {
+    background-image: url('../images/location/interior-2.jpg');
+
+    background-position: center;
+    background-size: cover;
+}
+
+#events-section .card {
+    background-color: var(--highlight-color);
+}
+
+#events-section .content {
+    color: var(--main-1-color);
+}
+
+#events-section .title {
+    background-color: var(--highlight-color);
+    color: var(--main-1-color);
+    display: inline;
+    padding: 10px;
+}
+
+#events-section select {
+    background-color:  var(--highlight-color);
+    color: var(--main-1-color);
+    border: var(--main-1-color);
+}
