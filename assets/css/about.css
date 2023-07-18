@@ -6,9 +6,6 @@
     overflow-x: hidden;
 }
 
-#about-section .about-container {
-}
-
 #about-section .about-container p {
     color: var(--light-font-color);
     margin-left: auto;
