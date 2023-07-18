@@ -13,18 +13,11 @@
     --light-font-color: #fffcfc;
     --dark-font-color: #090708;
 
-    --smoky-black-1: hsla(40, 12%, 5%, 1);
-    --smoky-black-2: hsla(30, 8%, 5%, 1);
-    --smoky-black-3: hsla(0, 3%, 7%, 1);
-
-    --trasparent-black-1: rgba(0, 0, 0, 0.5);
-    
     /* transition */
     --transition-1: 250ms ease;
     --transition-2: 500ms ease;
     --transition-3: 1000ms ease;
-    --light-font-color: #e3e3e3;
-    --dark-font-color: #1a1a1a;
+
     --light-font-color-a: #e3e3e355;
     --smoky-black-1: hsla(40, 12%, 5%, 1);
     --smoky-black-2: hsla(30, 8%, 5%, 1);

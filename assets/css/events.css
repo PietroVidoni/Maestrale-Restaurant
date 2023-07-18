@@ -7,19 +7,69 @@
 }
 
 #event-section .card {
+    background-color: var(--main-1-color);
+    border: 2px solid var(--highlight-color);
+
+    transition: all 250ms;
+}
+
+#event-section .card:hover {
     background-color: var(--highlight-color);
+    border: 2px solid var(--highlight-color);
+}
+
+#event-section .card:hover .event-title {
+    border-bottom: 2px solid var(--light-font-color);
+}
+
+#event-section .card:hover .content .event-description-text {
+    color: var(--dark-font-color);
+}
+#event-section .card:hover .event-title p {
+    color: var(--dark-font-color);
+}
+
+#event-section .card:hover .event-title {
+    border-bottom: 2px solid var(--main-1-color);
+}
+
+#event-section .card:hover .event-date {
+    background-color: var(--main-1-color);
+    color: var(--light-font-color);
+
+    border: 2px solid var(--main-1-color);
 }
 
 #event-section .content {
-    color: var(--main-1-color);
+    color: var(--light-font-color);
 }
 
 #event-section .event-description {
-background-image: linear-gradient(to bottom, var(--main-1-color) 75%, transparent);
+    background-image: linear-gradient(to bottom, var(--main-1-color) 75%, transparent);
 }
 
 #event-section .event-title {
-    border-bottom: 2px solid var(--dark-font-color);
+    border-bottom: 2px solid var(--highlight-color);
+
+    transition: all 250ms;
+}
+
+#event-section .event-title p {
+    background-color: transparent;
+    color: var(--light-font-color);
+    
+    transition: all 250ms;
+}
+
+#event-section .event-date {
+    background-color: var(--highlight-color);
+    color: var(--dark-font-color);
+
+    border: 2px solid var(--main-1-color);
+    border-radius: 10px;
+    width: fit-content;
+
+    transition: all 250ms;
 }
 
 #event-section .coming-soon p {
