@@ -17,8 +17,9 @@ session_start();
     <link rel="stylesheet" href="assets/css/animation.css">
     <link rel="stylesheet" href="assets/css/hero.css">
     <link rel="stylesheet" href="assets/css/animation.css">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/events.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 
     <script defer src="./assets/js/script.js"></script>
@@ -50,7 +51,7 @@ session_start();
             include "404.html";
         }
     } else {
-        $newURL = 'index.php?page=index#home';
+        $newURL = $_SERVER['REQUEST_URI'] . '?page=home#home';
     
         header("Location: $newURL");
         exit;
