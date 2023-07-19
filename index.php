@@ -11,7 +11,7 @@ session_start();
     <link rel="stylesheet" href="assets/css/gmap.css">
     <link rel="stylesheet" href="assets/css/newsletter.css">
     <link rel="stylesheet" href="assets/css/gallery.css">
-    <link rel="stylesheet" href="assets/css/footer.css"> 
+    <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/hero.css">
     <link rel="stylesheet" href="assets/css/animation.css">
@@ -52,15 +52,19 @@ session_start();
         }
     } else {
         $newURL = $_SERVER['REQUEST_URI'] . '?page=home#home';
-    
+
         header("Location: $newURL");
         exit;
     }
     ?>
-    
+
     <!-- Navbar start -->
     <?php include 'navbar.html'; ?>
     <!-- Navbar end -->
+
+    <!-- Footer start -->
+    <?php  include 'footer.html'; ?>
+    <!-- Footer end -->
 
 </body>
 
