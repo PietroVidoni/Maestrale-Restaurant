@@ -5,27 +5,6 @@
     }    
 }
 
-#location-section .button {   
-    appearance: none;
-    background-image: none;
-    padding-right: 1rem;
-    cursor: pointer;
-
-    color: var(--dark-font-color);
-    background-color: var(--highlight-color);
-    border: 2px solid var(--highlight-color);
-    border-radius: 4px;
-    padding: 0.5rem;
-    outline: none;
-
-    transition: all 0.2s ease-in-out;
-}
-    
-#location-section button:hover {
-    background-color: transparent;
-    color: var(--light-font-color);
-}
-
 #location-section .modal-content {
     background-color: var(--main-1-color);
     border: 2px solid var(--highlight-color);

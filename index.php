@@ -7,18 +7,17 @@ session_start();
 
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="assets/css/reservation.css">
-    <link rel="stylesheet" href="assets/css/gmap.css">
-    <link rel="stylesheet" href="assets/css/newsletter.css">
-    <link rel="stylesheet" href="assets/css/gallery.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/hero.css">
+    <link rel="stylesheet" href="assets/css/about.css">
     <link rel="stylesheet" href="assets/css/animation.css">
-    <link rel="stylesheet" href="assets/css/hero.css">
-    <link rel="stylesheet" href="assets/css/animation.css">
-    <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/events.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/gallery.css">
+    <link rel="stylesheet" href="assets/css/hero.css">
+    <link rel="stylesheet" href="assets/css/location.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/newsletter.css">
+    <link rel="stylesheet" href="assets/css/reservation.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
 
@@ -31,12 +30,12 @@ session_start();
     <title>Maestrale's Restaurant</title>
 </head>
 
-<body class="mt-6">
+<body>
     <!-- Preloader Start -->
 
     <div class="preload" data-preaload>
         <div class="circle"></div>
-        <p class="text">Maestrale</p>
+        <p class="text">maestrale</p>
     </div>
 
     <!-- Preloader end -->

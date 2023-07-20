@@ -6,6 +6,11 @@
   background-color: var(--trasparent-black-1);
 }
 
+#header .navbar-brand img {
+  image-rendering: crispEdges;
+  shape-rendering: crispEdges;
+}
+
 #header .navbar a {
   background-color: transparent;
   height: var(--navbar-height);

@@ -1,7 +1,7 @@
 #footer {
     background:
         url('../images/icons/logo.png') no-repeat,
-        radial-gradient(circle at 50% 100%, var(--highlight-color) 0%, var(--footer-color) 60%);
+        radial-gradient(circle at 50% 100%, var(--highlight-color) 0%, var(--footer-color) 80%);
     background-position: center;
     background-size: contain;
 

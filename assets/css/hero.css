@@ -16,7 +16,7 @@
     padding: 8rem 0;
 }
 
-#hero-section .menu-description {
-    margin-top: 16rem;
+#hero-section button {
+    margin-top: 22rem;
     color: var(--light-font-color);
 }

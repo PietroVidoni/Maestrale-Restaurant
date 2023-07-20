@@ -6,13 +6,14 @@
 <main id="main">
     <section id="hero-section" class=" hero darkening">
         <div class="content-wrapper" id="home">
-            <h2 class="title title-font is-size-1-desktop is-size-5-mobile is-size-2-tablet is-size-3-touch">
+            <h2 class="title title-font is-size-1-desktop is-size-5-mobile is-size-2-tablet is-size-3-touch p-3">
                 Taste the Magic of Italy
             </h2>
-            <h4 class="subtitle mt-5 text-font is-size-4-desktop is-size-6-mobile is-size-5">Unmistakably Italian, Unrivaled in
+            <h4 class="subtitle mt-5 text-font is-size-4-desktop is-size-6-mobile is-size-5">Unmistakably Italian,
+                Unrivaled in
                 Sarasota, FL.</h4>
-            <p class="is-size-6 mb-5 menu-description text-font">Take a look at today's special menu.</p>
-            <button class="rounded has-text-weight-bold is-size-6-touch py-4 px-3 custom-button">
+            <button
+                class="rounded has-text-weight-bold is-size-5-desktop is-size-6-touch py-4 px-3 button-fill-animation button-fill-background">
                 <a href="index.php?page=menus">View Today's Menu</a>
             </button>
         </div>
@@ -20,26 +21,27 @@
     <section id="reservation-section">
         <h2 class="title is-size-1-desktop is-size-2-tablet is-size-3-mobile has-text-centered py-3 title-font">
             Reserve Now</h2>
-            <div class="is-flex is-justify-content-center m-6 yelp-container">
-                <iframe id="yelp-reservations-widget" frameborder="" scrolling="no" width="850" height="520"
+        <div class="is-flex is-justify-content-center m-6 yelp-container">
+            <iframe id="yelp-reservations-widget" frameborder="" scrolling="no" width="850" height="520"
                 src="//www.yelp.com/reservations/maestrale-restaurant-sarasota/widget?orientation=vertical&color-scheme=dark"
-                title="Make a reservation"><a target="_blank" 
-                href=https://www.yelp.com/reservations/maestrale-restaurant-sarasota>Reserve at Maestrale  
-                Restaurant Management on Yelp</a>
+                title="Make a reservation"><a target="_blank"
+                    href=https://www.yelp.com/reservations/maestrale-restaurant-sarasota>Reserve at Maestrale
+                    Restaurant Management on Yelp</a>
             </iframe>
         </div>
         <div class="is-full is-flex is-justify-content-center is-align-items-center py-5">
-            <button class="button is-size-5-desktop is-size-6-touch">
-                <a target="_blank" href="https://www.yelp.com/reservations/maestrale-restaurant-sarasota">Book your
-                    table</a>
-                </button>
-            </div>
-            <p class="subtitle is-size-4-desktop is-size-5-touch has-text-centered pt-5 text-font disclaimer">
-                If you plan to book a table for more than six, <span class="is-underlined">please call the restaurant
+            <button class="is-size-5-desktop is-size-6-touch button-fill-animation button-fill-background">
+                <a target="_blank" href="https://www.yelp.com/reservations/maestrale-restaurant-sarasota">
+                    Book your table
+                </a>
+            </button>
+        </div>
+        <p class="subtitle is-size-4-desktop is-size-5-touch has-text-centered pt-5 text-font disclaimer">
+            If you plan to book a table for more than six, <span class="is-underlined">please call the restaurant
                 directly</span>.
         </p>
     </section>
-    <section id="gallery-section" class="mt-6">
+    <section id="gallery-section" class="mt-5">
         <h2 class="title is-size-1-desktop is-size-2-tablet is-size-3-mobile has-text-centered py-3 title-font">
             Gallery</h2>
         <p class="has-text-centered is-size-4-desktop is-size-5-touch m-6 gallery-description text-font">
@@ -67,10 +69,8 @@
                     <div class="image-description">
                         <p class="p-4 is-size-5-tablet is-size-5-mobile has-text-centered text-font">
                             Experience the divine flavors of our Italian Shrimp Gratin. Succulent shrimp, coated in
-                            crispy
-                            breadcrumbs and topped with melted cheese, rest delicately on a bed of fresh arugula. This
-                            dish
-                            is a true indulgence for the senses.
+                            crispy breadcrumbs and topped with melted cheese, rest delicately on a bed of fresh arugula.
+                            This dish is a true indulgence for the senses.
                         </p>
                     </div>
                 </div>
@@ -91,13 +91,14 @@
             </div>
             <div class="column is-4-desktop is-hidden-touch"></div>
         </div>
-        <div class="is-flex is-justify-content-center menu-link">
-            <p class="m-5 p-5">To see our menu <a href="?page=menus">click here</a></p>
+        <div class="is-flex is-justify-content-center">
+            <button class="is-size-5-desktop is-size-6-touch my-6 button-fill-animation button-fill-background">
+                <p>To see our menu <a href="?page=menus">click here</a></p>
+            </button>
         </div>
     </section>
-    <section id="location-section" class="mt-6">
-        <h2 class="title is-size-1-desktop is-size-2-tablet is-size-3-touch has-text-centered py-3 title-font">Where
-            we are</h2>
+    <section id="location-section">
+        <h2 class="title is-size-1-desktop is-size-2-tablet is-size-3-touch has-text-centered py-3 title-font">Where we are</h2>
         <div class="columns is-multiline mx-6">
             <div class="column is-flex is-justify-content-center is-half-tablet is-full-mobile">
                 <iframe id="gmap" width="400px" height="400px" frameborder="0" scrolling="yes" marginheight="0"
@@ -140,8 +141,9 @@
 
                     <button class="modal-close is-large" aria-label="close"></button>
                 </div>
-                <button id="contact-button" class="my-6 button js-modal-trigger" data-target="contact-modal">Contact
-                    us</button>
+                <button id="contact-button" class="my-6 js-modal-trigger button-fill-animation button-fill-background" data-target="contact-modal">
+                    Contact us
+                </button>
             </div>
         </div>
     </section>
@@ -151,16 +153,15 @@
         <p class="has-text-centered is-size-4-desktop is-size-5-touch m-6 gallery-description text-font">
             To stay updated on the latest news about Maestrale, we recommend subscribing to our personal
             newsletter. By doing so, you'll receive important updates on our restaurant, as well as exclusive offers
-            and
-            promotions.
+            and promotions.
         </p>
         <div id="newsletter-modal" class="modal">
             <div class="modal-background"></div>
 
             <form method="post" class="modal-content box has-text-centered" id="newsletter-form">
-                <p class="is-size-4-desktop is-size-5-touch has-text-centered py-3 mt-4 text-font">Please enter your
-                    email to receive the restaurant's news:</p>
-
+                <p class="is-size-4-desktop is-size-5-touch has-text-centered py-3 mt-4 text-font">
+                    Please enter your email to receive the restaurant's news:
+                </p>
                 <div class="control has-icons-left has-icons-right is-flex is-justify-content-flex-end">
                     <input class="input" type="email" name="email" placeholder="email@example.com" required>
                     <span class="icon is-small is-left">
@@ -170,18 +171,16 @@
                         <i class="fas fa-check"></i>
                     </span>
                 </div>
-
                 <span class="is-small has-text-centered" id="emailMessage"></span>
-
                 <div class="has-text-centered my-4 is-flex is-justify-content-flex-end">
-                    <button id="subscribe-button" class="js-modal-trigger button"
+                    <button id="subscribe-button" class="js-modal-trigger is-size-5-desktop is-size-6-touch button-fill-animation button-fill-background"
                         data-target="subscribe-modal">Subscribe</button>
                 </div>
                 <button class="modal-close is-large" aria-label="close"></button>
             </form>
         </div>
         <div class="has-text-centered pb-4">
-            <button id="newsletter-button" class="is-size-5 js-modal-trigger button"
+            <button id="newsletter-button" class="is-size-5 js-modal-trigger is-size-5-desktop is-size-6-touch button-fill-animation button-fill-background"
                 data-target="subscribe-modal">Subscribe</button>
         </div>
     </section>
