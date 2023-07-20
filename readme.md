@@ -6,7 +6,7 @@
 - [x] Contact-Us form fix (Emir)
 - [x] Create event-page similar to (this website)[https://www.sofiasrestaurantlwr.com/events]
 - [x] Create About Us page
-- [ ] When above 2100px the gallery invisible cell occupies the 4th space in the first gallery row.
+- [x] When above 2100px the gallery invisible cell occupies the 4th space in the first gallery row.
 - [ ] Gallery image on hover shows border not blurred.
 
 customer request:
