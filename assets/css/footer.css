@@ -1,7 +1,6 @@
-
 #footer {
-    background: 
-        url('../images/icons/logo.png') no-repeat, 
+    background:
+        url('../images/icons/logo.png') no-repeat,
         radial-gradient(circle at 50% 100%, var(--highlight-color) 0%, var(--footer-color) 60%);
     background-position: center;
     background-size: contain;
@@ -12,7 +11,7 @@
 #footer .separe {
     border-image: linear-gradient(to right, transparent 30%, var(--light-font-color) 30%, var(--light-font-color) 70%, transparent 70%) 1;
     border-style: solid;
-    border-width: 1px 0 0 0;  
+    border-width: 1px 0 0 0;
 }
 
 #footer .separe a {

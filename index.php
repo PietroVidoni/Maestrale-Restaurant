@@ -31,7 +31,7 @@ session_start();
     <title>Maestrale's Restaurant</title>
 </head>
 
-<body>
+<body class="mt-6">
     <!-- Preloader Start -->
 
     <div class="preload" data-preaload>
