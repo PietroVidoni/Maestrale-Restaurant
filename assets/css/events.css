@@ -1,5 +1,7 @@
 
 #event-section {
+    padding-top: 7rem;
+
     background-image: url('../images/food/wine-background.jpg');
     background-position: center;
     background-size: cover;

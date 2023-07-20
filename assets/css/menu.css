@@ -1,49 +1,42 @@
-
 @import url('https://fonts.googleapis.com/css?family=Gentium+Book+Plus');
 @import url('https://fonts.googleapis.com/css?family=Carattere');
 
-.menu-font{
-    font-family: 'Carattere';
-    font-weight: normal;
-    font-size: 4rem;
-    color: var(--light-font-color);
-}
-
-#menu-section{
+#menu-section {
     padding-top: calc(var(--navbar-height) + 4rem);
     background-color: var(--highlight-color);
-    background-image: url("../images/location/interior-1.jpg");
+    background-image: linear-gradient(to bottom, var(--highlight-color), #cd731f);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    overflow-y: hidden;
+
+    color: var(--dark-font-color);
 }
 
-#menu-section .menu-entry {
+#menu-section h1 {
+    background-color: transparent;
+}
+
+#menu-section h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.1);
+}
+
+
+#menu-section .menu-description {
     font-family: 'Gentium Book Plus';
     font-weight: normal;
-    font-size: 1rem;
-    margin-bottom: 3rem;
-    color: var(--light-font-color);
+}
+
+.menu-entry {
+    font-family: 'Gentium Book Plus';
+    font-weight: normal;
 }
 
 #menu-section .menu-title {
-    color: var(--light-font-color);
     font-family: 'Gentium Book Plus';
     font-weight: normal;
-}
-
-#menu-section .menu-description {
-    color: white;
-}
-
-#menu-section .is-bordered{
-    border: 1px solid rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.8);
-    transition: all 250ms;
-}
-
-#menu-section .is-bordered:hover {
-    background-color: color-mix(in srgb, var(--highlight-color), transparent 4%);
-    transform: scale(1.015);
-    border: 1px solid var(--highlight-color);
 }
