@@ -25,8 +25,8 @@ document.addEventListener('click', function (e) {
         checkbox.checked = false;
         menuState = false;
         burger_menu.style.left = "-100%";
-        darkening.forEach(item => toggleCSSProperty(item, 'filter', 'brightness(1)'));
-        Array.from(pageSections).forEach(item => toggleCSSProperty(main, 'filter', 'brightness(1)'));
+        darkening.forEach(item => toggleCSSProperty(item, 'filter', ''));
+        Array.from(pageSections).forEach(item => toggleCSSProperty(item, 'filter', ''));
     }
 });
 
