@@ -14,9 +14,9 @@ checkbox.addEventListener('click', () => {
         menuState = menuState ? false : true;
 
         burger_menu.style.left = menuState ? "0%" : "-100%";
-        darkening.forEach(item => toggleCSSProperty(item, 'filter', 'brightness(0.4)'));
+        darkening.forEach(item => item.style.filter = menuState ? 'brightness(0.4)' : '');
 
-        Array.from(pageSections).forEach(item => toggleCSSProperty(item, 'filter', 'brightness(0.4)'));
+        Array.from(pageSections).forEach(item => item.style.filter = menuState ? 'brightness(0.4)' : '');
     }
 });
 
@@ -24,9 +24,11 @@ document.addEventListener('click', function (e) {
     if (!menu.contains(e.target) && !checkbox.contains(e.target) && menuState) {
         checkbox.checked = false;
         menuState = false;
+
         burger_menu.style.left = "-100%";
-        darkening.forEach(item => toggleCSSProperty(item, 'filter', ''));
-        Array.from(pageSections).forEach(item => toggleCSSProperty(item, 'filter', ''));
+        
+        darkening.forEach(item => item.style.filter = '');
+        Array.from(pageSections).forEach(item => item.style.filter = '');
     }
 });
 
