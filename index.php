@@ -47,7 +47,7 @@ session_start();
         if (file_exists($page . ".html")) {
             include "$page.html";
         } else {
-            include "404.html";
+            include "?page=home#home";
         }
     } else {
         $newURL = $_SERVER['REQUEST_URI'] . '?page=home#home';

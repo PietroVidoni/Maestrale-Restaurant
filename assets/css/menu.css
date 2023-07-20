@@ -3,15 +3,14 @@
 
 #menu-section {
     padding-top: calc(var(--navbar-height) + 4rem);
-    background-color: var(--highlight-color);
-    background-image: linear-gradient(to bottom, var(--highlight-color), #cd731f);
+    background-color: var(--main-2-color);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
     overflow-y: hidden;
 
-    color: var(--dark-font-color);
+    color: var(--light-font-color);
 }
 
 #menu-section h1 {
