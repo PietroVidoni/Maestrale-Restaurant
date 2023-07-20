@@ -5,7 +5,7 @@
     right: 0;
     bottom: 0;
     background-color: var(--highlight-color);
-    z-index: 10;
+    z-index: 50;
     display: grid;
     place-content: center;
     justify-items: center;
@@ -90,6 +90,10 @@
 
 .box-animation> :first-child {
     margin-top: 0;
+}
+
+.box-animation> :last-child {
+    margin-bottom: 0;
 }
 
 .box-animation> :last-child {

@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
-    --main-1-color: #1a1a1a;
+    --main-1-color: hsla(210, 4%, 9%, 1);
     --main-2-color: #424242;
     --footer-color: #0f0f0f;
     --highlight-color: #FF9C40;
@@ -13,16 +13,27 @@
     --light-font-color: #fffcfc;
     --dark-font-color: #090708;
 
+    --smoky-black-1: hsla(40, 12%, 5%, 1);
+    --smoky-black-2: hsla(30, 8%, 5%, 1);
+    --smoky-black-3: hsla(0, 3%, 7%, 1);
+
+    --trasparent-black-1: rgba(0, 0, 0, 0.5);
     /* transition */
     --transition-1: 250ms ease;
     --transition-2: 500ms ease;
     --transition-3: 1000ms ease;
-
+    --light-font-color: #e3e3e3;
+    --dark-font-color: #1a1a1a;
     --light-font-color-a: #e3e3e355;
     --smoky-black-1: hsla(40, 12%, 5%, 1);
     --smoky-black-2: hsla(30, 8%, 5%, 1);
     --smoky-black-3: hsla(0, 3%, 7%, 1);
     --trasparent-black-1: rgba(0, 0, 0, 0.5);
+
+    /* transition */
+    --transition-1: 250ms ease;
+    --transition-2: 500ms ease;
+    --transition-3: 1000ms ease;
 
     /* radius */
     --radius-24: 24px;
@@ -34,7 +45,7 @@
 
     --loading-text-gradient: linear-gradient(90deg, transparent 0% 16.66%, var(--smoky-black-3) 33.33% 50%, transparent 66.66% 75%);
 
-    --navbar-height: 100px;
+    --navbar-height: 90px;
 }
 
 * {
@@ -45,7 +56,6 @@
 html, main {
     background-color: var(--main-1-color);
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 .title-font {
@@ -112,4 +122,43 @@ a:active {
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--highlight-color)
+}
+
+/* Buttons */
+
+.custom-button {
+    
+    background-color: var(--trasparent-black-1);
+    color: var(--light-font-color);
+
+    width: 200px;
+
+    border: 2px solid var(--highlight-color);
+
+    cursor: pointer;
+    
+    transition: all 0.2s ease;
+}
+
+.custom-button:hover {
+    transform: scale(1.1);
+    transition: all 200ms;
+}
+
+.custom-button a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.custom-button a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.column{
+    padding: 0;
+}
+
+.mt-9{
+    margin-top: 90px;
 }

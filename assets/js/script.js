@@ -1,24 +1,83 @@
+/* Navbar hamburger */
+
+const darkening = document.querySelectorAll('.darkening');
+const main = document.getElementById('main');
+const menu = document.querySelector('.navbar-burger');
+const checkbox = document.getElementById('burger-menu-button');
+const burger_menu = document.getElementById("navbarBurgerMenu");
+
+let menuState = false;
+
+checkbox.addEventListener('click', () => {
+    if (typeof CSS.supports('backdrop-filter', 'blur(0)')) {
+        menuState = menuState ? false : true;
+
+        burger_menu.style.left = menuState ? "0%" : "-100%";
+        darkening.forEach(item => toggleCSSProperty(item, 'filter', 'brightness(0.4)'));
+        toggleCSSProperty(main, 'filter', 'brightness(0.4)');
+    }
+});
+
+document.addEventListener('click', function (e) {
+    if (!menu.contains(e.target) && !checkbox.contains(e.target) && menuState) {
+        checkbox.checked = false;
+        menuState = false;
+        burger_menu.style.left = "-100%";
+        darkening.forEach(item => toggleCSSProperty(item, 'filter', 'brightness(1)'));
+        toggleCSSProperty(main, 'filter', 'brightness(1)');
+    }
+});
+
+function toggleCSSProperty(element, property, value) {
+    const currentValue = element.style.getPropertyValue(property);
+
+    if (currentValue) {
+        element.style.removeProperty(property);
+    } else {
+        element.style.setProperty(property, value);
+    }
+}
 /* Highlights the section you are looking at */
 const pageSections = document.getElementsByTagName('section')
 
 function highlightCurrentSection() {
-  for (let i = 0; i < pageSections.length; i++) {
-    var rect = pageSections.item(i).getBoundingClientRect();
-    let screenHeight = Math.max(document.documentElement.clientHeight, window.innerHeight)
     
-    // Doesn't check the remaining section if the current one is out of view
-    if (rect.bottom < 0 || rect.top - screenHeight >= 0) {
-      continue
+    if (menuState) {
+        return;
     }
-    
-    let isVisible = (rect.top - (screenHeight / 1.5) < 0) || (rect.top - (screenHeight / 1.5) < 0)
-    pageSections.item(i).style.filter = isVisible ? ``: `brightness(0.4)`
-  }
-}
 
+    for (let i = 0; i < pageSections.length; i++) {
+        var rect = pageSections.item(i).getBoundingClientRect();
+        let screenHeight = Math.max(document.documentElement.clientHeight, window.innerHeight)
+
+        // Doesn't check the remaining section if the current one is out of view
+        if (rect.bottom < 0 || rect.top - screenHeight >= 0) {
+            continue
+        }
+
+        let isVisible = (rect.top - (screenHeight / 1.5) < 0) || (rect.top - (screenHeight / 1.5) < 0)
+        pageSections.item(i).style.filter = isVisible ? `` : `brightness(0.4)`
+    }
+}
 
 window.addEventListener('load', highlightCurrentSection)
 window.addEventListener('scroll', highlightCurrentSection)
+
+window.addEventListener("load", () => {
+    var links = document.querySelectorAll('.navbar-item');
+
+    var url = window.location.href;
+    var pageName = url.split("?page=")[1];
+
+    links.forEach(link => {
+        var itemName = link.innerHTML.replace(/\s/g, "");
+
+        if (pageName.includes(itemName.toLowerCase())) {
+            link.classList.add('button-highlight');
+            return;
+        }
+    })
+})
 
 function toggleShape(link) {
     var links = document.querySelectorAll('.navbar-item');
@@ -46,38 +105,3 @@ const handleScroll = () => {
 };
 
 window.addEventListener('scroll', handleScroll);
-
-/* Navbar hamburger */
-const darkening = document.querySelectorAll('.darkening');
-const menu = document.querySelector('.navbar-burger');
-const button = document.querySelector('#burger-menu-button');
-const checkbox = document.getElementById('burger-menu-button');
-const burger = document.getElementById("burger-menu-button");
-
-let menuState = false;
-
-burger.addEventListener('click', () => {
-    if (typeof CSS.supports('backdrop-filter', 'blur(0)')) {
-        menuState = !menuState;
-
-        darkening.forEach(item => toggleCSSProperty(item, 'filter', 'brightness(0.4)'));
-    }
-});
-
-document.addEventListener('click', e => {
-    if (!menu.contains(e.target) && !button.contains(e.target) && menuState) {
-        checkbox.checked = false;
-
-        darkening.forEach(item => toggleCSSProperty(item, 'filter', 'brightness(1)'));
-    }
-});
-
-function toggleCSSProperty(element, property, value) {
-    const currentValue = element.style.getPropertyValue(property);
-
-    if (currentValue) {
-        element.style.removeProperty(property);
-    } else {
-        element.style.setProperty(property, value);
-    }
-}

@@ -1,17 +1,15 @@
 #newsletter-section .button {   
+    appearance: none;
+    background-image: none;
+    padding-right: 1rem;
+    cursor: pointer;
+
     color: var(--dark-font-color);
     background-color: var(--highlight-color);
-    background-image: none;
-
     border: 2px solid var(--highlight-color);
     border-radius: 4px;
-
     padding: 0.5rem;
-    padding-right: 1rem;
-
     outline: none;
-    cursor: pointer;
-    appearance: none;
 
     transition: all 0.2s ease-in-out;
 }

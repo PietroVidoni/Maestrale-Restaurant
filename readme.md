@@ -13,3 +13,9 @@ customer request:
 - [ ] Alessandro wants a space in the website to login as an administrator
     and to handle reservations. Remove yelp iframe and implement our own
     way to handle reservation.
+### Coding Convention
+
+#### CSS
+Start with a 'global' id for the most outer html object you have in your code.
+
+#### HTML

@@ -21,7 +21,7 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    padding-bottom: 100%; /* Creates a square aspect ratio */
+    padding-bottom: 100%;
 }
 
 #gallery-section .image-wrapper .image {
@@ -46,7 +46,7 @@
     top: 0;
     height: 100%;
     color: white;
-    transition: all 0.25s ease-in;
+    transition: opacity 0.8s ease-in-out;
     overflow-y: auto;
 }
 
@@ -55,14 +55,18 @@
 }
 
 #gallery-section .blur img {
-
-    transition: all .5s;
+    transition: all 0.8s;
+    filter: none;
 }
-
 
 #gallery-section .blur:hover img {
     filter: blur(5px) brightness(0.4);
     border: 10px solid var(--dark-font-color);
+}
+
+#gallery-section .blur:not(:hover) img {
+    filter: blur(0);
+    transition: filter 0.8s ease-in-out;
 }
 
 #gallery-section .menu-link {

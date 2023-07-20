@@ -55,7 +55,6 @@
 #location-section .input:focus {
     border: 2px solid var(--highlight-color);
     background-color: var(--main-1-color);
-    
 }
 
 /* Contact us modal */

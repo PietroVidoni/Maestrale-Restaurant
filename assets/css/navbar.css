@@ -8,7 +8,8 @@
 
 #header .navbar a {
   background-color: transparent;
-  height: 90px; /* height of the logo */
+  height: var(--navbar-height);
+  z-index: 10;
 }
 
 .navbar-burger {
@@ -36,7 +37,7 @@
 }
 
 #header .button-highlight {
-    background-image: url('/assets/images/svg/button-highlight.svg');
+    background-image: url('../images/svg/button-highlight.svg');
     background-repeat: no-repeat;   
     background-size: contain;
 
@@ -46,10 +47,6 @@
 
 #burger-menu-button {
   opacity: 0;
-}
-
-#burger-menu-button:checked ~ .menu-box {
-  left: 0 !important;
 }
 
 .menu-box {
@@ -68,15 +65,11 @@
   padding: 10px 0;
   
   transition-duration: .25s;
-  overflow-y: auto;
 
-  z-index: 20;
+  z-index: 30;
 }
 
 .menu-item {
   color: black;
   transition-duration: .25s;
-  
 }
-
-

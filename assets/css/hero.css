@@ -3,7 +3,7 @@
 */
 
 #hero-section {
-    background-image: url('/assets/images/food/wines-1.jpg');
+    background-image: url('../images/food/wines-1.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -19,22 +19,4 @@
 #hero-section .menu-description {
     margin-top: 16rem;
     color: var(--light-font-color);
-}
-
-#hero-section .custom-button {
-    
-    background-color: var(--trasparent-black-1);
-    color: var(--light-font-color);
-
-    width: 200px;
-
-    border: 2px solid var(--highlight-color);
-
-    cursor: pointer;
-    
-    transition: all 0.2s ease;
-}
-
-#hero-section .custom-button:hover {
-    transform: scale(1.1);
 }

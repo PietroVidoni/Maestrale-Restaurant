@@ -10,8 +10,6 @@
     background-color: var(--main-1-color);
     border: 2px solid var(--highlight-color);
 
-    max-width: 600px;
-
     transition: all 250ms;
 }
 
@@ -36,9 +34,6 @@
 }
 
 #event-section .card:hover .event-date {
-    background-color: var(--main-1-color);
-    color: var(--light-font-color);
-
     border: 2px solid var(--main-1-color);
 }
 
