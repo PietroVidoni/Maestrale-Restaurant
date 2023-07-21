@@ -39,8 +39,8 @@ function toggleCSSProperty(element, property, value) {
         element.style.setProperty(property, value);
     }
 }
-/* Highlights the section you are looking at */
 
+/* Highlights the section you are looking at */
 function highlightCurrentSection() {
     
     if (menuState) {
