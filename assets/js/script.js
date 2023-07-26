@@ -1,10 +1,11 @@
 /* Navbar hamburger */
 
 const darkening = document.querySelectorAll('.darkening');
-const main = document.getElementById('main');
 const menu = document.querySelector('.navbar-burger');
 const checkbox = document.getElementById('burger-menu-button');
 const burger_menu = document.getElementById("navbarBurgerMenu");
+
+const pageSections = document.getElementsByTagName('section');
 
 let menuState = false;
 
@@ -14,7 +15,8 @@ checkbox.addEventListener('click', () => {
 
         burger_menu.style.left = menuState ? "0%" : "-100%";
         darkening.forEach(item => toggleCSSProperty(item, 'filter', 'brightness(0.4)'));
-        toggleCSSProperty(main, 'filter', 'brightness(0.4)');
+
+        Array.from(pageSections).forEach(item => toggleCSSProperty(item, 'filter', 'brightness(0.4)'));
     }
 });
 
@@ -24,7 +26,7 @@ document.addEventListener('click', function (e) {
         menuState = false;
         burger_menu.style.left = "-100%";
         darkening.forEach(item => toggleCSSProperty(item, 'filter', 'brightness(1)'));
-        toggleCSSProperty(main, 'filter', 'brightness(1)');
+        Array.from(pageSections).forEach(item => toggleCSSProperty(main, 'filter', 'brightness(1)'));
     }
 });
 
@@ -37,9 +39,8 @@ function toggleCSSProperty(element, property, value) {
         element.style.setProperty(property, value);
     }
 }
-/* Highlights the section you are looking at */
-const pageSections = document.getElementsByTagName('section')
 
+/* Highlights the section you are looking at */
 function highlightCurrentSection() {
     
     if (menuState) {
