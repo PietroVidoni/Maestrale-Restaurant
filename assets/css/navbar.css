@@ -1,80 +1,81 @@
 /*
   Navbar code
 */
-
-#header .navbar {
-  background-color: var(--trasparent-black-1);
-}
-
-#header .navbar-brand img {
-  image-rendering: crispEdges;
-  shape-rendering: crispEdges;
-}
-
-#header .navbar a {
-  background-color: transparent;
-  height: var(--navbar-height);
-  z-index: 10;
-}
-
-.navbar-burger {
-  color: var(--light-font-color);
-}
-
-#header .navbar-item {
-
-    display: flex;
-    justify-content: center;
-
-    width: 150px;
-
-    color: var(--light-font-color);
-}
-
-#header .navbar-hidden {
-    transform: translateY(-100%);
-    transition: transform 0.3s ease;
-}
-
-#header .navbar-visible {
-    transform: translateY(0);
-    transition: transform 0.3s ease;
-}
-
-#header .button-highlight {
-    background-image: url('../images/svg/button-highlight.svg');
-    background-repeat: no-repeat;   
-    background-size: contain;
-
-    background-position: center;
-    z-index: inherit;
-}
-
-#burger-menu-button {
-  opacity: 0;
-}
-
-.menu-box {
-  display: block;
-  position: fixed;
-
+#navbar .navbar {
   background-color: transparent;
 
-  top: 0;
-  left: -100%;
+  transition: all 250ms ease-in-out;
+}
 
-  width: 270px;
+#navbar .navbar-brand  {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+#navbar .navbar-brand .navbar-item img {
+  width: auto;
+  height: 52px;
+
+  max-height: none;
+  max-width: none;
+}
+
+#navbar .navbar-burger div {
   height: 100%;
-
-  margin: 0;
-  padding: 10px 0;
-  
-  transition-duration: .25s;
-
-  z-index: 30;
 }
 
-.menu-item {
-  color: black;
-  transition-duration: .25s;
+#navbar .navbar-brand i, #navbar .navbar-menu a {
+  color: var(--light-font-color);
+
+  transition: all 250ms;
+}
+
+#navbar .navbar-brand:hover i, #navbar .navbar-menu a:hover {
+  color: var(--highlight-color);
+}
+
+#navbar .navbar-menu {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  width: fit-content;
+  float: right;
+  
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+  #navbar .navbar-menu {
+    display: flex !important;
+    justify-content: space-between;
+  }
+
+  #navbar .navbar {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+#navbar .navbar-menu .navbar-item {
+  flex: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+#navbar .navbar-menu .navbar-item:hover {
+  transform: scale(1.1);
+  background-color: transparent;
+}
+
+#navbar .navbar-end {
+  position: relative;
+}
+
+#navbar .navbar-current {
+  color: var(--highlight-color);
+  transform: scale(1.1);
+}
+
+.hide-navbar {
+  transform: translateY(-100%);
 }

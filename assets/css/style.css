@@ -54,6 +54,8 @@
 html, main {
     background-color: var(--main-1-color);
     scroll-behavior: smooth;
+
+    overscroll-behavior: none;
 }
 
 .title-font {

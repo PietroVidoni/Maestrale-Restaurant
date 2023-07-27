@@ -1,92 +1,33 @@
 <!DOCTYPE html>
-
-<header id="header">
-
+<header id="navbar">
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand is-flex is-justify-content-space-between is-align-items-center">
-            <a class="darkening" href="?page=home">
-                <img src="./assets/images/svg/logo.svg" alt="'Logo Restaurant">
+        <div class="navbar-brand">
+          <a class="navbar-item p-0" href="#">
+            <img src="./assets/images/svg/navbar-logo.svg">
+          </a>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <div class="is-flex is-justify-content-center is-align-items-center">
+                <i class="fas fa-utensils"></i>
+            </div>
+          </a>
+        </div>
+        <div id="navbar-links" class="navbar-menu is-hidden">
+          <div class="navbar-end">
+            <a class="navbar-item text-font mx-3" href="#">
+                Home
             </a>
-
-            <input id="burger-menu-button" type="checkbox" />
-            <label class="navbar-burger mr-5" data-target="navbarMenu" for="burger-menu-button">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-
+            <a class="navbar-item text-font mx-3" href="about.html">
+                About Us
+            </a>
+            <a class="navbar-item text-font mx-3" href="menus.html">
+                Menu
+            </a>
+            <a class="navbar-item text-font mx-3" href="events.html">
+                Events
+            </a>
+            <a class="navbar-item text-font mx-3" href="#location-section">
+                Contact Us
+            </a>
         </div>
-
-        <div id="navbarMenu" class="mr-3 navbar-menu darkening">
-            <div class="navbar-end">
-                <a class="navbar-item has-text-weight-normal has-background-transparent" href="?page=home#home"
-                    onclick="toggleShape(this)">
-                    Home
-                </a>
-                <a class="navbar-item has-text-weight-normal has-background-transparent" href="?page=about"
-                    onclick="toggleShape(this)">
-                    About
-                </a>
-                <a class="navbar-item has-text-weight-normal has-background-transparent" href="?page=menus"
-                    onclick="toggleShape(this)">
-                    Menus
-                </a>
-                <a class="navbar-item has-text-weight-normal has-background-transparent" href="?page=events"
-                    onclick="toggleShape(this)">
-                    Event
-                </a>
-                <a class="navbar-item has-text-weight-normal has-background-transparent" href="?page=home#contact_us"
-                    onclick="toggleShape(this)">
-                    Contact Us
-                </a>
-            </div>
-        </div>
-    </nav>
-
-    <ul class="menu-box columns" id="navbarBurgerMenu">
-        <div class="column has-text-centered">
-            <div class="box-animation">
-
-                <a>
-                    <img src="./assets/images/svg/hamburgerLogo.svg">
-                </a>
-
-                <div class="is-mobile mt-5">
-                    <div class="column has-text-left">
-                        <li class=""><a class="ml-2 menu-item" href="?page=home#home">Home</a></li>
-                        <li class="mt-2"><a class="ml-2 menu-item" href="?page=about">About</a></li>
-                        <li class="mt-2"><a class="ml-2 menu-item" href="?page=menus">Menus</a></li>
-                        <li class="mt-2"><a class="ml-2 menu-item" href="?page=events">Event</a></li>
-                        <li class="mt-2"><a class="ml-2 menu-item" href="?page=home#contact_us">Contact Us</a></li>
-                    </div>
-                </div>
-
-                <p>Visit Us:</p>
-
-                <div class="mt-3"></div>
-
-                <address>
-                    7515 S Tamiami Trl, <br>
-                    Sarasota, FL 34231-6901
-                </address>
-
-                <div class="mt-4"></div>
-
-                <p>Open: 17.00 pm - 22.00.pm</p>
-
-                <div class="mt-1"></div>
-
-                <a href="mailto:maestraleflorida@gmail.com">maestraleflorida@gmail.com</a>
-
-                <div class="mt-4"></div>
-
-                <p>Booking Request</p>
-
-                <a href="tel:+1 941 312 5410">
-                    +1 941 312 5410
-                </a>
-
-            </div>
-        </div>
-    </ul>
+      </nav>
 </header>
