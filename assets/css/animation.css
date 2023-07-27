@@ -85,8 +85,8 @@
 }
 
 .box-animation:hover {
-    padding-left: 0.5rem;
-    border-left: 0.5rem solid var(--highlight-color-2);
+    /*padding-left: 0.5rem;*/
+    /*border-left: 0.5rem solid var(--highlight-color-2);*/
 }
 
 .box-animation > :first-child {
@@ -96,45 +96,6 @@
 .box-animation > :last-child {
     margin-bottom: 0;
 }
-
-/* Old Button animations (dont delete until approval)
-.button-fill-animation {
-    display: inline-block;
-    padding: 16px;
-    overflow: hidden;
-
-    color: var(--light-font-color);
-    background-color: var(--trasparent-black-1);
-    
-    text-decoration: none;
-    
-    border: 2px solid var(--highlight-color);
-    border-radius: 3px;
-    
-    background-position: 0 -100%;
-    background-repeat: repeat-x;
-    
-    transition: all .8s ease;
-
-    cursor: pointer;
-}
-
-.button-fill-animation a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.button-fill-animation:hover {
-    background-position: 100% 100%;
-    border-color: var(--highlight-color);
-    transform: scale(1);
-}
-
-.button-fill-background {
-    background-image: url('/assets/images/svg/button-fill.svg');
-}*/
-
-
 
 /* New button animation */
 .button-fill-animation {
