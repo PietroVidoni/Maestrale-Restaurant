@@ -109,6 +109,29 @@ a:active {
     outline: none;
 }
 
+/* Input fields*/
+
+.input {
+    border: 2px solid var(--main-2-color);
+    background-color: var(--main-1-color);
+    color: var(--light-font-color);
+
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+    transition: all 100ms ease-in-out;
+}
+
+.input::placeholder {
+    color: var(--light-font-color-a);
+}
+
+.input:focus {
+    border: 2px solid var(--highlight-color);
+
+    background-color: var(--main-1-color);
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
     width: 4px;
