@@ -1,19 +1,29 @@
 
-@media screen and (max-width > 1024px) {
+/* Styles for the location */
+
+/* Media query for screens with max width greater than 1024px */
+@media screen and (max-width: 1024px) {
+    /* Styles for location description within the location section */
     #location-section .location-description {
-        line-height: 2.25rem;
-    }    
+        line-height: 2.25rem; /* Adjusted line height for smaller screens */
+    }
 }
 
+/* Styles for modal content within the location section */
 #location-section .modal-content {
+    /* Background and border styles for modal content */
     background-color: var(--main-1-color);
     border: 2px solid var(--highlight-color);
 }
 
+/* Styles for labels within the location section */
 #location-section label {
+    /* Sets text color for labels */
     color: var(--light-font-color);
 }
-/* Contact us modal */
+
+/* Styles for the contact us modal within the location section */
 #location-section .modal {
+    /* Sets z-index for the modal */
     z-index: 999;
 }

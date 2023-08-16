@@ -1,88 +1,96 @@
-/*
-  Navbar code
-*/
-#navbar .navbar {
-  background-color: transparent;
 
-  transition: all 250ms ease-in-out;
+/* Styles for the navbar */
+
+/* Styles for the main navbar container */
+#navbar .navbar {
+  background-color: transparent; /* Background color for the navbar */
+  transition: all 250ms ease-in-out; /* Transition effect */
 }
 
+/* Styles for the navbar burger icon */
 #navbar .navbar-burger {
   display: flex;
-
   height: inherit;
   justify-content: center;
 }
 
-#navbar .navbar-brand  {
-  background-color: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(5px);
+/* Styles for the navbar brand */
+#navbar .navbar-brand {
+  background-color: rgba(0, 0, 0, 0.3); /* Background color with blur effect */
+  backdrop-filter: blur(5px); /* Blurring effect for the background */
 }
 
+/* Styles for the logo within the navbar brand */
 #navbar .navbar-brand .navbar-item img {
   width: auto;
-  height: var(--navbar-height);
-
+  height: var(--navbar-height); /* Set height for the logo */
   max-height: none;
   max-width: none;
 }
 
+/* Styles for icons and links within the navbar */
 #navbar .navbar-brand i, #navbar .navbar-menu a {
-  color: var(--light-font-color);
-
-  transition: all 250ms;
+  color: var(--light-font-color); /* Icon and link color */
+  transition: all 250ms; /* Transition effect */
 }
 
+/* Hover styles for icons and links within the navbar */
 #navbar .navbar-brand:hover i, #navbar .navbar-menu a:hover {
-  color: var(--highlight-color);
+  color: var(--highlight-color); /* Highlight color on hover */
 }
 
+/* Styles for the navbar menu */
 #navbar .navbar-menu {
   display: flex;
   justify-content: flex-end;
-  background-color: rgba(0, 0, 0, 0.3);
-
+  background-color: rgba(0, 0, 0, 0.3); /* Background color for the menu */
   width: fit-content;
   float: right;
-  
   overflow: hidden;
 }
 
+/* Media query for screens with minimum width 1024px */
 @media screen and (min-width: 1024px) {
+  /* Adjusted styles for larger screens */
   #navbar .navbar-menu {
     display: flex !important;
     justify-content: space-between;
   }
-
+  
   #navbar .navbar {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3); /* Background color for the navbar */
   }
-
+  
   #navbar .navbar-burger {
-    display: none;
+    display: none; /* Hide the burger icon */
   }
 }
 
+/* Styles for individual items within the navbar menu */
 #navbar .navbar-menu .navbar-item {
   flex: 1;
   text-align: center;
   white-space: nowrap;
 }
 
+/* Hover styles for navbar menu items */
 #navbar .navbar-menu .navbar-item:hover {
-  transform: scale(1.1);
-  background-color: transparent;
+  transform: scale(1.1); /* Enlarge on hover */
+  background-color: transparent; /* Transparent background on hover */
 }
 
+/* Styles for items at the end of the navbar menu */
 #navbar .navbar-end {
   position: relative;
 }
 
+/* Styles for the current page indicator */
 #navbar .navbar-current {
-  color: var(--highlight-color);
-  transform: scale(1.1);
+  color: var(--highlight-color); /* Color for current page */
+  transform: scale(1.1); /* Enlarge for current page */
 }
 
+/* Styles to hide the navbar */
 .hide-navbar {
-  transform: translateY(-100%);
+  transform: translateY(-100%); /* Move the navbar out of view */
 }

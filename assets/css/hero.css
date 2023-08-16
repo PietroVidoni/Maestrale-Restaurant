@@ -1,22 +1,25 @@
-/*
-    Hero-section 
-*/
+
+/* Styles for the Hero Section */
 
 #hero-section {
+    /* Sets background image for the hero section */
     background-image: url('../images/food/wines-1.jpg');
     background-size: cover;
     background-position: center;
 }
 
+/* Styles for the content wrapper within the hero section */
 #hero-section .content-wrapper {
+    /* Styles for the flex container */
     display: flex;
     flex-direction: column;
-
     align-items: center;
-    padding: 8rem 0;
+    padding: 8rem 0; /* Top and bottom padding, 0 left and right */
 }
 
+/* Styles for buttons within the hero section */
 #hero-section button {
-    margin-top: 22rem;
-    color: var(--light-font-color);
+    /* Styles for the button */
+    margin-top: 22rem; /* Margin from the top */
+    color: var(--light-font-color); /* Text color */
 }

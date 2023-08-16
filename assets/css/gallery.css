@@ -1,19 +1,28 @@
-#gallery-section {
-    background-image: url('../images/food/food-background-2.jpg');
 
+/* Styles for the Gallery Section */
+
+#gallery-section {
+    /* Sets background image for the gallery section */
+    background-image: url('../images/food/food-background-2.jpg');
     background-size: cover;
     background-position: center;
 }
 
+/* Styles for individual columns within the gallery */
 #gallery-section .columns > div {
+    /* Sets maximum width for individual columns */
     max-width: 500px;
 }
 
+/* Styles for the gallery description */
 #gallery-section .gallery-description {
+    /* Sets text color for the gallery description */
     color: var(--light-font-color);
 }
 
+/* Styles for the image wrapper */
 #gallery-section .image-wrapper {
+    /* Styles for the wrapper containing the images */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,22 +32,27 @@
     padding-bottom: 100%; /* Creates a square aspect ratio */
 }
 
+/* Styles for images within the image wrapper */
 #gallery-section .image-wrapper .image {
+    /* Styles for the images themselves */
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-
     border: 2px solid var(--highlight-color);
 }
 
+/* Styles for the image description */
 #gallery-section .image-description {
+    /* Styles for the image description */
     overflow-y: auto;
 }
 
+/* Styles for the blur effect on images */
 #gallery-section .blur p {
+    /* Styles for the hidden text over the image */
     opacity: 0;
     position: absolute;
     left: 0;
@@ -49,15 +63,18 @@
     overflow-y: auto;
 }
 
+/* Hover styles for the hidden text over images */
 #gallery-section .blur:hover p {
     opacity: 1;
 }
 
+/* Styles for images within the blur effect */
 #gallery-section .blur img {
-
+    /* Transition for image blur effect */
     transition: all .5s;
 }
 
+/* Hover styles for images within the blur effect */
 #gallery-section .blur:hover img {
     filter: blur(5px) brightness(0.4);
     border: 10px solid var(--dark-font-color);

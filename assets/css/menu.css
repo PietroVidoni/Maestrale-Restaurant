@@ -1,41 +1,55 @@
+
+/* Styles for the menu */
+
+/* Importing Google Fonts */
+/* Imports the Gentium Book Plus and Carattere fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Gentium+Book+Plus');
 @import url('https://fonts.googleapis.com/css?family=Carattere');
 
+/* Styles for the Menu Section */
 #menu-section {
+    /* Sets padding at the top to create space for the menu section */
     padding-top: calc(var(--navbar-height) + 4rem);
-    background-color: var(--main-2-color);
+    background-color: var(--main-2-color); /* Background color */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
-    overflow-y: hidden;
-
-    color: var(--light-font-color);
+    overflow-y: hidden; /* Hides vertical overflow */
+    color: var(--light-font-color); /* Text color */
 }
 
+/* Styles for heading level 1 within the menu section */
 #menu-section h1 {
+    /* Background color for heading level 1 */
     background-color: transparent;
 }
 
+/* Styles for heading level 2 within the menu section */
 #menu-section h2 {
+    /* Styles for heading level 2, aligning and justifying center */
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.1); /* Background color */
 }
 
-
+/* Styles for the menu description within the menu section */
 #menu-section .menu-description {
-    font-family: 'Gentium Book Plus';
-    font-weight: normal;
+    /* Styles for the menu description text */
+    font-family: 'Gentium Book Plus'; /* Set font-family */
+    font-weight: normal; /* Set font weight */
 }
 
+/* Styles for menu entries */
 .menu-entry {
-    font-family: 'Gentium Book Plus';
-    font-weight: normal;
+    /* Styles for menu entries */
+    font-family: 'Gentium Book Plus'; /* Set font-family */
+    font-weight: normal; /* Set font weight */
 }
 
+/* Styles for menu titles */
 #menu-section .menu-title {
-    font-family: 'Gentium Book Plus';
-    font-weight: normal;
+    /* Styles for menu titles */
+    font-family: 'Gentium Book Plus'; /* Set font-family */
+    font-weight: normal; /* Set font weight */
 }

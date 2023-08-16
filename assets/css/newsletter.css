@@ -1,12 +1,21 @@
+
+/* Styles for the newslatter */
+
+/* Styles for the modal content within the newsletter section */
 #newsletter-section .modal-content {
+    /* Background and border styles for modal content */
     background-color: var(--main-1-color);
     border: 2px solid var(--highlight-color);
 }
 
+/* Styles for labels within the newsletter section */
 #newsletter-section label {
+    /* Sets text color for labels */
     color: var(--light-font-color);
 }
 
+/* Styles for icons within the newsletter section */
 #newsletter-section .icon {
+    /* Sets color for icons */
     color: var(--light-font-color);
 }
