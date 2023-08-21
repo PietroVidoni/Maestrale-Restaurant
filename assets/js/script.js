@@ -1,75 +1,41 @@
-/**
- * @fileoverview Manages functionality for a responsive navbar, highlighting active links, and scroll behavior.
- * This script handles the hamburger button interaction, highlights active links in the navbar,
- * and controls the behavior of the navbar on scroll.
- * 
- * @module NavbarManager
- */
-
-/**
- * Selects the hamburger button element from the DOM.
- * 
- * @constant {HTMLElement}
- */
+/* Navbar hamburger */
+// Select the navbar burger button
 const burgerButton = document.getElementsByClassName('navbar-burger').item(0);
-
-/**
- * Selects the navbar links container from the DOM.
- * 
- * @constant {HTMLElement}
- */
+// Get the navbar links container
 const navbarLinks = document.getElementById('navbar-links');
 
-/**
- * Handles the click event for the hamburger button.
- * Toggles the visibility of the navbar links when the button is clicked.
- * 
- * @function
- * @returns {void}
- */
+// Add click event listener to toggle the visibility of navbar links
 burgerButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('is-hidden');
 });
 
 /* Navbar highlight */
-
-// Highlights the active link in the navbar
+// Convert the navbar links to an array
 const navbarButtons = Array.from(navbarLinks.getElementsByTagName('a'));
+// Highlight the active link based on the current URL
 navbarButtons.forEach(btn => {
     if (window.location.href.includes(btn.getAttribute('href'))) {
+        // Add the 'active' class to the active link
         btn.classList.add('active');
     }
 });
 
 /* Navbar scroll */
-
-/**
- * Tracks the previous scroll position to control navbar behavior.
- * 
- * @type {number}
- */
+// Store the previous scroll position
 let previousScrollPosition = window.scrollY;
-
-/**
- * Selects the navbar element from the DOM.
- * 
- * @constant {HTMLElement}
- */
+// Get the navbar element
 const navbar = document.getElementsByClassName('navbar').item(0);
 
-/**
- * Handles the scroll event for the window.
- * Controls the behavior of the navbar's visibility on scroll.
- * 
- * @function
- * @returns {void}
- */
+// Add scroll event listener to handle navbar visibility on scroll
 window.addEventListener('scroll', () => {
     if (window.scrollY > previousScrollPosition) {
+        // Scroll down, hide the navbar
         navbar.classList.add('hide-navbar');
     } else {
+        // Scroll up, show the navbar
         navbar.classList.remove('hide-navbar');
     }
 
+    // Update the previous scroll position
     previousScrollPosition = window.scrollY;
 });
