@@ -128,32 +128,34 @@
                 <div id="contact-modal" class="modal">
                     <div class="modal-background"></div>
 
-                    <form class="modal-content box has-text-centered " action="assets/php/mail.php" method="post"
+                    <form class="modal-content box has-text-centered p-0" action="assets/php/mail.php" method="post"
                         id="message-form">
-                        <h2 class="title is-size-1 has-text-centered py-3 mt-4 title-font">Send us a message</h2>
-                        <div>
-                            <input class="input" type="text" placeholder="Name" name="name" required>
+                        <div class="modal-header">
+                            <h2 class="title is-size-1 has-text-centered py-3 py-5 title-font">Send us a message</h2>
                         </div>
-                        <div>
-                            <input class="input mt-5" type="tel" placeholder="Phone number" name="phone">
-                        </div>
-                        <div>
-                            <input class="input mt-5" type="email" placeholder="Email" name="email" required>
-                        </div>
-                        <div>
-                            <input class="input mt-5" type="text" placeholder="Message" name="message" required>
-                        </div>
-
-                        <div class="has-text-centered my-4 mt-5 is-flex is-justify-content-flex-end">
-                            <button type="submit" id="send-message-button" class="js-modal-trigger button-fill-animation button-fill-background"
-                                data-target="contact-modal">Send message</button>
+                        <div class="p-5">
+                            <div>
+                                <input class="input mt-5" type="text" placeholder="Name" name="name" required>
+                            </div>
+                            <div>
+                                <input class="input mt-5" type="tel" placeholder="Phone number" name="phone">
+                            </div>
+                            <div>
+                                <input class="input mt-5" type="email" placeholder="Email" name="email" required>
+                            </div>
+                            <div>
+                                <input class="input mt-5" type="text" placeholder="Message" name="message" required>
+                            </div>
+                            <div class="has-text-centered my-4 is-flex is-justify-content-flex-end">
+                                <button type="submit" id="send-message-button" class="js-modal-trigger is-size-5-desktop is-size-6-touch button-fill-animation button-fill-background"
+                                    data-target="contact-modal">Send message</button>
+                            </div>
                         </div>
                     </form>
 
                     <button class="modal-close is-large" aria-label="close"></button>
                 </div>
-                <button id="contact-button" class="my-6 js-modal-trigger button-fill-animation button-fill-background"
-                    data-target="contact-modal">
+                <button id="contact-button" class="mt-6 js-modal-trigger is-size-5-desktop is-size-6-touch button-fill-animation button-fill-background" data-target="contact-modal">
                     Contact us
                 </button>
             </div>
