@@ -1,4 +1,3 @@
-
 /* Styles for the newslatter */
 
 /* Styles for the modal content within the newsletter section */
@@ -12,6 +11,10 @@
 #newsletter-section label {
     /* Sets text color for labels */
     color: var(--light-font-color);
+}
+
+#newsletter-section .modal-content .input::placeholder {
+    color: var(--main-2-color);
 }
 
 /* Styles for icons within the newsletter section */

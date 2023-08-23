@@ -16,6 +16,10 @@
     border: 2px solid var(--highlight-color);
 }
 
+#location-section .modal-content .input::placeholder {
+    color: var(--main-2-color);
+}
+
 /* Styles for labels within the location section */
 #location-section label {
     /* Sets text color for labels */
