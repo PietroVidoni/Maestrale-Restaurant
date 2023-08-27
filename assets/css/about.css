@@ -12,6 +12,10 @@
     overflow-x: hidden;
 }
 
+#about-section img {
+    border: 2px solid var(--highlight-color);
+}
+
 /* Styles for text within the About Container */
 #about-section .about-container p {
     /* Sets text color, margins, and background color for paragraphs in about container */
