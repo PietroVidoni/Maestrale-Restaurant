@@ -1,13 +1,6 @@
 
 /* Styles for the Gallery Section */
 
-#gallery-section {
-    /* Sets background image for the gallery section */
-    background-image: url('../images/food/food-background-2.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
 /* Styles for individual columns within the gallery */
 #gallery-section .columns > div {
     /* Sets maximum width for individual columns */
