@@ -56,7 +56,7 @@ session_start();
         exit;
     }
     ?>
-
+    
     <!-- Navbar start -->
     <?php include 'navbar.html'; ?>
     <!-- Navbar end -->
