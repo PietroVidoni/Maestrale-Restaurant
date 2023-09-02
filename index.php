@@ -31,14 +31,10 @@ session_start();
 </head>
 
 <body>
-    <!-- Preloader Start -->
-
     <div class="preload" data-preaload>
         <div class="circle"></div>
         <p class="text">maestrale</p>
     </div>
-
-    <!-- Preloader end -->
 
     <?php
     if (isset($_GET['page'])) {
@@ -56,15 +52,10 @@ session_start();
         exit;
     }
     ?>
-    
-    <!-- Navbar start -->
+
     <?php include 'navbar.html'; ?>
-    <!-- Navbar end -->
 
-    <!-- Footer start -->
     <?php  include 'footer.html'; ?>
-    <!-- Footer end -->
-
 </body>
 
 </html>

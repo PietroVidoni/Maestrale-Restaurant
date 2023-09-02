@@ -1,12 +1,16 @@
 /* 
-    Style.css
+   Main CSS Stylesheet
 */
+
+/* Google Fonts Imports */
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Montserrat:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Gentium+Book+Plus');
 @import url('https://fonts.googleapis.com/css?family=Carattere');
 
+/* Root Variables */
 :root {
+    /* Color variables */
     --main-1-color: hsla(210, 4%, 9%, 1);
     --main-2-color: #424242;
     --footer-color: #0f0f0f;
@@ -14,72 +18,65 @@
     --highlight-color-2: #e88c35;
     --light-font-color: #fffcfc;
     --dark-font-color: #090708;
-
-    --smoky-black-1: hsla(40, 12%, 5%, 1);
-    --smoky-black-2: hsla(30, 8%, 5%, 1);
-    --smoky-black-3: hsla(0, 3%, 7%, 1);
-
-    --trasparent-black-1: rgba(0, 0, 0, 0.5);
-
-    /* transition */
-    --light-font-color-a: #e3e3e355;
+    /* Preload animation color variables */
     --smoky-black-1: hsla(40, 12%, 5%, 1);
     --smoky-black-2: hsla(30, 8%, 5%, 1);
     --smoky-black-3: hsla(0, 3%, 7%, 1);
     --trasparent-black-1: rgba(0, 0, 0, 0.5);
-
-    /* transition */
+    /* Animation transition variables */
     --transition-1: 250ms ease;
     --transition-2: 500ms ease;
     --transition-3: 1000ms ease;
-
-    /* radius */
+    /* animation radius variables */
     --radius-24: 24px;
     --radius-circle: 50%;
-
-    /* font */
+    /* Font weight variables */
     --weight-regular: 400;
     --weight-bold: 700;
-
+    /* Loading text gradient */
     --loading-text-gradient: linear-gradient(90deg, transparent 0% 16.66%, var(--smoky-black-3) 33.33% 50%, transparent 66.66% 75%);
-
-    --navbar-height: 90px;
+    /* Navbar height variable */
+    --navbar-height: 70px;
 }
 
+/* Reset default margin and padding */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Global HTML and main element styles */
 html, main {
     background-color: var(--main-1-color);
     scroll-behavior: smooth;
+    overscroll-behavior: none;
 }
 
+/* Title Font */
 .title-font {
     font-family: 'Poppins';
     font-weight: bold;
     color: var(--light-font-color);
-
     transition: all 250ms;
 }
 
+/* Text Font */
 .text-font {
     font-family: 'Montserrat';
     font-weight: normal;
     color: var(--light-font-color);
-
     transition: all 250ms;
 }
 
+/* Detail Font */
 .detail-font {
     font-family: 'Montserrat';
     font-weight: normal;
     color: var(--light-font-color);
-
     transition: all 250ms;
 }
 
+/* Menu Font */
 .menu-font {
     font-family: 'Carattere';
     font-weight: normal;
@@ -91,10 +88,12 @@ html, main {
     background-color: var(--highlight-color);
 }
 
+/* Transitions for sections */
 section {
     transition: all 500ms ease-in-out;
 }
 
+/* Media query for smaller screens */
 @media (max-width: 769px) {
     .mx-6 {
         margin-left: 1.5rem !important;
@@ -102,12 +101,35 @@ section {
     }
 }
 
+/* Active link styles */
 a:active {
     background-color: transparent;
     outline: none;
 }
 
-/* Scrollbar */
+/* Input fields */
+.input {
+    border: 2px solid var(--main-2-color);
+    background-color: var(--main-1-color);
+    color: var(--light-font-color);
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+    transition: all 100ms ease-in-out;
+}
+
+/* Placeholder color for input fields */
+.input::placeholder {
+    color: var(--light-font-color-a);
+}
+
+/* Focus styles for input fields */
+.input:focus {
+    border: 2px solid var(--highlight-color);
+    background-color: var(--main-1-color);
+}
+
+/* Scrollbar styles */
 ::-webkit-scrollbar {
     width: 4px;
     background-color: var(--smoky-black-3);
@@ -124,5 +146,5 @@ a:active {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--highlight-color)
+    background-color: var(--highlight-color);
 }

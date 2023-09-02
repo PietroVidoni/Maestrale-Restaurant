@@ -1,15 +1,21 @@
 
-#reservation-section {
-    background-image: url('../images/location/interior-2.jpg');
+/* Styles for the reservation section */
 
+#reservation-section {
+    /* Sets background image for the reservation section */
+    background-image: url('../images/location/interior-2.jpg');
     background-position: center;
     background-size: cover;
 }
 
+/* Styles for the disclaimer within the reservation section */
 #reservation-section .disclaimer {
+    /* Background color for the disclaimer */
     background-color: var(--main-1-color);
 }
 
+/* Styles for the Yelp iframe container within the reservation section */
 #reservation-section .yelp-container iframe {
+    /* Sets overflow to hidden for the iframe container */
     overflow: hidden;
 }

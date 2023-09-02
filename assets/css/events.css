@@ -1,76 +1,88 @@
 
-#event-section {
-    padding-top: 7rem;
+/* Styles for the Event Section */
 
+#event-section {
+    /* Adds top padding and sets background image for the event section */
+    padding-top: 7rem;
     background-image: url('../images/food/wine-background.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+/* Styles for event cards */
 #event-section .card {
+    /* Sets background color and border for event cards */
     background-color: var(--main-1-color);
     border: 2px solid var(--highlight-color);
-
     transition: all 250ms;
 }
 
+/* Hover styles for event cards */
 #event-section .card:hover {
     background-color: var(--highlight-color);
     border: 2px solid var(--highlight-color);
 }
 
+/* Hover styles for event card titles */
 #event-section .card:hover .event-title {
     border-bottom: 2px solid var(--light-font-color);
 }
 
+/* Hover styles for event card content description */
 #event-section .card:hover .content .event-description-text {
     color: var(--dark-font-color);
 }
+
+/* Hover styles for event card title text */
 #event-section .card:hover .event-title p {
     color: var(--dark-font-color);
 }
 
+/* Hover styles for event card titles */
 #event-section .card:hover .event-title {
     border-bottom: 2px solid var(--main-1-color);
 }
 
+/* Hover styles for event card dates */
 #event-section .card:hover .event-date {
     border: 2px solid var(--main-1-color);
 }
 
+/* Styles for content within event cards */
 #event-section .content {
     color: var(--light-font-color);
 }
 
+/* Styles for event description gradient */
 #event-section .event-description {
     background-image: linear-gradient(to bottom, var(--main-1-color) 75%, transparent);
 }
 
+/* Styles for event card titles */
 #event-section .event-title {
     border-bottom: 2px solid var(--highlight-color);
-
     transition: all 250ms;
 }
 
+/* Styles for text within event card titles */
 #event-section .event-title p {
     background-color: transparent;
     color: var(--light-font-color);
-    
     transition: all 250ms;
 }
 
+/* Styles for event card dates */
 #event-section .event-date {
     background-color: var(--highlight-color);
     color: var(--dark-font-color);
-
     border: 2px solid var(--main-1-color);
     border-radius: 10px;
     width: fit-content;
-
     transition: all 250ms;
 }
 
+/* Styles for "coming soon" text within event cards */
 #event-section .coming-soon p {
     color: var(--dark-font-color);
     background-color: var(--highlight-color);

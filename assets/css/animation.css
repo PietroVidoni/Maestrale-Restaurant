@@ -1,4 +1,6 @@
+/* Preloader Styles */
 .preload {
+    /* Styles for the preloader container */
     position: fixed;
     top: 0;
     left: 0;
@@ -12,20 +14,28 @@
     transition: var(--transition-2);
 }
 
+/* Styles for preloader elements */
 .preload > * {
+    /* Transitions for preloader elements */
     transition: var(--transition-1);
 }
 
+/* Styles for loaded preloader elements */
 .preload.loaded > * {
+    /* Hides loaded preloader elements */
     opacity: 0;
 }
 
+/* Styles for loaded preloader container */
 .preload.loaded {
+    /* Transitions and transformation for loaded preloader */
     transition-delay: 250ms;
     transform: translateY(100%);
 }
 
+/* Circle Animation Styles */
 .circle {
+    /* Styles for the rotating circle animation */
     width: 112px;
     height: 112px;
     border-radius: var(--radius-circle);
@@ -35,17 +45,19 @@
     animation: rotate360 1s linear infinite;
 }
 
+/* Keyframes for rotating animation */
 @keyframes rotate360 {
     0% {
         transform: rotate(0);
     }
-
     100% {
         transform: rotate(1turn);
     }
 }
 
+/* Loading Text Styles */
 .preload .text {
+    /* Styles for the loading text */
     background-image: var(--loading-text-gradient);
     background-size: 500%;
     font-size: calc(2rem + 3vw);
@@ -62,82 +74,76 @@
     animation: loadingText linear 2s infinite;
 }
 
+/* Keyframes for loading text animation */
 @keyframes loadingText {
     0% {
         background-position: 100%;
     }
-
     100% {
         background-position: 0%;
     }
 }
 
+/* Animation Box Styles */
+
 .box-animation {
+    /* Styles for the animated box */
     padding: 1rem;
     box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
         0 5px 15px 0 rgba(0, 0, 0, 0.08);
     background-color: var(--highlight-color);
     border-radius: 0.5rem;
-
     border-left: 0 solid var(--highlight-color-2);
     transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
     color: black;
 }
 
-.box-animation:hover {
-    /*padding-left: 0.5rem;*/
-    /*border-left: 0.5rem solid var(--highlight-color-2);*/
-}
-
 .box-animation > :first-child {
+    /* Margin adjustment for first child element in the animated box */
     margin-top: 0;
 }
 
 .box-animation > :last-child {
+    /* Margin adjustment for last child element in the animated box */
     margin-bottom: 0;
 }
 
 /* New button animation */
 .button-fill-animation {
+    /* Styles for the button with fill animation */
     position: relative;
     display: inline-block;
     padding: 16px;
     overflow: hidden;
-    
     color: var(--light-font-color);
     background-color: var(--trasparent-black-1);
-
     text-decoration: none;
-
     border: 2px solid var(--highlight-color);
     border-radius: 3px;
-
-
     z-index: 1;
-
     cursor: pointer;
 }
 
+/* Styles for the button fill background */
 .button-fill-background:before {
     content: "";
     position: absolute;
     background: var(--highlight-color);;
-
     bottom: 0;
     left: 0;
     right: 0;
     top: 100%;
-
     z-index: -1;
-
     transition: all .8s ease;
 }
 
+/* Hover styles for the button fill background */
 .button-fill-background:hover:before {
     border-color: var(--highlight-color);
     top: 0;
 }
 
+/* Styles for button link within the button fill animation */
 .button-fill-animation a {
     color: inherit;
     text-decoration: none;

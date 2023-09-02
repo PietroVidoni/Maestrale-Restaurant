@@ -1,108 +1,41 @@
 /* Navbar hamburger */
+// Select the navbar burger button
+const burgerButton = document.getElementsByClassName('navbar-burger').item(0);
+// Get the navbar links container
+const navbarLinks = document.getElementById('navbar-links');
 
-const darkening = document.querySelectorAll('.darkening');
-const menu = document.querySelector('.navbar-burger');
-const checkbox = document.getElementById('burger-menu-button');
-const burger_menu = document.getElementById("navbarBurgerMenu");
+// Add click event listener to toggle the visibility of navbar links
+burgerButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('is-hidden');
+});
 
-const pageSections = document.getElementsByTagName('section');
-
-let menuState = false;
-
-checkbox.addEventListener('click', () => {
-    if (typeof CSS.supports('backdrop-filter', 'blur(0)')) {
-        menuState = menuState ? false : true;
-
-        burger_menu.style.left = menuState ? "0%" : "-100%";
-        darkening.forEach(item => toggleCSSProperty(item, 'filter', 'brightness(0.4)'));
-
-        Array.from(pageSections).forEach(item => toggleCSSProperty(item, 'filter', 'brightness(0.4)'));
+/* Navbar highlight */
+// Convert the navbar links to an array
+const navbarButtons = Array.from(navbarLinks.getElementsByTagName('a'));
+// Highlight the active link based on the current URL
+navbarButtons.forEach(btn => {
+    if (window.location.href.includes(btn.getAttribute('href'))) {
+        // Add the 'active' class to the active link
+        btn.classList.add('active');
     }
 });
 
-document.addEventListener('click', function (e) {
-    if (!menu.contains(e.target) && !checkbox.contains(e.target) && menuState) {
-        checkbox.checked = false;
-        menuState = false;
-        burger_menu.style.left = "-100%";
-        darkening.forEach(item => toggleCSSProperty(item, 'filter', 'brightness(1)'));
-        Array.from(pageSections).forEach(item => toggleCSSProperty(main, 'filter', 'brightness(1)'));
-    }
-});
+/* Navbar scroll */
+// Store the previous scroll position
+let previousScrollPosition = window.scrollY;
+// Get the navbar element
+const navbar = document.getElementsByClassName('navbar').item(0);
 
-function toggleCSSProperty(element, property, value) {
-    const currentValue = element.style.getPropertyValue(property);
-
-    if (currentValue) {
-        element.style.removeProperty(property);
+// Add scroll event listener to handle navbar visibility on scroll
+window.addEventListener('scroll', () => {
+    if (window.scrollY > previousScrollPosition) {
+        // Scroll down, hide the navbar
+        navbar.classList.add('hide-navbar');
     } else {
-        element.style.setProperty(property, value);
-    }
-}
-
-/* Highlights the section you are looking at */
-function highlightCurrentSection() {
-    
-    if (menuState) {
-        return;
+        // Scroll up, show the navbar
+        navbar.classList.remove('hide-navbar');
     }
 
-    for (let i = 0; i < pageSections.length; i++) {
-        var rect = pageSections.item(i).getBoundingClientRect();
-        let screenHeight = Math.max(document.documentElement.clientHeight, window.innerHeight)
-
-        // Doesn't check the remaining section if the current one is out of view
-        if (rect.bottom < 0 || rect.top - screenHeight >= 0) {
-            continue
-        }
-
-        let isVisible = (rect.top - (screenHeight / 1.5) < 0) || (rect.top - (screenHeight / 1.5) < 0)
-        pageSections.item(i).style.filter = isVisible ? `` : `brightness(0.4)`
-    }
-}
-
-window.addEventListener('load', highlightCurrentSection)
-window.addEventListener('scroll', highlightCurrentSection)
-
-window.addEventListener("load", () => {
-    var links = document.querySelectorAll('.navbar-item');
-
-    var url = window.location.href;
-    var pageName = url.split("?page=")[1];
-
-    links.forEach(link => {
-        var itemName = link.innerHTML.replace(/\s/g, "");
-
-        if (pageName.includes(itemName.toLowerCase())) {
-            link.classList.add('button-highlight');
-            return;
-        }
-    })
-})
-
-function toggleShape(link) {
-    var links = document.querySelectorAll('.navbar-item');
-
-    links.forEach(link => {
-        link.classList.remove('button-highlight');
-        link.style.color = 'var(--light-font-color)';
-    });
-
-    link.classList.add('button-highlight');
-    link.style.color = 'var(--dark-font-color)';
-}
-
-const navbar = document.querySelector('.navbar');
-
-let prevScrollPos = window.scrollY;
-
-const handleScroll = () => {
-    let isVisible = prevScrollPos > window.scrollY || window.scrollY <= 0
-
-    navbar.classList.remove(isVisible ? 'navbar-hidden' : 'navbar-visible');
-    navbar.classList.add(isVisible ? 'navbar-visible' : 'navbar-hidden');
-
-    prevScrollPos = window.scrollY;
-};
-
-window.addEventListener('scroll', handleScroll);
+    // Update the previous scroll position
+    previousScrollPosition = window.scrollY;
+});

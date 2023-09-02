@@ -1,19 +1,28 @@
+
+/* Styles for the Footer */
+
 #footer {
+    /* Sets background with logo and gradient for the footer */
     background:
         url('../images/icons/logo.png') no-repeat,
         radial-gradient(circle at 50% 100%, var(--highlight-color) 0%, var(--footer-color) 80%);
     background-position: center;
     background-size: contain;
-
+    
+    /* Adds a top border with a color */
     border-top: 2px solid var(--highlight-color);
 }
 
+/* Styles for the separator within the Footer */
 #footer .separe {
+    /* Styles for the separator line */
     border-image: linear-gradient(to right, transparent 30%, var(--light-font-color) 30%, var(--light-font-color) 70%, transparent 70%) 1;
     border-style: solid;
     border-width: 1px 0 0 0;
 }
 
+/* Styles for links within the separator */
 #footer .separe a {
+    /* Sets text color for links within the separator */
     color: var(--light-font-color);
 }

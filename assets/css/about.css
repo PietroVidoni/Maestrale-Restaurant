@@ -1,53 +1,44 @@
+
+/* Styles for the About Section */
+
 #about-section {
+    /* Adds top padding and sets background image for the about section */
     padding-top: 7rem;
     background-image: url('../images/location/interior-1.jpg');
     background-position: center;
     background-size: cover;
-
+    
+    /* Prevents horizontal overflow */
     overflow-x: hidden;
 }
 
+#about-section img {
+    border: 2px solid var(--highlight-color);
+}
+
+/* Styles for text within the About Container */
 #about-section .about-container p {
+    /* Sets text color, margins, and background color for paragraphs in about container */
     color: var(--light-font-color);
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(0,0,0,0.7);
-} 
+}
 
+/* Styles for the "family" element within the About Section */
 #about-section .family {
+    /* Sets background image, padding, and box shadow for the "family" section */
     background-image: url('../images/people/borthers.jpg');
     background-position: center;
     background-size: cover;
-
     padding-bottom: 20rem;
-
-    box-shadow: inset 0 0 200px var(--main-1-color);
-}
-#about-section {
-    background-image: url('../images/location/interior-1.jpg');
-    background-position: center;
-    background-size: cover;
-
-    overflow-x: hidden;
-}
-
-#about-section .about-container p {
-    color: var(--light-font-color);
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(0,0,0,0.7);
-} 
-
-#about-section .family {
-    background-image: url('../images/people/borthers.jpg');
-    background-position: center;
-    background-size: cover;
-
-    padding-bottom: 20rem;
-
+    
+    /* Adds an inset box shadow with a color variable */
     box-shadow: inset 0 0 200px var(--main-1-color);
 }
 
+/* Styles for text within the "family" element */
 #about-section .family p {
-    background-image: linear-gradient(to right,transparent, var(--highlight-color), transparent);
+    /* Adds a linear gradient background to paragraphs within the "family" element */
+    background-image: linear-gradient(to right, transparent, var(--highlight-color), transparent);
 }
